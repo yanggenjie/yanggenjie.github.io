@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://github.com/yanggenjie/yanggenjie.github.io/2019/12/10/about/</loc>
+    
+    <lastmod>2021-04-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/yanggenjie/yanggenjie.github.io/series/index.html</loc>
+    
+    <lastmod>2021-04-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/yanggenjie/yanggenjie.github.io/tags/index.html</loc>
+    
+    <lastmod>2021-04-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/yanggenjie/yanggenjie.github.io/404.html</loc>
+    
+    <lastmod>2021-04-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/yanggenjie/yanggenjie.github.io/archives/index.html</loc>
+    
+    <lastmod>2021-04-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://github.com/yanggenjie/yanggenjie.github.io/2021/04/14/hello-world/</loc>
     
     <lastmod>2021-04-14</lastmod>
@@ -16,6 +51,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://github.com/yanggenjie/yanggenjie.github.io/tags/%E5%85%B3%E4%BA%8E%E6%88%91/</loc>
+    <lastmod>2021-04-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 
   
