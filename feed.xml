@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>自学之路</title>
+    <link>https://yanggenjie.cn/</link>
+    
+    <image>
+      <url>https://yanggenjie.cn/img/icon.png</url>
+      <title>自学之路</title>
+      <link>https://yanggenjie.cn/</link>
+    </image>
+    
+    <atom:link href="https://yanggenjie.cn/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>自学之路博客</description>
+    <pubDate>Sat, 08 Apr 2023 10:07:29 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>C#文件IO</title>
+      <link>https://yanggenjie.cn/post/code/CSharpFileIO.html</link>
+      <guid>https://yanggenjie.cn/post/code/CSharpFileIO.html</guid>
+      <pubDate>Sat, 08 Apr 2023 08:51:17 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;文件和文件夹&quot;&gt;&lt;a href=&quot;#文件和文件夹&quot; class=&quot;headerlink&quot; title=&quot;文件和文件夹&quot;&gt;&lt;/a&gt;文件和文件夹&lt;/h1&gt;&lt;p&gt;&lt;code&gt;System.IO&lt;/code&gt;命名空间下的常用类&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;t</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/CSharpFileIO/csharp-programming.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/C/">C#</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/CSharpFileIO.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Revit二次开发必备工具</title>
+      <link>https://yanggenjie.cn/post/code/revitTools.html</link>
+      <guid>https://yanggenjie.cn/post/code/revitTools.html</guid>
+      <pubDate>Sun, 05 Mar 2023 03:51:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;开发工具&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Studio：&lt;a href=&quot;https://visualstudio.microsoft.com/zh-hans/vs/&quot;&gt;https://visualstudio.microsoft.com/zh-hans/vs/&lt;/</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/revitTools/revit2020Logo.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/">二次开发</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/revitTools.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>2023年转行进入新领域</title>
+      <link>https://yanggenjie.cn/post/summary/2023FirstSum.html</link>
+      <guid>https://yanggenjie.cn/post/summary/2023FirstSum.html</guid>
+      <pubDate>Fri, 17 Feb 2023 17:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;今年有幸能入门Revit的二次开发，虽然不知道自己最终能不能胜任这份工作，但我会拼尽自己的全力去努力争取。&lt;/p&gt;
+&lt;p&gt;入行之前，我完全是二开的小白，也从没学过C#，也看不懂RevitAPI，虽然自学过C++，但工作要使用的是C#，一切都要重头学习。&lt;/p&gt;
+&lt;p&gt;然而学</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/summary/2023FirstSum/bridge7675585640.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">年终总结</category>
+      
+      
+      <category domain="https://yanggenjie.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
+      
+      
+      <comments>https://yanggenjie.cn/post/summary/2023FirstSum.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>为c/c++量身定制vim</title>
+      <link>https://yanggenjie.cn/post/code/vim.html</link>
+      <guid>https://yanggenjie.cn/post/code/vim.html</guid>
+      <pubDate>Fri, 03 Feb 2023 17:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;为c-x2F-c-量身定制vim&quot;&gt;&lt;a href=&quot;#为c-x2F-c-量身定制vim&quot; class=&quot;headerlink&quot; title=&quot;为c&amp;#x2F;c++量身定制vim&quot;&gt;&lt;/a&gt;为c&amp;#x2F;c++量身定制vim&lt;/h1&gt;&lt;h1 id=&quot;简介&quot;&gt;&lt;</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/vim/vim.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/Vim/">Vim</category>
+      
+      
+      <category domain="https://yanggenjie.cn/tags/vim/">vim</category>
+      
+      
+      <comments>https://yanggenjie.cn/post/code/vim.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>饮酒与解酒</title>
+      <link>https://yanggenjie.cn/post/life/drankAndWakeup.html</link>
+      <guid>https://yanggenjie.cn/post/life/drankAndWakeup.html</guid>
+      <pubDate>Tue, 17 Jan 2023 17:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;过年避免不了喝酒，了解酒精在人体内经过了什么器官，产生了什么反应，可以让自己更好的了解自己该喝多少，了解自己的极限，喝酒不拼酒，不要燃烧生命</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/life/drankAndWakeup/%E6%88%91%E5%8F%AA%E6%83%B3%E5%96%9D%E4%B8%AA%E7%83%82%E9%86%89.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      
+      <category domain="https://yanggenjie.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
+      
+      
+      <comments>https://yanggenjie.cn/post/life/drankAndWakeup.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>2022 年终总结</title>
+      <link>https://yanggenjie.cn/post/summary/2022.html</link>
+      <guid>https://yanggenjie.cn/post/summary/2022.html</guid>
+      <pubDate>Sat, 07 Jan 2023 17:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;书籍——《原则》&quot;&gt;&lt;a href=&quot;#书籍——《原则》&quot; class=&quot;headerlink&quot; title=&quot;书籍——《原则》&quot;&gt;&lt;/a&gt;书籍——《原则》&lt;/h1&gt;&lt;p&gt;今年阅读的书籍不多，因为大部分时间都在工作，今年对我来说影响比较大的一本书是瑞达利欧的《原则</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/summary/2022/2022.png" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">年终总结</category>
+      
+      
+      <category domain="https://yanggenjie.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
+      
+      
+      <comments>https://yanggenjie.cn/post/summary/2022.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>sqlite3笔记</title>
+      <link>https://yanggenjie.cn/post/code/sqlite3.html</link>
+      <guid>https://yanggenjie.cn/post/code/sqlite3.html</guid>
+      <pubDate>Tue, 27 Dec 2022 03:51:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://www.sqlite.org/download.html&quot;&gt;https://www.sqlite</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/sqlite3/sqliteDefault.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/SQLite3/">SQLite3</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/sqlite3.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>我的软件清单</title>
+      <link>https://yanggenjie.cn/post/InBox/mysoftwarelist.html</link>
+      <guid>https://yanggenjie.cn/post/InBox/mysoftwarelist.html</guid>
+      <pubDate>Thu, 22 Dec 2022 03:51:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;效率&quot;&gt;&lt;a href=&quot;#效率&quot; class=&quot;headerlink&quot; title=&quot;效率&quot;&gt;&lt;/a&gt;效率&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;everything：本地搜索最快的一个软件，想找什么文件，1s 就可以搜索到，几乎 0 延迟。比 windows 自带的搜索好</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/InBox/mysoftwarelist/software-417880640.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/">软件清单</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/InBox/mysoftwarelist.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://yanggenjie.cn/post/about/about.html</link>
+      <guid>https://yanggenjie.cn/post/about/about.html</guid>
+      <pubDate>Thu, 22 Dec 2022 03:51:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;个人简介&quot;&gt;&lt;a href=&quot;#个人简介&quot; class=&quot;headerlink&quot; title=&quot;个人简介&quot;&gt;&lt;/a&gt;个人简介&lt;/h2&gt;&lt;p&gt;杨根杰，普通的师范大学，19级土木工程专业。&lt;/p&gt;
+&lt;p&gt;土木的那些年的痕迹：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;制作了&lt;a hr</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/about/about/leave_a_msg.gif" type="image"/>
+      
+      
+      
+      
+      <category domain="https://yanggenjie.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
+      
+      
+      <comments>https://yanggenjie.cn/post/about/about.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo+GitHub Pages 搭建个人博客</title>
+      <link>https://yanggenjie.cn/post/InBox/hexoBlog.html</link>
+      <guid>https://yanggenjie.cn/post/InBox/hexoBlog.html</guid>
+      <pubDate>Fri, 03 Jul 2020 09:18:15 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;环境要求&quot;&gt;&lt;a href=&quot;#环境要求&quot; class=&quot;headerlink&quot; title=&quot;环境要求&quot;&gt;&lt;/a&gt;环境要求&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;nodejs：用来安装 hexo&lt;/li&gt;
+&lt;li&gt;hexo：用来写博客&lt;/li&gt;
+&lt;li&gt;git：用来推送博客</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/InBox/hexoBlog/hexo.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/InBox/hexoBlog.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>友情链接</title>
+      <link>https://yanggenjie.cn/post/about/link.html</link>
+      <guid>https://yanggenjie.cn/post/about/link.html</guid>
+      <pubDate>Mon, 03 Jul 2017 03:51:24 GMT</pubDate>
+      
+      <description>极客兔兔的友情链接</description>
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/about/link/link.png" type="image"/>
+      
+      
+      
+      
+      <category domain="https://yanggenjie.cn/tags/%E5%8F%8B%E9%93%BE/">友链</category>
+      
+      
+      <comments>https://yanggenjie.cn/post/about/link.html#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
