@@ -15,7 +15,7 @@
     <atom:link href="https://yanggenjie.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Sat, 08 Apr 2023 13:29:55 GMT</pubDate>
+    <pubDate>Sat, 08 Apr 2023 13:37:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -34,8 +34,12 @@
       
       
       
-      <category domain="https://yanggenjie.cn/categories/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98/">关于硬盘</category>
+      <category domain="https://yanggenjie.cn/categories/%E6%9D%82%E8%B0%88/">杂谈</category>
       
+      
+      <category domain="https://yanggenjie.cn/tags/%E6%9D%82%E8%B0%88/">杂谈</category>
+      
+      <category domain="https://yanggenjie.cn/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
       
       
       <comments>https://yanggenjie.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98.html#disqus_thread</comments>
@@ -226,31 +230,6 @@
     </item>
     
     <item>
-      <title>我的软件清单</title>
-      <link>https://yanggenjie.cn/post/InBox/mysoftwarelist.html</link>
-      <guid>https://yanggenjie.cn/post/InBox/mysoftwarelist.html</guid>
-      <pubDate>Thu, 22 Dec 2022 03:51:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;效率&quot;&gt;&lt;a href=&quot;#效率&quot; class=&quot;headerlink&quot; title=&quot;效率&quot;&gt;&lt;/a&gt;效率&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;everything：本地搜索最快的一个软件，想找什么文件，1s 就可以搜索到，几乎 0 延迟。比 windows 自带的搜索好</description>
-        
-      
-      
-      <enclosure url="https://yanggenjie.cn/post/InBox/mysoftwarelist/software-417880640.webp" type="image"/>
-      
-      
-      
-      <category domain="https://yanggenjie.cn/categories/%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/">软件清单</category>
-      
-      
-      
-      <comments>https://yanggenjie.cn/post/InBox/mysoftwarelist.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>关于</title>
       <link>https://yanggenjie.cn/post/about/about.html</link>
       <guid>https://yanggenjie.cn/post/about/about.html</guid>
@@ -278,9 +257,34 @@
     </item>
     
     <item>
+      <title>我的软件清单</title>
+      <link>https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist.html</link>
+      <guid>https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist.html</guid>
+      <pubDate>Thu, 22 Dec 2022 03:51:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;效率&quot;&gt;&lt;a href=&quot;#效率&quot; class=&quot;headerlink&quot; title=&quot;效率&quot;&gt;&lt;/a&gt;效率&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;everything：本地搜索最快的一个软件，想找什么文件，1s 就可以搜索到，几乎 0 延迟。比 windows 自带的搜索好</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist/software-417880640.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/">软件清单</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>Hexo+GitHub Pages 搭建个人博客</title>
-      <link>https://yanggenjie.cn/post/InBox/hexoBlog.html</link>
-      <guid>https://yanggenjie.cn/post/InBox/hexoBlog.html</guid>
+      <link>https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog.html</link>
+      <guid>https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog.html</guid>
       <pubDate>Fri, 03 Jul 2020 09:18:15 GMT</pubDate>
       
         
@@ -292,7 +296,7 @@
         
       
       
-      <enclosure url="https://yanggenjie.cn/post/InBox/hexoBlog/hexo.webp" type="image"/>
+      <enclosure url="https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog/hexo.webp" type="image"/>
       
       
       
@@ -300,7 +304,7 @@
       
       
       
-      <comments>https://yanggenjie.cn/post/InBox/hexoBlog.html#disqus_thread</comments>
+      <comments>https://yanggenjie.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog.html#disqus_thread</comments>
       
     </item>
     
