@@ -15,8 +15,32 @@
     <atom:link href="https://yanggenjie.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Sat, 08 Apr 2023 11:33:52 GMT</pubDate>
+    <pubDate>Sat, 08 Apr 2023 13:24:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>关于硬盘</title>
+      <link>https://yanggenjie.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98.html</link>
+      <guid>https://yanggenjie.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98.html</guid>
+      <pubDate>Sat, 08 Apr 2023 12:11:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;前段时间，重装重装系统的时候一不小心就把数据盘给分区格式化了，很多记录都没有了，从2月15开始上班到现在，还有之前那段自学半年的每天都一直记录，记录一些无用的思考，挣扎，心路历程。然而，格式化之后就完全没有了，不由感慨电子产品过于脆弱，过于梦幻，那些用文字记录的过去，在按下</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98/%E6%9C%BA%E6%A2%B0%E7%A1%AC%E7%9B%98%E6%9E%84%E4%BB%B6%E5%88%86%E5%B8%83.jpg" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98/">关于硬盘</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>C#文件IO</title>
