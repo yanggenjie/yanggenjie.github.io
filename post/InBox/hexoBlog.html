@@ -204,7 +204,7 @@
 <li>git：用来推送博客到 github 或者云服务器上</li>
 </ul>
 <h1 id="1-首先安装-nodejs"><a href="#1-首先安装-nodejs" class="headerlink" title="1.首先安装 nodejs"></a>1.首先安装 nodejs</h1><p>去 NodeJs 官网下载最新的 LST 版本：<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a>，我习惯下载压缩包，下载解压之后，<strong>把 nodejs 的 bin 目录添加到环境变量</strong>，这样就可以使用 npm 命令了。</p>
-<h1 id="2-用-npm-命令安装-hexo"><a href="#2-用-npm-命令安装-hexo" class="headerlink" title="2.用 npm 命令安装 hexo"></a>2.用 npm 命令安装 hexo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h1 id="2-用-npm-命令安装-hexo"><a href="#2-用-npm-命令安装-hexo" class="headerlink" title="2.用 npm 命令安装 hexo"></a>2.用 npm 命令安装 hexo</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 
 <p>安装完成之后，就可以使用 hexo 来写博客了</p>
 <h1 id="3-写博客"><a href="#3-写博客" class="headerlink" title="3.写博客"></a>3.写博客</h1><blockquote>
@@ -213,18 +213,18 @@
 <ul>
 <li>初始化博客</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建一个文件夹blog，作为博客目录</span></span><br><span class="line"><span class="comment"># 使用init命令之后，就会在blog目录下自动生成一堆配置文件</span></span><br><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一个文件夹blog，作为博客目录</span></span><br><span class="line"><span class="comment"># 使用init命令之后，就会在blog目录下自动生成一堆配置文件</span></span><br><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>新建一篇文章</li>
 </ul>
 <p>在<code>source/_posts</code>目录下，新建一个 markdown 文件，就是一篇博客，也可以用命令来新建 markdown 文件，这样会自动生成一些配置，不然自己写也无所谓。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>预览博客效果</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.生成静态网页</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2.开启本地服务</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 访问http://localhost:4000</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1.生成静态网页</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2.开启本地服务</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 访问http://localhost:4000</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="更换博客主题"><a href="#更换博客主题" class="headerlink" title="更换博客主题"></a>更换博客主题</h2><p>刚才生成的博客是默认的主题，你可以修改成自己觉得好看的主题。</p>
 <ol>
@@ -233,20 +233,19 @@
 <li>修改 <code>blog/_config.yml</code> 中的<code>theme：xxx</code> ，xxx 改成 themes 文件夹下的主题名字</li>
 </ol>
 <h1 id="4-发布博客到-github-pages-或者云服务器"><a href="#4-发布博客到-github-pages-或者云服务器" class="headerlink" title="4.发布博客到 github pages 或者云服务器"></a>4.发布博客到 github pages 或者云服务器</h1><p>首先你得有 github 账户，并且已经配置好 SSH 免密登录。在 github 上创建一个名为 <code>xxx.github.io</code> 的仓库。（xxx 为自己的 github 用户名）</p>
-<p><strong>4.1 安装git推送插件</strong></p>
+<p><strong>4.1 安装 git 推送插件</strong></p>
 <p>不安装插件，会推送不出去。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <p><strong>4.2 配置 Hexo</strong></p>
 <p>即设置你要推送到的远端地址。<br>修改<code>blog/_config.yml</code></p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">   <span class="attr">type:</span> <span class="string">git</span> <span class="comment"># git方式推送</span></span><br><span class="line">   <span class="attr">repo:</span> <span class="string">git@github.com:xxx/xxx.github.io.git</span> <span class="comment">#仓库地址，或者服务器地址</span></span><br><span class="line">   <span class="attr">branch:</span> <span class="string">master</span> <span class="comment"># 默认是master分支</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span> <span class="comment"># git方式推送</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:xxx/xxx.github.io.git</span> <span class="comment">#仓库地址，或者服务器地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span> <span class="comment"># 默认是master分支</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>4.3 推送服务器</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d <span class="comment"># 输入这个命令，就可以把当前生成的博客文件推送到远程仓库了，主要是把public目录推送出去</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d <span class="comment"># 输入这个命令，就可以把当前生成的博客文件推送到远程仓库了，主要是把public目录推送出去</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>如果你购买了自己的域名，想要把域名绑定到刚才生成的博客上，不想使用 xxx.github.io 这个域名。你可以在<code>source</code>文件夹下<code>新建CNAME文件</code>，无后缀，在里面写上你购买的域名，即可。</p>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo d <span class="comment"># 生成博客页面，然后推送到远程仓库</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s <span class="comment"># 清理之前生成的文件，重新生成新文件，开启本地预览服务</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d <span class="comment"># 清理之前生成的文件，重新生成新文件，推送到远程服务器</span></span><br></pre></td></tr></table></figure>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo d <span class="comment"># 生成博客页面，然后推送到远程仓库</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s <span class="comment"># 清理之前生成的文件，重新生成新文件，开启本地预览服务</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d <span class="comment"># 清理之前生成的文件，重新生成新文件，推送到远程服务器</span></span><br></pre></td></tr></table></figure>
 
         
 <script src="/js/qrious.min.js"></script>
@@ -443,64 +442,6 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/summary/2023FirstSum/bridge7675585640.webp')"></div>
-    <div class="post-info">
-        <div class="post-info-center">
-            <div class="hidden-xs">
-                
-                
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#关于我"
-                    title="关于我">关于我</a>
-                <span>/</span>
-                
-                
-            </div>
-            <a href="/post/summary/2023FirstSum.html" class="title">
-                2023年转行进入新领域
-            </a>
-            <p class="text-gray">
-                <small>
-                    <span>发表于2023-02-18，</span>
-                    <span class="hidden-xs">全文1304字，</span>
-                    <span>阅读约5分钟</span>
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-        
-        <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/code/vim/vim.webp')"></div>
-    <div class="post-info">
-        <div class="post-info-center">
-            <div class="hidden-xs">
-                
-                
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#vim"
-                    title="vim">vim</a>
-                <span>/</span>
-                
-                
-            </div>
-            <a href="/post/code/vim.html" class="title">
-                为c/c++量身定制vim
-            </a>
-            <p class="text-gray">
-                <small>
-                    <span>发表于2023-02-04，</span>
-                    <span class="hidden-xs">全文5020字，</span>
-                    <span>阅读约17分钟</span>
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-        
-        <div class="post-preview">
     <div class="post-img" style="background-image: url('/post/summary/2022/2022.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
@@ -521,8 +462,52 @@
             <p class="text-gray">
                 <small>
                     <span>发表于2023-01-08，</span>
-                    <span class="hidden-xs">全文2342字，</span>
+                    <span class="hidden-xs">全文2351字，</span>
                     <span>阅读约8分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/code/sqlite3/sqliteDefault.webp')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/code/sqlite3.html" class="title">
+                sqlite3笔记
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2022-12-27，</span>
+                    <span class="hidden-xs">全文1521字，</span>
+                    <span>阅读约6分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/InBox/hexoBlog/hexo.webp')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/InBox/hexoBlog.html" class="title">
+                Hexo+GitHub Pages 搭建个人博客
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2020-07-03，</span>
+                    <span class="hidden-xs">全文1818字，</span>
+                    <span>阅读约7分钟</span>
                 </small>
             </p>
         </div>

@@ -199,9 +199,9 @@
         
         <div class="gkt-article-start"></div>
         <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>下载地址：<a target="_blank" rel="noopener" href="https://www.sqlite.org/download.html">https://www.sqlite.org/download.html</a></p>
-<p>主要下载dll文件和tools文件。dll有32位、64位，根据自己系统类型选择。</p>
+<p>主要下载 dll 文件和 tools 文件。dll 有 32 位、64 位，根据自己系统类型选择。</p>
 <p>下载解压出来，把这个文件夹路径<strong>添加到环境变量</strong>。就安装完成了</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 安装成功检测</span><br><span class="line"># 命令行输入，看看结果是否显示sqlite版本号</span><br><span class="line">sqlite3</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line">sqlite3 --version</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装成功检测</span><br><span class="line"># 命令行输入，看看结果是否显示sqlite版本号</span><br><span class="line">sqlite3</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line">sqlite3 --version</span><br></pre></td></tr></table></figure>
 
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><ul>
 <li>新建&#x2F;打开数据库</li>
@@ -209,28 +209,31 @@
 <p>语法：<code>sqlite3 数据库名字.db</code></p>
 <p>解释：新建或者打开数据库，如果原先不存在就新建，已存在就是打开</p>
 <p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlite3 DatabaseName.db </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sqlite3 DatabaseName.db</span><br></pre></td></tr></table></figure>
 
 <p>打开数据库</p>
 <p>语法：<code>.open 数据库名称.db</code></p>
-<p>解释：在sqlite命令行中使用，打开已存在的数据库</p>
+<p>解释：在 sqlite 命令行中使用，打开已存在的数据库</p>
 <p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.open DatabaseName.db</span><br><span class="line"></span><br><span class="line"># 示例</span><br><span class="line">sqlite&gt;.open DatabaseName.db</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.open DatabaseName.db</span><br><span class="line"></span><br><span class="line"># 示例</span><br><span class="line">sqlite&gt;.open DatabaseName.db</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>查看数据库列表</p>
 <p>语法：<code>.databases</code></p>
 <p>解释：查看当前打开的数据库的信息，包括数据库位置，读写权限</p>
 <p>示例:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.databases</span><br><span class="line"># 示例</span><br><span class="line">sqlite&gt; .databases</span><br><span class="line">main: C:\Users\Administrator\Documents\source\test\liveDB.db r/w</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.databases</span><br><span class="line"># 示例</span><br><span class="line">sqlite&gt; .databases</span><br><span class="line">main: C:\Users\Administrator\Documents\source\test\liveDB.db r/w</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>退出数据库</p>
 <p>语法：<code>.quit</code></p>
 <p>解释：退出数据库<br>创建表</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">create table 表名(字段名 数据类型 属性,...);</span><br><span class="line"># 常用字段属性</span><br><span class="line">primary key #每张表只有一个主键，主键自带unique属性</span><br><span class="line">not null # 非空</span><br><span class="line">unique # 不能重复</span><br><span class="line">autuincrement # 自增</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名(字段名 数据类型 属性,...);</span><br><span class="line"># 常用字段属性</span><br><span class="line">primary key #每张表只有一个主键，主键自带unique属性</span><br><span class="line">not null # 非空</span><br><span class="line">unique # 不能重复</span><br><span class="line">autuincrement # 自增</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>插入元素</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 插入元素</span><br><span class="line">intsert into 表名(字段1，字段2) values(字段1的值，字段2的值);</span><br><span class="line"></span><br><span class="line"># 查看表内元素</span><br><span class="line">select 字段1,字段2 from 表名  where 筛选条件;</span><br><span class="line"></span><br><span class="line"># 清空表    </span><br><span class="line">select * from userInfo;</span><br><span class="line">delete from userInfo;</span><br><span class="line">update sqlite_sequence set seq=0 where name =&#x27;userInfo&#x27;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"># 插入元素</span><br><span class="line">intsert into 表名(字段1，字段2) values(字段1的值，字段2的值);</span><br><span class="line"></span><br><span class="line"># 查看表内元素</span><br><span class="line">select 字段1,字段2 from 表名  where 筛选条件;</span><br><span class="line"></span><br><span class="line"># 清空表</span><br><span class="line">select * from userInfo;</span><br><span class="line">delete from userInfo;</span><br><span class="line">update sqlite_sequence set seq=0 where name =&#x27;userInfo&#x27;;</span><br></pre></td></tr></table></figure>
 
 <p>修改字段</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># Sqlite 不支持直接修改字段的名称。</span><br><span class="line"># 我们可以使用别的方法来实现修改字段名。</span><br><span class="line"></span><br><span class="line">#  1、修改原表的名称</span><br><span class="line">ALTER TABLE table RENAME TO tableOld;</span><br><span class="line"></span><br><span class="line">#  2、新建修改字段后的表</span><br><span class="line">CREATE TABLE table(ID INTEGER PRIMARY KEY AUTOINCREMENT, Modify_Username text not null);</span><br><span class="line"></span><br><span class="line"># 3、从旧表中查询出数据 并插入新表</span><br><span class="line">INSERT INTO table SELECT ID,Username FROM tableOld;</span><br><span class="line"></span><br><span class="line"># 4、删除旧表</span><br><span class="line">DROP TABLE tableOld;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Sqlite 不支持直接修改字段的名称。</span><br><span class="line"># 我们可以使用别的方法来实现修改字段名。</span><br><span class="line"></span><br><span class="line">#  1、修改原表的名称</span><br><span class="line">ALTER TABLE table RENAME TO tableOld;</span><br><span class="line"></span><br><span class="line">#  2、新建修改字段后的表</span><br><span class="line">CREATE TABLE table(ID INTEGER PRIMARY KEY AUTOINCREMENT, Modify_Username text not null);</span><br><span class="line"></span><br><span class="line"># 3、从旧表中查询出数据 并插入新表</span><br><span class="line">INSERT INTO table SELECT ID,Username FROM tableOld;</span><br><span class="line"></span><br><span class="line"># 4、删除旧表</span><br><span class="line">DROP TABLE tableOld;</span><br></pre></td></tr></table></figure>
+
         
 <script src="/js/qrious.min.js"></script>
 
@@ -439,7 +442,7 @@
             <p class="text-gray">
                 <small>
                     <span>发表于2023-03-05，</span>
-                    <span class="hidden-xs">全文486字，</span>
+                    <span class="hidden-xs">全文490字，</span>
                     <span>阅读约2分钟</span>
                 </small>
             </p>
@@ -448,7 +451,7 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/summary/2022/2022.png')"></div>
+    <div class="post-img" style="background-image: url('/post/about/about/leave_a_msg.gif')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
@@ -462,14 +465,14 @@
                 
                 
             </div>
-            <a href="/post/summary/2022.html" class="title">
-                2022 年终总结
+            <a href="/post/about/about.html" class="title">
+                关于
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-01-08，</span>
-                    <span class="hidden-xs">全文2342字，</span>
-                    <span>阅读约8分钟</span>
+                    <span>发表于2022-12-22，</span>
+                    <span class="hidden-xs">全文1177字，</span>
+                    <span>阅读约4分钟</span>
                 </small>
             </p>
         </div>
@@ -477,21 +480,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/InBox/hexoBlog/hexo.webp')"></div>
+    <div class="post-img" style="background-image: url('/post/InBox/mysoftwarelist/software-417880640.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/InBox/hexoBlog.html" class="title">
-                Hexo+GitHub Pages 搭建个人博客
+            <a href="/post/InBox/mysoftwarelist.html" class="title">
+                我的软件清单
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2020-07-03，</span>
-                    <span class="hidden-xs">全文1819字，</span>
-                    <span>阅读约7分钟</span>
+                    <span>发表于2022-12-22，</span>
+                    <span class="hidden-xs">全文1418字，</span>
+                    <span>阅读约5分钟</span>
                 </small>
             </p>
         </div>

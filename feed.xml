@@ -15,7 +15,7 @@
     <atom:link href="https://yanggenjie.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Sat, 08 Apr 2023 10:07:29 GMT</pubDate>
+    <pubDate>Sat, 08 Apr 2023 11:33:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -79,9 +79,9 @@
       
         
         
-      <description>&lt;p&gt;今年有幸能入门Revit的二次开发，虽然不知道自己最终能不能胜任这份工作，但我会拼尽自己的全力去努力争取。&lt;/p&gt;
-&lt;p&gt;入行之前，我完全是二开的小白，也从没学过C#，也看不懂RevitAPI，虽然自学过C++，但工作要使用的是C#，一切都要重头学习。&lt;/p&gt;
-&lt;p&gt;然而学</description>
+      <description>&lt;p&gt;今年有幸能入门 Revit 的二次开发，虽然不知道自己最终能不能胜任这份工作，但我会拼尽自己的全力去努力争取。&lt;/p&gt;
+&lt;p&gt;入行之前，我完全是二开的小白，也从没学过 C#，也看不懂 RevitAPI，虽然自学过 C++，但工作要使用的是 C#，一切都要重头学习。&lt;/p&gt;
+</description>
         
       
       
@@ -107,7 +107,7 @@
       
         
         
-      <description>&lt;h1 id=&quot;为c-x2F-c-量身定制vim&quot;&gt;&lt;a href=&quot;#为c-x2F-c-量身定制vim&quot; class=&quot;headerlink&quot; title=&quot;为c&amp;#x2F;c++量身定制vim&quot;&gt;&lt;/a&gt;为c&amp;#x2F;c++量身定制vim&lt;/h1&gt;&lt;h1 id=&quot;简介&quot;&gt;&lt;</description>
+      <description>&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;本文介绍如何配置 vim，搭建一个简易的 c&amp;#x2F;c++编码环境，主要配置:树形目录文件查看、代码格式化、代码自动补全、括号配对&lt;/p</description>
         
       
       
