@@ -15,8 +15,181 @@
     <atom:link href="https://yanggenjie.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Sat, 08 Apr 2023 13:37:58 GMT</pubDate>
+    <pubDate>Sun, 02 Jul 2023 10:48:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2023上半年总结</title>
+      <link>https://yanggenjie.cn/post/summary/2023.html</link>
+      <guid>https://yanggenjie.cn/post/summary/2023.html</guid>
+      <pubDate>Sun, 02 Jul 2023 10:48:34 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;很久没有写总结笔记了，回顾这几个月来做二开的感受，到现在还有一种不真实的感觉，一开始我是自学的C++，后面阴差阳错的进入了二开的领域，现在感觉也还不错。&lt;/p&gt;
+&lt;p&gt;尽管也有加班，也有怎么都做不完的活，但想来工作也都差不多，都是永远会有加班，永远会有做不完的活。&lt;/p&gt;
+</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/summary/2023/2023.jpeg" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">年终总结</category>
+      
+      
+      <category domain="https://yanggenjie.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
+      
+      
+      <comments>https://yanggenjie.cn/post/summary/2023.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>1.Git安装</title>
+      <link>https://yanggenjie.cn/post/code/git/1.git%E5%AE%89%E8%A3%85.html</link>
+      <guid>https://yanggenjie.cn/post/code/git/1.git%E5%AE%89%E8%A3%85.html</guid>
+      <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h1&gt;&lt;h2 id=&quot;安装git&quot;&gt;&lt;a href=&quot;#安装git&quot; class=&quot;headerlink&quot; title=&quot;安装g</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/CSharpFileIO/csharp-programming.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/Git/">Git</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/git/1.git%E5%AE%89%E8%A3%85.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>2.配置Git</title>
+      <link>https://yanggenjie.cn/post/code/git/2.%E9%85%8D%E7%BD%AEGit.html</link>
+      <guid>https://yanggenjie.cn/post/code/git/2.%E9%85%8D%E7%BD%AEGit.html</guid>
+      <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;配置Git&quot;&gt;&lt;a href=&quot;#配置Git&quot; class=&quot;headerlink&quot; title=&quot;配置Git&quot;&gt;&lt;/a&gt;配置Git&lt;/h1&gt;&lt;h2 id=&quot;配置个人的用户名和电子邮件&quot;&gt;&lt;a href=&quot;#配置个人的用户名和电子邮件&quot; class=&quot;header</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/CSharpFileIO/csharp-programming.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/Git/">Git</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/git/2.%E9%85%8D%E7%BD%AEGit.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>1.Git安装</title>
+      <link>https://yanggenjie.cn/post/code/git/4.%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86.html</link>
+      <guid>https://yanggenjie.cn/post/code/git/4.%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86.html</guid>
+      <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;创建分支命令：&quot;&gt;&lt;a href=&quot;#创建分支命令：&quot; class=&quot;headerlink&quot; title=&quot;创建分支命令：&quot;&gt;&lt;/a&gt;创建分支命令：&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/CSharpFileIO/csharp-programming.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/Git/">Git</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/git/4.%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>1.Git安装</title>
+      <link>https://yanggenjie.cn/post/code/git/3.Git%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5.html</link>
+      <guid>https://yanggenjie.cn/post/code/git/3.Git%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5.html</guid>
+      <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;Git相关概念&quot;&gt;&lt;a href=&quot;#Git相关概念&quot; class=&quot;headerlink&quot; title=&quot;Git相关概念&quot;&gt;&lt;/a&gt;Git相关概念&lt;/h1&gt;&lt;h1 id=&quot;git的相关概念&quot;&gt;&lt;a href=&quot;#git的相关概念&quot; class=&quot;headerli</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/CSharpFileIO/csharp-programming.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/Git/">Git</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/git/3.Git%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>1.Git安装</title>
+      <link>https://yanggenjie.cn/post/code/git/5.Git%E6%A0%87%E7%AD%BE.html</link>
+      <guid>https://yanggenjie.cn/post/code/git/5.Git%E6%A0%87%E7%AD%BE.html</guid>
+      <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;如果你达到一个重要的阶段，并希望永远记住那个特别的提交快照，你可以使用 git tag 给它打上标签。&lt;/p&gt;
+&lt;p&gt;比如说，我们想为我们的 runoob 项目发布一个”1.0”版本。 我们可以用 git tag -a v1.0 命令给最新一次提交打上（HEAD）”v1.0</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/CSharpFileIO/csharp-programming.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/Git/">Git</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/git/5.Git%E6%A0%87%E7%AD%BE.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>1.Git安装</title>
+      <link>https://yanggenjie.cn/post/code/git/6.%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93.html</link>
+      <guid>https://yanggenjie.cn/post/code/git/6.%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93.html</guid>
+      <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;添加远程仓库&quot;&gt;&lt;a href=&quot;#添加远程仓库&quot; class=&quot;headerlink&quot; title=&quot;添加远程仓库&quot;&gt;&lt;/a&gt;添加远程仓库&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code</description>
+        
+      
+      
+      <enclosure url="https://yanggenjie.cn/post/code/CSharpFileIO/csharp-programming.webp" type="image"/>
+      
+      
+      
+      <category domain="https://yanggenjie.cn/categories/Git/">Git</category>
+      
+      
+      
+      <comments>https://yanggenjie.cn/post/code/git/6.%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>关于硬盘</title>
@@ -96,34 +269,6 @@
       
       
       <comments>https://yanggenjie.cn/post/code/revitTools.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>2023上半年总结</title>
-      <link>https://yanggenjie.cn/post/summary/2023.html</link>
-      <guid>https://yanggenjie.cn/post/summary/2023.html</guid>
-      <pubDate>Fri, 17 Feb 2023 17:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;很久没有写总结笔记了，回顾这几个月来做二开的感受，到现在还有一种不真实的感觉，一开始我是自学的C++，后面阴差阳错的进入了二开的领域，现在感觉也还不错。&lt;/p&gt;
-&lt;p&gt;尽管也有加班，也有怎么都做不完的活，但想来工作也都差不多，都是永远会有加班，永远会有做不完的活。&lt;/p&gt;
-</description>
-        
-      
-      
-      <enclosure url="https://yanggenjie.cn/post/summary/2023/2023.jpeg" type="image"/>
-      
-      
-      
-      <category domain="https://yanggenjie.cn/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">年终总结</category>
-      
-      
-      <category domain="https://yanggenjie.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
-      
-      
-      <comments>https://yanggenjie.cn/post/summary/2023.html#disqus_thread</comments>
       
     </item>
     
