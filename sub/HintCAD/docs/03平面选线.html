@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. 平面选线 &mdash; 纬地一学即会 1.0 文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="4.设计向导" href="04%E8%AE%BE%E8%AE%A1%E5%90%91%E5%AF%BC.html" />
+    <link rel="prev" title="2.打开地形图" href="02%E6%89%93%E5%BC%80%E5%9C%B0%E5%BD%A2%E5%9B%BE.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            纬地一学即会
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="00%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00%E8%AE%BE%E8%AE%A1%E6%80%BB%E6%B5%81%E7%A8%8B.html">设计总流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.html">1.新建项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02%E6%89%93%E5%BC%80%E5%9C%B0%E5%BD%A2%E5%9B%BE.html">2.打开地形图</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 平面选线</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.1 选交点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.2 平曲线参数设置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">选线思路</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">直线的要求</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">园曲线最小半径</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">缓和曲线长度</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">3.3 平面图例识别</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">3.4 平面相关文件解读</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04%E8%AE%BE%E8%AE%A1%E5%90%91%E5%AF%BC.html">4.设计向导</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%A8%A1.html">5.建立数模</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06%E7%BA%B5%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html">6. 做纵断面设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07%E8%B7%AF%E5%9F%BA%E8%AE%BE%E8%AE%A1%E8%AE%A1%E7%AE%97.html">7 路基设计计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08%E6%A8%AA%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html">8.横断面设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09%E5%85%B6%E5%AE%83%E6%9E%84%E9%80%A0%E7%89%A9%E8%AE%BE%E8%AE%A1.html">9. 其它构造物的设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%E5%87%BA%E5%9B%BE%E4%B8%8E%E8%A1%A8%E6%A0%BC%E8%BE%93%E5%87%BA.html">出图输出表格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%E7%BB%93%E8%AF%AD.html">结语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE.html">参考文献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html">关于我</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#id2">关于本书</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">纬地一学即会</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">3. 平面选线</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/03平面选线.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>3. 平面选线<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
+<section id="id2">
+<h2>3.1 选交点<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
+<ul class="simple">
+<li><p><strong>点击设计，主线平面设计</strong></p></li>
+</ul>
+<p><img alt="image-20201126165238425" src="../_images/d3e7b438f0984da9a8fcbff6db55c314.webp" /></p>
+<p>然后弹出主线平面设计的窗口。</p>
+<ul class="simple">
+<li><p><strong>选一个地形图上的点，作为路线的起点</strong></p></li>
+</ul>
+<p>我们先说怎么在软件上操作，然后再说需要考虑什么。</p>
+<p><img alt="image-20201126165452089" src="../_images/13a0a220e2af4c91abba12f698fb8906.webp" /></p>
+<ul class="simple">
+<li><p>点击拾取，然后<code class="docutils literal notranslate"><span class="pre">鼠标移动</span></code>到你想作为起点的地方，<code class="docutils literal notranslate"><span class="pre">单击鼠标左键</span></code>就可以完成起点的选取。</p></li>
+</ul>
+<p>这时候我们可以观察到，窗口上的 X、Y 坐标已经变了，之前是(0，0)，现在已经自动生成了一个新坐标。这个点就是你刚才选定的起点。</p>
+<p>你可以看看上图，我们未拾取的时候，坐标都是（0,0），选取之后，纬地自动读取。</p>
+<p><img alt="image-20201126165812905" src="../_images/b098a939b4cc423699396da92163796d.webp" /></p>
+<p>然后，点击<code class="docutils literal notranslate"><span class="pre">插入</span></code>：</p>
+<p><img alt="image-20201126170111377" src="../_images/e4c927755cfe4d8db8583e55b41c0a4d.webp" /></p>
+<p>弹出，是否插入<code class="docutils literal notranslate"><span class="pre">交点1</span></code>，点击<code class="docutils literal notranslate"><span class="pre">是</span></code>：</p>
+<p><img alt="image-20201126170138855" src="../_images/945b4fb6020845179a8b7692fe1180a9.webp" /></p>
+<p>这时候，我们就回到了地形图上，不过鼠标在拉动一条线，即可以选线了。如下图，我随便选了一条。</p>
+<p>这个时候，<strong>我们只能选做直线，没有园曲线、缓和曲线，转弯都是折线</strong></p>
+<p>最终，你选完了，就需要按键盘上的<code class="docutils literal notranslate"><span class="pre">回车键</span></code>（即 Enter 键），不然它是永远不会自动结束的。</p>
+<p><img alt="image-20201126170317388" src="../_images/b9ac3c0ada774a0bbacd7a3a1c878369.webp" /></p>
+<p>当我按下<code class="docutils literal notranslate"><span class="pre">回车键</span></code>之后，就<strong>自动重新弹回主线平面设计</strong>的窗口(如果没有自动弹出，或者你关闭了，那么重新点击<code class="docutils literal notranslate"><span class="pre">设计</span></code>-<code class="docutils literal notranslate"><span class="pre">主线平面设计</span></code>，即可)：</p>
+<p><img alt="image-20201126170657839" src="../_images/4b532d354c394f40b3b91cb87918e06a.webp" /></p>
+<p>如上图，可以按<code class="docutils literal notranslate"><span class="pre">向左</span></code>或者<code class="docutils literal notranslate"><span class="pre">向右</span></code>的箭头，查看这条路线的交点，也就是转弯的地方的点。</p>
+<blockquote>
+<div><p>不过现在，转弯的地方都是折线转弯，如果这样设计的话，我估计没有人敢开车上路。所以你需要设计<code class="docutils literal notranslate"><span class="pre">园曲线</span></code>、<code class="docutils literal notranslate"><span class="pre">缓和曲线</span></code>。</p>
+</div></blockquote>
+<p>那么如何设计<code class="docutils literal notranslate"><span class="pre">园曲线</span></code>，<code class="docutils literal notranslate"><span class="pre">缓和曲线</span></code>呢？这就需要在这个<code class="docutils literal notranslate"><span class="pre">交点</span></code>（也就是转折点）的地方做文章，由图中，我们可以看到，</p>
+<p><img alt="image-20201126172139438" src="../_images/e8422061080146a381533ea37cef2c6b.webp" /></p>
+<p>这个窗口大概可以分成这样三部分：显示<strong>交点数据</strong>的区域、显示<strong>园曲线及缓和曲线设计</strong>的区域、显示<strong>相关数据</strong>的区域；</p>
+<p>交点数据刚才我们用来选起点；数据显示区域就只是一个展示台；剩下的区域就是<strong>做园曲线和缓和曲线设计的</strong>部分了。</p>
+<p>那如何做？就<strong>按规范填入一些数据即可</strong>。</p>
+<blockquote>
+<div><p>注意，这里说填入，实际上就是你<strong>对这条路线设计的考虑</strong>，你觉得设计园曲线 300m 的半径，还是 1200m 的半径，这些需要你考虑填入。而具体该怎么考虑，那就需要结合规范来考虑了。</p>
+</div></blockquote>
+<p>这里先随便填一下，稍后我们详细说这些参数怎么考虑（详见 3.3 选线思路）。</p>
+<p>这里选用的计算模式是：<code class="docutils literal notranslate"><span class="pre">常规已知S1+Rc+S2</span></code>，然后需要<code class="docutils literal notranslate"><span class="pre">填写3个数据</span></code>，然后点击<code class="docutils literal notranslate"><span class="pre">试算</span></code>。</p>
+<p>园曲线半径(Rc)：400</p>
+<p>前缓和曲线(S1)：75</p>
+<p>后缓和曲线(S2)：75</p>
+<p><img alt="image-20201126173929540" src="../_images/dcf593aa886849ce8e2131587b38f20f.webp" /></p>
+<blockquote>
+<div><p>这里先讲一个小原则，当然后面也会详细讲到</p>
+<p>即：S1：Sc：S2=1：1：1~1：2：1，就是说这三个的比值需要保持在这个范围。</p>
+</div></blockquote>
+<p>我们填完之后，点击试算，园曲线长度 Sc 会自动计算出来，这三个数据 S1、Sc、S2 的比值要在 1：1：1~到 1：2：1 之间即可。</p>
+<p>至此，平面设计的步骤就已经做完了，我们需要<strong>保存刚才的路线文件</strong>。</p>
+<p><img alt="image-20201126174517459" src="../_images/a6a4de1dbb4240a58b535a62cf4ed1f2.webp" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">点击</span></code>另存<code class="docutils literal notranslate"><span class="pre">或者</span></code>存盘<code class="docutils literal notranslate"><span class="pre">都可以，因为是第一次保存，无论点击哪一个，都会问你保存到哪。</span></code></p>
+<p>我们点击<code class="docutils literal notranslate"><span class="pre">存盘</span></code>。</p>
+<p><img alt="image-20201126174817880" src="../_images/8f8ada74c20042d1b3b88ae8fc03611f.webp" /></p>
+<p>弹出窗口，点击保存即可,然后弹出窗口：</p>
+<p><img alt="image-20201126174917288" src="../_images/650e62dacb8f4c77bcac40f3211337ab.webp" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">是否将“平面交点数据”自动转化为当前项目的“平曲线数据”？</span></code></p>
+<p>点击<code class="docutils literal notranslate"><span class="pre">是</span></code>,然后我们再点击一次<code class="docutils literal notranslate"><span class="pre">存盘</span></code>，然后弹出窗口提示文件保存结束，即可。</p>
+<p>不放心还可以再点击一次保存……</p>
+<p><img alt="image-20201126175038149" src="../_images/7f5611f769c34b298dea7aaca2f98e27.webp" /></p>
+<p>最后，还要<code class="docutils literal notranslate"><span class="pre">保存项目</span></code>。点击<code class="docutils literal notranslate"><span class="pre">项目</span></code>-<code class="docutils literal notranslate"><span class="pre">保存项目</span></code>。这个就是在软件上做平面设计的完整流程。</p>
+</section>
+<section id="id3">
+<h2>3.2 平曲线参数设置<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h2>
+<section id="id4">
+<h3>选线思路<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h3>
+<p>如果你看懂了上面的操作流程，那么恭喜你，至少已经进步了很多了。</p>
+<p>不过，光有操作是不行的，我们要做的是设计，不是走流程。那么接下来的小节中，我们要</p>
+<p>那么在选线的时候需要注意哪些问题呢？这里 UP 也只能根据一些浅薄的理论知识来给大家讲解一些，我按我的方式来将，你看着吸收，如果有讲得不对或者不完整的地方，请多多指正。</p>
+<ul class="simple">
+<li><p>最好能多省钱。</p></li>
+</ul>
+<p>别哪有村子往哪挖，哪有天然气管道，我非要跨过去这样的，能少造桥就少造桥……先不说人家施工方在施工的时候难度有多大，就是业主爸爸也没有那么多钱给你折腾。最好呢，你就真的只有一条路，连涵洞都不要的。</p>
+<blockquote>
+<div><p>这里说到了一些工程相关的单位，大的来讲就有三方，一个是设计单位，一个是业主，一个是施工单位。业主看中了一块地盘，出钱找人修路，首先要找一个设计的，然后找一个干活的（施工单位）</p>
+<p><code class="docutils literal notranslate"><span class="pre">为啥不只找一家，让它自己设计，也同时让它干活。大家自己做设计的时候都知道自己设计的东西有多烂，你让我去干活，去你的吧，鬼知道这个东西怎么施工，不会。</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">会干活的，设计的时候就各种挖坑，在业主身上挖矿。</span></code></p>
+<p>所以需要两手互相制约，相互牵制。</p>
+<p>这里还有第四方，监理方，就是监督设计的好好设计，监督干活的好好干活，大家和平相处，要讲江湖规矩，讲武德，以和为贵。</p>
+<p><strong>咳咳，以上讲述的是极端情况，不要当真。</strong></p>
+</div></blockquote>
+<p>总的来说，就是你在初次选线的时候呢：</p>
+<p>首先要尽量避开房屋、不要多次跨相同的一条河，这样能够少造桥。其次，与村庄尽量避开，不能避开尽量少拆房子。然后，过山的时候呢，尽量少挖少填。感觉是一堆废话，不过也没办法，选线没有什么固定的套路，大家就自己多研究吧。这样就大概满足了省钱的原则。</p>
+<ul class="simple">
+<li><p>要确保安全。</p></li>
+</ul>
+<p>就是要符合规范，不然出问题了，在座的没有哪个可以脱得了干系。至于偷不偷工减料，那是人家施工单位的问题，不是你设计的问题。不过实际的施工难度，当然你也得考虑一下，别看到一个悬崖你非要说我就爱在这里搭桥，那是你觉得不能施工，我不要你觉得，我就觉得行……</p>
+<p>那具体要怎么符合规范呢？一条路可以由直线部分、曲线部分、缓和曲线部分构成，那么规范就是要规定在不同等级、不同情况的条件之下，直线的最小长度、最大长度应该是多少；园曲线最小半径应该是多少，缓和曲线的最小长度应该是多少。</p>
+</section>
+<section id="id5">
+<h3>直线的要求<a class="headerlink" href="#id5" title="此标题的永久链接"></a></h3>
+<p>我们现在来翻翻这本《公路路线设计规范》JTG D20-2017——第七章 公路平面</p>
+<p><strong>对直线的要求：</strong></p>
+<p><img alt="image-20201126212652239" src="../_images/5438d1a8bf204dc6ae52653caf6a61ce.webp" /></p>
+<blockquote>
+<div><p>首先，第一条，这条路直线部分长度不宜过长，因为直线太长了，在这条路上开车就会容易打瞌睡，容易翻车。</p>
+<p>然后，第二条，这段直线也不能太短，不然开车的人刹不住车，容易引发车祸，翻车现场就是因为把油门当成刹车，一脚踩到底，路走窄了，最终不省人事。</p>
+</div></blockquote>
+</section>
+<section id="id6">
+<h3>园曲线最小半径<a class="headerlink" href="#id6" title="此标题的永久链接"></a></h3>
+<p><strong>对园曲线的要求：</strong></p>
+<p><img alt="image-20201126212724865" src="../_images/4824e967bc0c4f76b44301bdfce14a4a.webp" /></p>
+<blockquote>
+<div><p>园曲线部分，也就是转弯的地方啦。</p>
+<p>先说第一条，还记得开头我们选的那条路线吗？转弯的地方就是一个折线，你开车的时候，前面看着没啥子变化，油门一踩可能就冲下坡了，为了避免这种情况发生，就需要在这种转折的地方，设计一个曲线，让你提前知道，哦，要转弯了，准备打方向盘，这个曲线就是园曲线啦。</p>
+<p><strong>总之，第一条说的就是：转弯的地方，不能干巴巴的就一个折线，需要曲线来过渡</strong></p>
+<p>然后第二条，既然<strong>设计曲线，那么就需要精确的计算出来数据</strong>，不能天天凭感觉，凭个人喜好。所以各位专家们已经计算出来了，我们看懂这个表格就好。</p>
+<p>其实也挺容易看懂的，**根据<code class="docutils literal notranslate"><span class="pre">设计速度</span></code>、<code class="docutils literal notranslate"><span class="pre">超高设计值</span></code>来判断园曲线最小半径不能小于多少。**比如说，设计速度 80km/h，超高 6%，那么园曲线最小半径一般就不能小于 400m，如果你哪个地方条件实在苛刻，那么极限最小的半径不能小于 270m，再小就要出事了。</p>
+<p>第三条，园曲线半径超过 1000m，那就和直线也没什么区别了，也就没有设计园曲线的必要了，这个地方也不要设置转弯了，就直接一条线拉到底即可。</p>
+</div></blockquote>
+<p>关于园曲线最小半径，如果超过一定值，则园曲线可不设置超高，如下<code class="docutils literal notranslate"><span class="pre">表7.4.1不设超高的园曲线最小半径</span></code>所示，这一点，我们到后面讲关于超高加宽设置的时候再讲。</p>
+</section>
+<section id="id7">
+<h3>缓和曲线长度<a class="headerlink" href="#id7" title="此标题的永久链接"></a></h3>
+<p><strong>然后是缓和曲线的要求：</strong></p>
+<p><img alt="image-20201126215616265" src="../_images/ea20bbbfe7df46e898d642669496051f.webp" /></p>
+<p><img alt="image-20201126215703258" src="../_images/082f7112f2604c57a4d816a4a4d2d665.webp" /></p>
+<p><img alt="image-20201126215722057" src="../_images/af137ec5459345cba3fdb7dcb760dc4b.webp" /></p>
+<p><img alt="image-20201126215730866" src="../_images/53190e2ecbdc4dadb0291ef83052a6dc.webp" /></p>
+<blockquote>
+<div><p>因为公路平面缓和曲线采用的是回旋线，所以规范这里写的就是回旋线。</p>
+<p>关于缓和曲线，首先要考虑的是，该不该设置？也就是要不要在纬地的软件上面，填写缓和曲线的长度。所以<strong>规范说的就是考虑什么时候必须设置，什么时候不用设置。</strong></p>
+<p>第一条，直线和园曲线相接的时候，要不要设置缓和曲线；</p>
+<p>第二条，园曲线和园曲线相接的时候，要不要设置缓和曲线；大家都体验过连续转弯的情况吧？那就是两个转弯相接了。注意有<strong>同向曲线相接和反向曲线相接</strong>的情况？所以就需要你自己看自己路线的设计速度来判断，要不要设置缓和曲线。</p>
+<p>第一条、第二条说的是<strong>判断要不要设置</strong>。不设置就无需多言，要是设置，该设置多少？</p>
+<p>第三条，说的就是<strong>该设置多少</strong>的事情。还是看你的设计速度来判断的，比如你是 60km/h 的设计速度，然后是两个园曲线相接，那么根据第二条规范，肯定是要添加缓和曲线的啦。那么这个缓和曲线最小长度就不能小于 50m。你可以取 55m，60m，70m 等等以上。</p>
+</div></blockquote>
+<p>现在我已经看完了规范，也按我浅薄的理解讲解完了，不知道你看了多少。</p>
+<p>如果你看完了以上所说，那么你至少能大概知道这个地方的数据该填什么了。</p>
+<blockquote>
+<div><p><strong>对了，我之前还提到一个原则，即：S1：Sc：S2=1：1：1~1：2：1，就是说这三个的比值需要保持在这个范围。</strong></p>
+<p>这个原则呢是，《道路勘测设计》第四版，第二章，讲平面设计的时候提到的，规范上并没有看到。不过也最好遵循。</p>
+</div></blockquote>
+<p>现在我们回过头来看看《 公路路线设计规范》关于平面设计这部分的目录：</p>
+<p><img alt="image-20201128160413837" src="../_images/69d3b5ba35b744acb26820983a5f5f39.webp" /></p>
+<p>平面三要素：直线、园曲线、缓和曲线，都在这几个小结作出了详细的解释说明。</p>
+<ul class="simple">
+<li><p><strong>小结</strong></p></li>
+</ul>
+<p>好了，最重要的差不多就这两个了，<strong>省钱，能开车上路</strong>，大家要求都低一点。</p>
+<p>这里讲选线原则我经验过于浅薄，请大家转移到《道路勘测设计》第<code class="docutils literal notranslate"><span class="pre">(最新)</span></code>版,里面有详尽的公路选线、城市道路选线原则讲解，这里 UP 就不想再继续献丑了。或者你可以去查看文献，看看选线原则啊什么的，这个时候，看文献这种高逼格的动作，就在你身上体现出来了。或者多查查基本关于选线的书，多问问有经验的老师，师兄师姐（恩？有师姐吗？假设希望有吧）。本人知识止步于此了，继续扯下去就误人误己了，咳咳。</p>
+<p><code class="docutils literal notranslate"><span class="pre">话说回来，这一张好不容易有图片，结果图片里面还是文字，希望你们能静下心看。只要能看的书都看，多看几本。</span></code></p>
+</section>
+</section>
+<section id="id8">
+<h2>3.3 平面图例识别<a class="headerlink" href="#id8" title="此标题的永久链接"></a></h2>
+<p>其实选线原则这东西，一说谁都会，考虑的思路也比较明确，问题就是我不认识地形图上它标的到底是什么东西，说实话，不是我想挖这个房子，而是我根本不知道它是个房子！！所以，我觉得这个才是我能够帮助你的，现在开始识图模式。</p>
+<ul class="simple">
+<li><p>房屋</p></li>
+</ul>
+<p>既然那么怕拆房子，那我们先认识一下房子吧：</p>
+<p><img alt="image-20201126201733930" src="../_images/78e154de3a084c188449d0d931c88e7c.webp" /></p>
+<p>像这样用<strong>矩形</strong>来表示，然后中间写着砖、混之类的，就是房子了，砖就是用砖做的房子，砖 2，数字就一个编号，你知道这个是房子就行。这个可能不太清楚，再看一张：</p>
+<p><img alt="image-20201126202042874" src="../_images/67e7276ed4c14905b48728ab5ebcf307.webp" /></p>
+<p>看到那些<strong>矩形</strong>没？里面可能没写子，不过不影响它是房子，这么多矩形就说明这里有很多房子，也就是一个村落或者镇了。</p>
+<p><img alt="居民房屋" src="../_images/134c4a7570ec478f953d502f9f9c3965.JPEG" /></p>
+<p>这里有个总图，不过清晰度不是太高，不过勉强可以看到，就是各种房子。</p>
+<ul class="simple">
+<li><p>农田、庄稼</p></li>
+</ul>
+<p>第二个就是比较多的农田、庄稼了</p>
+<p><img alt="image-20201126202625183" src="../_images/1db623d72e36430d9d2873bea48e937c.webp" /></p>
+<p>看到这个向下的箭头没。这个就是稻田。还有就是像下面这种：</p>
+<p><img alt="image-20201126202735748" src="../_images/2fbc61fe5a2e496cba14133d53ecbe9c.webp" /></p>
+<p>这个也是农田，不过是干旱的了，简称旱田。这种地方，如果当地是以此为生，那么修路的时候，最好就别穿过这里了，如果都出去打工了，那么人家巴不得你来占地，双手奉上。我就总图例奉上：</p>
+<p><img alt="植被园林" src="../_images/dd2970e745db49dda93a73ebb0abc308.JPEG" /></p>
+<ul class="simple">
+<li><p>道路</p></li>
+</ul>
+<p>还有道路</p>
+<p><img alt="image-20201126203215111" src="../_images/21a7c3a046264768922022600ee75f60.webp" /></p>
+<p>仔细看，还是很容易辨别的，它和等高线虽然有点像，不过却是独木成林，和等高线之间还是有一些<strong>有角度的相交</strong>，两条线就是道路两边的边界。而且<strong>等高线是一条闭合的曲线</strong>，虽然有些没有闭合，那是因为地形图被裁剪了，所以你看到是不闭合的。</p>
+<p>公路相关的图例：</p>
+<p><img alt="公路相关" src="../_images/2e0c3248ed5c4cfc8a8e9af132c6e620.JPEG" /></p>
+<ul class="simple">
+<li><p>河流</p></li>
+</ul>
+<p>河流的话;</p>
+<p><img alt="image-20201126204015403" src="../_images/1b44bb0e331f40c8a5bb9ebf2129668e.webp" /></p>
+<p>和道路的差不多，也是用两条把两岸的边界标出来，不过河流还在中间用箭头把水流的方向标出来。</p>
+<ul class="simple">
+<li><p>最后，看图层</p></li>
+</ul>
+<p>如果你实在不知道你的地形图上标的是什么东西，可能是制作地形图的人使用了它自己的方式标记出来，还没来得及修正。不过一般都会写在图层上面的。比如说下面这个：</p>
+<p><img alt="image-20201126204406437" src="../_images/4dc130175c9a4b2085bfa3ee75ff8634.webp" /></p>
+<p>点击这条青色的线，标的居然是水系，可能是一条小溪，不配拥有正规图例吧。不过呢在图层的名字上已经写出来了，这个时候呢，这条小溪也只能忍着，吃了哑巴亏了。</p>
+<ul class="simple">
+<li><p><strong>小结</strong></p></li>
+</ul>
+<p>我们认识了哪些常见的图例：房屋、道路、庄稼/农田、河流。其它的，比如电线杆什么的，大家多看看图层的名字。</p>
+</section>
+<section id="id9">
+<h2>3.4 平面相关文件解读<a class="headerlink" href="#id9" title="此标题的永久链接"></a></h2>
+<p><strong>1.为什么要保存项目呢？</strong></p>
+<p>还记得第一节我们说了：<strong>所有的数据都是基于项目文件之上的，<strong>刚才我们存盘，是单独保存了这条</strong>路线的数据文件</strong>，这个时候项目文件会自动建立一个<code class="docutils literal notranslate"><span class="pre">索引</span></code>，意思就是说，<code class="docutils literal notranslate"><span class="pre">项目文件</span></code>帮我们自动寻找到了<code class="docutils literal notranslate"><span class="pre">平面路线文件</span></code>，这一点，可以打开项目管理器得到印证。</p>
+<p>点击<code class="docutils literal notranslate"><span class="pre">项目</span></code>-<code class="docutils literal notranslate"><span class="pre">项目管理器</span></code></p>
+<p><img alt="image-20201126184524421" src="../_images/0e4f789d3ec94e73bf14b8801b5d9540.webp" /></p>
+<p>然后弹出一下窗口：</p>
+<p><img alt="image-20201126184621547" src="../_images/a0159ff311bf412fa276e3efb15f26b5.webp" /></p>
+<p>可以看到平面交点文件，自动导入进来了，如果你不保存项目，那么下一次你就需要自己手动导入。我们可以选中平面交点文件那一行，然后旁边出现 3 个点，点击它。</p>
+<p><img alt="image-20201126185435410" src="../_images/7210b11b2aaf4430a3f36f8a76946125.webp" /></p>
+<p>然后就弹出一下窗口：</p>
+<p><img alt="image-20201126185542733" src="../_images/9d4276ecf89e4b11a097cce77251f7b6.webp" /></p>
+<p>这个就是导入<code class="docutils literal notranslate"><span class="pre">.JD</span></code>文件时候弹出的窗口，点击保存，其实就是导入。</p>
+<p><strong>2.关于项目文件<code class="docutils literal notranslate"><span class="pre">.Prj</span></code>和平面交点文件<code class="docutils literal notranslate"><span class="pre">.JD</span></code></strong></p>
+<p>我们现在可以回到文件夹下看现在生成了哪些文件：</p>
+<p>第一个是<code class="docutils literal notranslate"><span class="pre">.Prj</span></code>文件；我们知道这个是项目文件，</p>
+<p>第二个是<code class="docutils literal notranslate"><span class="pre">.JD</span></code>文件；这个是交点文件，也就是这条路线。</p>
+<p>第三个是<code class="docutils literal notranslate"><span class="pre">.pm</span></code>文件；这个是什么东西？</p>
+<p><img alt="image-20201126185738503" src="../_images/4c7dee480094411dbdd42e3389ffab56.webp" /></p>
+<p>还记得刚才存盘操作吗？存盘之后弹出了一个窗口</p>
+<p><img alt="image-20201126190128419" src="../_images/9206df7516b349ff923257850142cb9d.webp" /></p>
+<p>注意看后缀：<code class="docutils literal notranslate"><span class="pre">.pm</span></code>，这时候我们知道了，这个文件就是交点文件附带的一个东西，</p>
+<p>就算丢失了，我们可以重新存盘一次，就自动生成了，不过前提是你得有<code class="docutils literal notranslate"><span class="pre">.JD</span></code>文件。这个<code class="docutils literal notranslate"><span class="pre">.pm</span></code>数据是后续纬地计算时需要用到的文件。</p>
+<blockquote>
+<div><p>平面设计里面的文件最重要的其实就是<code class="docutils literal notranslate"><span class="pre">.JD</span></code>文件。里面包含了你设计的整条路线、每个交点的园曲线半径、缓和曲线长度。</p>
+</div></blockquote>
+<blockquote>
+<div><p>项目文件里面保存的都是一些索引，并不是设计本身。</p>
+</div></blockquote>
+<p>如果我要看你的<strong>平面设计</strong>，你只需要发给我一个<code class="docutils literal notranslate"><span class="pre">.JD</span></code>文件和地形图就可以了。然后我重新<code class="docutils literal notranslate"><span class="pre">新建</span></code>一个<code class="docutils literal notranslate"><span class="pre">新的项目</span></code>，导入<code class="docutils literal notranslate"><span class="pre">.JD</span></code>文件，存盘，生成<code class="docutils literal notranslate"><span class="pre">.pm</span></code>文件。这个时候，我电脑上的设计就和你的一模一样了。</p>
+<p>现在大家是不是对这些交点文件有了一些更深的理解了？</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="02%E6%89%93%E5%BC%80%E5%9C%B0%E5%BD%A2%E5%9B%BE.html" class="btn btn-neutral float-left" title="2.打开地形图" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="04%E8%AE%BE%E8%AE%A1%E5%90%91%E5%AF%BC.html" class="btn btn-neutral float-right" title="4.设计向导" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2023, RyzeYang.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

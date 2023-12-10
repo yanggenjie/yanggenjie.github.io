@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.设计向导 &mdash; 纬地一学即会 1.0 文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="5.建立数模" href="05%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%A8%A1.html" />
+    <link rel="prev" title="3. 平面选线" href="03%E5%B9%B3%E9%9D%A2%E9%80%89%E7%BA%BF.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            纬地一学即会
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="00%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00%E8%AE%BE%E8%AE%A1%E6%80%BB%E6%B5%81%E7%A8%8B.html">设计总流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.html">1.新建项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02%E6%89%93%E5%BC%80%E5%9C%B0%E5%BD%A2%E5%9B%BE.html">2.打开地形图</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03%E5%B9%B3%E9%9D%A2%E9%80%89%E7%BA%BF.html">3. 平面选线</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4.设计向导</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">4.1 纬地操作步骤</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">衔接上一步操作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">路线参数设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">项目分段设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">路幅及断面形式设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">填方边坡设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">挖方边坡设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">边沟和排水沟设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">曲线超高设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">曲线加宽设置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%A8%A1.html">5.建立数模</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06%E7%BA%B5%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html">6. 做纵断面设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07%E8%B7%AF%E5%9F%BA%E8%AE%BE%E8%AE%A1%E8%AE%A1%E7%AE%97.html">7 路基设计计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08%E6%A8%AA%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html">8.横断面设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09%E5%85%B6%E5%AE%83%E6%9E%84%E9%80%A0%E7%89%A9%E8%AE%BE%E8%AE%A1.html">9. 其它构造物的设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%E5%87%BA%E5%9B%BE%E4%B8%8E%E8%A1%A8%E6%A0%BC%E8%BE%93%E5%87%BA.html">出图输出表格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%E7%BB%93%E8%AF%AD.html">结语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE.html">参考文献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html">关于我</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#id2">关于本书</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">纬地一学即会</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4.设计向导</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/04设计向导.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>4.设计向导<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
+<section id="id2">
+<h2>4.1 纬地操作步骤<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
+<section id="id3">
+<h3>衔接上一步操作<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h3>
+<p>接上一章的纬地操作，我假设你是一路看着过来的，也就是说，中间你可能关闭过电脑，那么现在重启打开电脑，我们要如何继续上一次的工作呢？</p>
+<p>首先，点击项目-打开项目：</p>
+<p><img alt="image-20201127172325303" src="../_images/e23fd4c3a81144778a4d48bedabc9964.webp" /></p>
+<p>然后找到项目文件所在的位置，选中，打开：</p>
+<p><img alt="image-20201127172426205" src="../_images/99977e989cce45baac6df051e85f8121.webp" /></p>
+<p>打开之后就已经接着上一次的工作了。</p>
+<p>但现在 CAD 窗口还是空空如也，什么都没有，地形图也没有打开。不过我们已经不需要打开地形图了，只有做平面选线的时候才需要打开地形图，或者是你自己想熟悉一下地形图，你可以打开。现在做设计向导，就无需打开。</p>
+</section>
+<section id="id4">
+<h3>路线参数设置<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h3>
+<p>然后现在开始做设计向导，设计向导这部分主要就是填入数据，所以这部分内容主要就是查询规范，下面的内容展示查询规范的过程。</p>
+<p>点击项目-设计向导：</p>
+<p><img alt="image-20201127184433866" src="../_images/6ce3cdb0491c45fb83d68bfeaf3a34a0.webp" /></p>
+<p>弹出这个向导的窗口：</p>
+<p><img alt="image-20201127184505883" src="../_images/f878ebd0b5e84bc3a004ecd4369f671c.webp" /></p>
+<p>然后接下来就是填数据了，第一步这里，其实没有什么需要填写的，就是看你设计的是什么类型的路线，你是设计公路还是城市道路，这个需要你自己选择了，我们这里就选择公路。其它就不需要填写了。</p>
+<p>这里可以注意到一个文件，.pm 文件，这个文件是之前生成的，所以如果你没有这个文件，那么设计向导就会出现致命错误。</p>
+<p>如果一直重复出现致命错误，大概率就是因为缺失了某些文件。</p>
+<p><img alt="image-20201127184712235" src="../_images/6aa5f88a17ed49edbde0a24085bfc86b.webp" /></p>
+</section>
+<section id="id5">
+<h3>项目分段设置<a class="headerlink" href="#id5" title="此标题的永久链接"></a></h3>
+<p><img alt="image-20201127185024171" src="../_images/a6127d83cd294e18821017f1cce2d6bf.webp" /></p>
+<p>这里需要选择你自己设计的公路等级和设计车速。</p>
+</section>
+<section id="id6">
+<h3>路幅及断面形式设置<a class="headerlink" href="#id6" title="此标题的永久链接"></a></h3>
+<p><img alt="image-20201127195431653" src="../_images/d957fd1587d242c5a3ab298a2bd0687b.webp" /></p>
+<p>这里注意看标题，就是你设计的横断面的形式了，这些数据是需要你自己设计，然后填入的。<strong>怎么设计，就需要查规范了</strong>：</p>
+<p>我们翻开《公路路线设计规范》JTG D20-2017，第六章，公路横断面，第六章前面是对横断面的一些说明，大家没事的时候，多翻翻，可以更加深对横断面设计的理解。</p>
+<p><img alt="image-20201127200127468" src="../_images/174590b351d24500bbbd13b5078dacd8.webp" /></p>
+<p>这里我们设计的是二级公路，那么就找与二级公路相关的说明：</p>
+<p><img alt="image-20201127200359739" src="../_images/df3bf08ba8c542b4be6556488e93f95a.webp" /></p>
+<p>从这里（得把我圈起来的文字看或者读一遍，你才知道我是怎么确定的，我默认你已经看了上图勾出来的，下面的情况类似），可确定我们应该<strong>使用整体式路基断面</strong>。我们继续往下看：</p>
+<p><img alt="image-20201127200515738" src="../_images/ace558052508408e8ebe9062a6f27e54.webp" /></p>
+<p>这里就需要<code class="docutils literal notranslate"><span class="pre">车流量</span></code>的数据了，这个是需要去调查得到的，规范上是翻不到的。我们<strong>演示就不需要加宽路肩</strong>了。继续往下翻规范：</p>
+<p><img alt="image-20201127200746010" src="../_images/7b151c6bf50f4f25bb0fad68716002be.webp" /></p>
+<p>从这里可以判断，我们的<strong>车道宽度得 3.5m</strong>。继续往下看：</p>
+<p><img alt="image-20201127200905452" src="../_images/67435b5fdf904c8c99664c6962080ac7.webp" /></p>
+<p>从这里知道，我们要<strong>设计两条车道</strong>。</p>
+<p>到现在我们确定了哪些东西？</p>
+<ul class="simple">
+<li><p>整体式路基</p></li>
+<li><p>两条车道，每条 3.5m 宽</p></li>
+</ul>
+<p>然后，现在回到纬地上看看：</p>
+<p><img alt="image-20201127201503067" src="../_images/e9f2fc7e66364e34a6d264751dc243fa.webp" /></p>
+<p>好吧，只能选一个 2 车道，还是默认选的。<strong>这是因为纬地其实是自动绑定了规范的</strong>，当你第一步选择<strong>公路主线</strong>，第二步选择<strong>公路等级</strong>（我们选二级公路）、设计车速（我们选择了 60 km/h），然后<strong>纬地就自动查找规范</strong>，<strong>自动帮你填好后面的数据</strong>了。</p>
+<p>回想一下我们是怎么设计出来<strong>整体式路基、两车道、3.5m</strong>的？</p>
+<p>根据公路等级确定了整体式路基和车道数量，根据设计车速确定了车道宽度。</p>
+<p>我们接着往下看规范：</p>
+<p><img alt="image-20201127203459189" src="../_images/3ad68db50f194ebab1b1c0891cdf72f6.webp" /></p>
+<p>到了如何确定中间带了，我们是 60km/h 的设计车速，不过我们是二级公路，没有要求必须要设置中间带，那么现在中间带就是 0m 了，也就是不设置，因为没钱，你开车的自己好自为之。</p>
+<p><code class="docutils literal notranslate"><span class="pre">这里就是个人的选择了，毕竟没钱，到时候在路上多贴上限速的标牌，多设置几个摄像头，不会相撞就好。</span></code></p>
+<p>想必看到这里，大家已经不用再继续看我废话了，知道横断面设计的车道宽度、车道数量、路肩、中间带、路供坡度等等这些部分的参数怎么设计的了吧？多翻翻规范就知道了。</p>
+<p>好我们再看一个路肩，往下翻规范：</p>
+<p><img alt="image-20201127205751287" src="../_images/edd776bcb7ef4f87a3b241621fc6b6eb.webp" /></p>
+<p>路肩可以宽一点，都取一般值，土路肩+硬路肩=0.75+0.75=1.5m，这个只是右侧的，左侧也是 1.5m。</p>
+<p>好了，现在我们已经把横断面的大概形式已经设计出来了：</p>
+<p>0.75(左侧土路肩)+0.75(左侧硬路肩)+3.5(左侧行车道)+3.5(右侧行车道)+0.75（右侧硬路肩）+0.75（右侧土路肩）=10m。</p>
+<p>所以呢，分别选中下图中的这些数据，依次填入，然后路幅宽度就会自动计算出来了。或者你可以选预设的路幅宽度，纬地会自动按预设的分配给每个部分。</p>
+<p><img alt="image-20201127210705146" src="../_images/08a4b8f152d54a7bba68a6c0246f110d.webp" /></p>
+<p>这里还需要填个横坡，也是一样，查规范：</p>
+<p><img alt="image-20201127211219416" src="../_images/a4f465c4d6124545bc702ba70d6d559e.webp" /></p>
+<p>这里有路供横坡和路肩横坡的区分，大家不知道可以自行研究一下……</p>
+<p>路供就是把路面做成倾斜一点，利于排水，免得下雨的时候积水太多，影响车行。</p>
+<p>由于二级公路规定是双向横坡，也就是两条车道都要倾斜，但是我们又没有中间带，那么就只能中间高，往路的两边倾斜，这样就可以让水排出去。所以这种中间高两边低的横坡，也叫人字坡。如果有中间带，可以在中间带下面设置水管什么的，水往中间带流的时候，可以流到水管里面，然后进过水管，排除路外。</p>
+<p>总之呢，路供就是为了排水用的。</p>
+<p>其它的其实我觉得没有什么说的了，我这里就是给大家展示一下这些数据是怎么找出来的，怎么设计出来，就是查规范，然后结合实际情况。说到结合实际情况这几个字，有同学就头疼，“哎呀，我什么都会，就是不会结合实际情况……”，那你就按规范的数值填，也是造价多几个 0 或者少几个 0 的问题而已。</p>
+<p><strong>小结</strong></p>
+<p>读到这里，大家再回过头来看看《公路路线设计规范》JTG D20-2017，第六章公路横断面的目录。</p>
+<p><img alt="image-20201127212145554" src="../_images/4233e15a4d8d4d68a300a84c986c442f.webp" /></p>
+<p>你看，目录上都写得清清楚楚，车道怎么设计出来的，中间带要不要设置，路肩要不要设置，宽度应该是多少才合理，路供横坡应该是多少。</p>
+</section>
+<section id="id7">
+<h3>填方边坡设置<a class="headerlink" href="#id7" title="此标题的永久链接"></a></h3>
+<ul class="simple">
+<li><p><strong>补充知识</strong></p></li>
+</ul>
+<p>讲填方边坡之前，先熟悉熟悉路基结构图：</p>
+<p><img alt="image-20201130112613821" src="../_images/b17e3b04a2e541e8898240ba45c1e77f.webp" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">图片来自《路基设计手册》第二版</span></code></p>
+<p>上图是路基每个部分的专业名词即对应部位。大家知道这些专业名词的具体部位，看规范也会理解深刻一点。</p>
+<p><code class="docutils literal notranslate"><span class="pre">下面继续纬地的操作</span></code></p>
+<p>下一步，填方边坡：</p>
+<p><img alt="image-20201127195815723" src="../_images/44511c9a627c4140b440928fb445a203.webp" /></p>
+<p>这里的数据应该去哪里找？</p>
+<p>那就需要用到另一本规范了：《公路路基设计规范》JTG D30-2015</p>
+<p><img alt="image-20201128134856397" src="../_images/fd95db3f6464483fa9e9cd17d825c940.webp" /></p>
+<blockquote>
+<div><p>上个版本是《公路路基设计规范》JTG D30-2004，已经弃用，规范还是要看最新版的。</p>
+</div></blockquote>
+<p>现在来翻翻这本书的第三章——一般路基</p>
+<p><strong><img alt="image-20201128135119718" src="../_images/9b86b2c3827641a08d328387186556d9.webp" /></strong></p>
+<p>对了，如果不知道规范中说的路堤和路堑是什么（这一点当然不会不知道，就是怕有时候忘记了弄混淆了，所以规范的前面就给你说明了路堤路堑的概念。）</p>
+<p><img alt="image-20201128135710665" src="../_images/6117973585d245789baac97e60508c7e.webp" /></p>
+<ul class="simple">
+<li><p><strong>坡率 P</strong></p></li>
+</ul>
+<p>好了，现在我们需要填写填方边坡的数据，就翻到填方边坡：</p>
+<p><img alt="image-20201128140127548" src="../_images/95c6623e6fae404fb527fe466f398927.webp" /></p>
+<p>这里给出的上部高度，就是纬地上的 H1，下部高度就是 H2。比值就是坡率比，注意看 P1 的括号里面是（1:X）然后我们填入的值就是 X 的值。</p>
+<p><code class="docutils literal notranslate"><span class="pre">我这里点击了下图中右侧的数据部分，所以图上显示的是右侧的边坡，如果你点击左侧的数据，那么就是左边坡。（这里左侧、右侧不是方向，注意看下图中窗口上显示的文字。）</span></code></p>
+<p><img alt="image-20201128140608226" src="../_images/d29dfc052e034a85857b7246d1b2ed58.webp" /></p>
+<p>由《公路路基设计规范》表 3.3.5 我们可以知道，这里的坡度 P1 应该是 1:1.5，P2 应该是 1:1.75。（这里左右两侧当然是设置一样的数值，纬地会根据实际地形，计算的，这里是输入一个限制区间）</p>
+<blockquote>
+<div><p>如果你没有选二级台阶，是不会有 P2 的，这里的边坡形式一般都取二级台阶。<strong>选二级台阶的意思不是要求全线都是二级台阶，而是如果高度超过你设置的值，那么就自动变成二级台阶，否则就用一个台阶</strong>。</p>
+<p>而如果你选择一级台阶，那么全线不管填方多高，都是一个坡，没有台阶。二级台阶就像下面这种，中间有个台阶，那个宽度，人可以走过去。</p>
+<p><img alt="image-20201128141929615" src="../_images/b33e9e733a984004b8c49e0b8d20f671.webp" /></p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>高度 H1</strong></p></li>
+</ul>
+<p>坡率已经填好，接下来到高度 H1、H2，H1 也就是上部高度最高的范围，意思就是，如果你填土是在 6m 以下，那么就只有一个坡就好，不用设置台阶，如果超过了 6m，那么纬地就会开始设置一个台阶了。</p>
+<blockquote>
+<div><p>有同学可能会问，规范的表格上不是写着 H 小于等于 8m 吗？你为什么要设置成 6m？</p>
+<p>这是需要做边坡稳定性计算了，意思就是，我其实也不知道要设置多少才好，只知道 8m 以内可以不用做台阶，可是这是地质条件良好的情况下的，如果地质不好，那么你填土不到 8m，这个坡就垮了，所以在这种地质下，很可能最高就只能到 5m,6m，如果要继续填土，那么就需要设置一个台阶，来缓冲一下。</p>
+<p>那么如何做边坡稳定性计算，那又是另一本书的故事了。可以去看《公路路基设计手册》</p>
+</div></blockquote>
+<p>所以规范是规范，是理论情况，需要根据实际情况来设计，这里，每个人的设计水平就开始有所区分了，如果你依然是不管不顾，就用规范上的最大值，那么你这个设计就会出问题，如果只是学校里面的作业，那也就罢了，毕竟没有实施下来，如果是实际工程，你随便这样设计，那么就会出大问题。</p>
+<p>所以，设计也没有想想中那么简单，我们使用软件倒是很容易。</p>
+<ul class="simple">
+<li><p><strong>W1</strong></p></li>
+</ul>
+<p>还有一个就是 W1,W2 的宽度，是什么？</p>
+<p>W1 是边坡平台，W2 是护坡道。边坡平台都知道，设置边坡平台一来可以增加边坡的稳定性，还可以便于施工。</p>
+<p>然后，在坡脚的地方就是护坡道了。这两个的取值一般在 1-2m。</p>
+<p>如果填方或者挖方太高，最低要求是 2m。填高超过 20m，就需要做边坡稳定性验算，然后设计挡墙、护坡脚等之类的防护设置。</p>
+<p><img alt="image-20201130112933766" src="../_images/13aa4bd1159246bfb6a5e6c7cb938cd4.webp" /></p>
+</section>
+<section id="id8">
+<h3>挖方边坡设置<a class="headerlink" href="#id8" title="此标题的永久链接"></a></h3>
+<p>接下来是挖方边坡：</p>
+<p><img alt="image-20201128142726423" src="../_images/9b5c05f6d342422cac2e42e339e46341.webp" /></p>
+<p>挖方边坡的设置和填方的类似。不过，因为是挖的，是土质还是岩质，是看当地的地质情况，土质的坡率可以稍微大一点，岩质坡率要缓一点。</p>
+<p>如果你做的是课程设计之类的，没有地质相关的资料，那么就默认选土质的吧，或者你也可以使用搜索引擎搜索看看那个地方的地质情况。这里坡率就选 1:1.5。高度就按纬地默认的高度，如果你要修改那么 H1 可以写成 8m，H2 是 12m。8m+12m=20m 已经是深路堑了。</p>
+<blockquote>
+<div><p>这里为什么又可以按规范上的，而不是改成 6m，这<strong>就是体现自己设计的思考了</strong>，不然老按规范，那么这个设计向导做到第二步，就直接一直点下一步，看都不用看了，还查什么规范。人家就是按规范建议填入的，那随便找一个会操作软件的人，都可以设计公路了。</p>
+</div></blockquote>
+<p>然后接下来是碎落台和边坡平台，碎落台是防止有碎石之类的掉进边沟，影响排水，所以呢需要设置 1-2m 宽的碎落台，一般设置 1m 就差不多了。</p>
+<p><img alt="image-20201130121504713" src="../_images/5dc948fe886e48fe8131aeb3620515c7.webp" /></p>
+</section>
+<section id="id9">
+<h3>边沟和排水沟设置<a class="headerlink" href="#id9" title="此标题的永久链接"></a></h3>
+<p>关于边沟，二级公路排水量相对少，所以一般都是设置矩形边沟，然后是 40x40cm 的，如果是一级公路以上或者是该地降雨量较多，排水需求大的，才是 60x60 的矩形边沟，或者梯形。干旱的地方就 30x30cm。</p>
+<p><img alt="image-20201130125044477" src="../_images/955ea39ed89646b39c9cf14079e3cd75.webp" /></p>
+<p>排水沟也一样，如果你设置梯形的：</p>
+<p><img alt="image-20201130151820681" src="../_images/51965cbd79c5423ea1226a7a2f449ef6.webp" /></p>
+<p>内侧边坡(靠近道路一侧，如图上的 P2)一般为 1:1~1:1.5 之间，外侧边坡(靠近山体一侧，如上图的 P1)通常和挖方边坡的坡率一致。</p>
+</section>
+<section id="id10">
+<h3>曲线超高设置<a class="headerlink" href="#id10" title="此标题的永久链接"></a></h3>
+<p>点击下一步，到超高加宽设置：</p>
+<p><img alt="image-20201130152141502" src="../_images/6e25c07ef6814cf1929ccf0ab26ee8c0.webp" /></p>
+<p>先看最大超高值的设置：</p>
+<p><img alt="image-20201130152341110" src="../_images/1269ddb3a04e47ca98efd7fb9e954779.webp" /></p>
+<p>我们重新翻开《公路路线设计规范》：</p>
+<p><img alt="image-20201130152612277" src="../_images/74c36dd1ffee41eb8310fbaee538e260.webp" /></p>
+<p>之前我们设置园曲线半径的时候，说如果园曲线半径大于一定值的时候，可以不设置超高，如果不记得可以往回翻一下平面选线那一章。</p>
+<p>我们首先判断自己要不要设置超高，如果设置，那么就按上图中的综合来选，比如说一般地区的二级公路，最大超高是 8%，然后加上车速限制，比如 60km/h，那么最大超高值就只能是 4%。综合起来就只能选 4%。</p>
+<ul class="simple">
+<li><p>旋转方式</p></li>
+</ul>
+<p><img alt="image-20201130153739933" src="../_images/fa95d211eae64002916143150f0ffb72.webp" /></p>
+<p>这一点，还是继续往下翻规范：</p>
+<p><img alt="image-20201130153708093" src="../_images/1e4cf7790a5b46aa96c45f7ab7e10b4a.webp" /></p>
+<p>首先我们要看懂这个内侧和外侧是什么意思，恩，怎么说呢，超高我想大家都知道是什么意思，就是把路的一边抬高，以防车受离心力的影响飞出去，抬高的那一侧就是外侧，低的那一侧是内侧。</p>
+<p>然后纬地的用词和规范的用词有点出入，规范是：</p>
+<blockquote>
+<div><p>绕内侧车道边缘旋转、绕路中线旋转、绕外侧车道边缘旋转。</p>
+</div></blockquote>
+<p>纬地上是：</p>
+<blockquote>
+<div><p>绕行车道中心旋转、绕曲线内侧路基边缘旋转、绕曲线内侧行车道边缘旋转。</p>
+</div></blockquote>
+<p>这里先给结论，然后下面给出我的解释：</p>
+<p>绕<strong>内侧车道边缘</strong>旋转=绕曲线<strong>内侧行车道边缘</strong>旋转。</p>
+<p>绕路<strong>中线</strong>旋转=绕行<strong>车道中心</strong>旋转；</p>
+<p>绕曲线内侧<strong>路基边缘</strong>旋转=绕<strong>外侧车道边缘</strong>旋转。</p>
+<p>前面两条可能比较好理解，就是最后一条有点争议，大家可以看看我下面的论证过程。</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>论证过程</strong></p></li>
+</ul>
+<p>我们按<strong>规范所写的名词</strong>为标准来理解这三种旋转方式：</p>
+<p>先理解第一个：<code class="docutils literal notranslate"><span class="pre">绕内侧车道边缘旋转</span></code>，看图理解：</p>
+<p><img alt="image-20201130162847221" src="../_images/3734153338cd4cb881b3c34f3cb737b5.webp" /></p>
+<p>也就是说，<strong>最终是绕内侧车道边缘</strong>旋转。</p>
+<p>然后第二个<code class="docutils literal notranslate"><span class="pre">绕路中线旋转</span></code>：</p>
+<p><img alt="image-20201130163717823" src="../_images/b1457ad4acac4fa895f8fd47044f9c73.webp" /></p>
+<p>前面两步一样的，只是这种方式最后是绕行车道中心旋转的，所以</p>
+<p>这种超高方式就叫绕中线旋转。</p>
+<p>第三个方式绕外边线旋转，这个比前面这两个稍难理解点：</p>
+<p><img alt="image-20201130165111170" src="../_images/c6655a6881a1412f83cbdd88368f5f05.webp" /></p>
+<p>第二步，右侧的行车道绕<strong>最右侧的边缘</strong>旋转，是降低的旋转，因为最终要做成外侧高，内侧低。而路基是整体式路基，所以呢，左侧的就自然跟着右侧的走。</p>
+<p>然后现在来看看这个纬地上的名词，</p>
+<p>先看纬地上的第一个：绕曲线内侧<strong>路基边缘</strong>旋转方式</p>
+<p>这个我有点懵了，我们翻开纬地的帮助文档看看，这里纬地说的<code class="docutils literal notranslate"><span class="pre">绕曲线内侧路基边缘旋转</span></code>，这个旋转轴是在<strong>路基边缘</strong>。</p>
+<p><img alt="image-20201130160300217" src="../_images/915309525c6749e0823026553db413fc.webp" /></p>
+<p>我们看到这个最终的旋转轴是在<strong>内侧路基边缘</strong>旋转的，不过规范上说如果路基外缘高程受限制时，可以采用绕外侧行车道边缘的旋转方式，所以按我的理解，<code class="docutils literal notranslate"><span class="pre">绕内侧路基边缘</span></code>这种方式是<code class="docutils literal notranslate"><span class="pre">绕外侧行车道边缘</span></code>的理想情况，两者可以替代。前者更优，当然这里可替代是我个人的看法，如果有误，各位读者请多多指正一下。</p>
+<p>接着第二个：<strong>绕曲线内侧行车道边缘旋转方式</strong></p>
+<p><img alt="image-20201130170655933" src="../_images/bfb82b751c7f47739a711f5e1fab31ea.webp" /></p>
+<p>这个应该不用多解释了，如果你看了之前我对规范上三个旋转方式的解释，分清路什么是内侧，什么是外侧，就很容易看出来，这个就是<strong>绕内边线旋转</strong>的方式。</p>
+<p>然后最后一个：<strong>绕行车道中心旋转方式</strong>，这里也贴上纬地帮助文件的图：</p>
+<p><img alt="image-20201130170914353" src="../_images/badb37e0555e4f9c829b13437c6ca104.webp" /></p>
+<p>这种旋转方式容易理解，反正就是绕着中心转嘛，这里有一点需要注意，就是<code class="docutils literal notranslate"><span class="pre">绕中央分隔带边缘</span></code>旋转方式，在纬地上可以选<code class="docutils literal notranslate"><span class="pre">绕行车道中心旋转方式</span></code> 这种方式。</p>
+<ul>
+<li><p>渐变方式</p>
+<p>7.5.7 给出，超高过渡一般采用线性过渡方式。</p>
+</li>
+<li><p>土路肩超高方式</p></li>
+</ul>
+<p>土路肩一般选择不超高，而硬路肩超高一般和行车道一致。</p>
+</section>
+<section id="id11">
+<h3>曲线加宽设置<a class="headerlink" href="#id11" title="此标题的永久链接"></a></h3>
+<p>园曲线的加宽应该根据公路的交通组成确定。</p>
+<p><img alt="image-20201130172731444" src="../_images/087dede9d0e44d07a48d689f0197b106.webp" /></p>
+<p>我们继续查看规范：</p>
+<p><img alt="image-20201130172235365" src="../_images/df1b62d246e1418c8194d56039b4e07c.webp" /></p>
+<p>首先要判断你设计的公路需不需要加宽，二级、三级公路、四级公路且园曲线半径小于或等于 250m 的时候，才需要设置加宽，如果你是高速公路、一级公路什么的，就不需要设置加宽路，因为你全程都很宽。</p>
+<p>这里我设计的例子是二级公路，无论是作为干线还是集散，都是 3 类加宽。其它的可以查看一下规范，以及《道路勘测设计》第四版（或者更新的版本）查。</p>
+<p><img alt="image-20201130172657488" src="../_images/b5c5e46f05644f48b0224e2d8eba4e19.webp" /></p>
+<p>来自《道路勘测设计》第四版截图</p>
+<p>然后是加宽位置，不管你是哪种，都只能选曲线内侧加宽。(在纬地上)</p>
+<p>加宽过渡有线性加宽和高次抛物线加宽。二、三、四级公路一般选线性加宽，高速公路和一级公路选高次抛物线加宽，至于几次你就自己决定吧。还有些高速公路、一级公路、二级公路的一些特殊路段，是用回旋线加宽。</p>
+<p>到这里，超高和加宽的数据怎么查询规范，就已经做好了。</p>
+<p>现在继续纬地的下一步：</p>
+<p><img alt="image-20201130173747237" src="../_images/51573d64138940e5ab88ccd68f61a0e2.webp" /></p>
+<p>点击自动计算超高加宽：</p>
+<p><img alt="image-20201130173805452" src="../_images/6114cf0f87b94e23b9a53bc56bdcbfe9.webp" /></p>
+<p>这里都没有红色数据报错。</p>
+<p>如果有某一行报错了，那么大多就是选线的时候出问题了，你设计的路线不合理，需要重新调整，比如说你的园曲线半径和缓和曲线的数值，不满足规范的要求，这种情况较多见，你就需要重新回去选线了。</p>
+<p>如果你选线的时候，特别是设计园曲线的半径、缓和曲线的时候，都是满足规范的，然后做设计向导，也都是按规范填入的，那么到这一步基本上是不会报错的。</p>
+<p>点击下一步：</p>
+<p><img alt="image-20201130174122637" src="../_images/d4dcb8e7b8bd439aa7c5d09931482bf6.webp" /></p>
+<p>就会生成 4 个文件，就是你刚才填入的那些数据，软件自动计算完了，然后保存到文件里面。点击完成即可。</p>
+<blockquote>
+<div><p>如果点击完成之后，软件出现致命错误，那就重新做一遍就好。重新不行就重启电脑，再重新开始，这没什么，只有第一次查询规范的时候才需要话费很大的力气，之后的基本上就没有什么了，都是软件常规操作而已。</p>
+<p>出现问题，多重做几遍，看看是不是哪一步出问题了，步骤没错就是软件的问题。</p>
+</div></blockquote>
+<p>好，做了这么久，我们也该休息一下了，这时候，关闭软件之前，点击保存一下项目就可以，然后就可以退出了。</p>
+<p>如果你点击保存项目之后，随便点了鼠标，你退出的时候还会弹出项目已修改，是否保存，你点击是也可以，否也可以；因为刚才的改变是因你滚动了鼠标，你只要确保做完设计之后，第一时间保存项目，而且后面没有做关于设计的任何操作，那么都可以忽视这些提示。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="03%E5%B9%B3%E9%9D%A2%E9%80%89%E7%BA%BF.html" class="btn btn-neutral float-left" title="3. 平面选线" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="05%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%A8%A1.html" class="btn btn-neutral float-right" title="5.建立数模" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2023, RyzeYang.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

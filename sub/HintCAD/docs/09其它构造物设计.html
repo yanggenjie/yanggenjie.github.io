@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9. 其它构造物的设计 &mdash; 纬地一学即会 1.0 文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="出图输出表格" href="10%E5%87%BA%E5%9B%BE%E4%B8%8E%E8%A1%A8%E6%A0%BC%E8%BE%93%E5%87%BA.html" />
+    <link rel="prev" title="8.横断面设计" href="08%E6%A8%AA%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            纬地一学即会
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="00%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00%E8%AE%BE%E8%AE%A1%E6%80%BB%E6%B5%81%E7%A8%8B.html">设计总流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.html">1.新建项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02%E6%89%93%E5%BC%80%E5%9C%B0%E5%BD%A2%E5%9B%BE.html">2.打开地形图</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03%E5%B9%B3%E9%9D%A2%E9%80%89%E7%BA%BF.html">3. 平面选线</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04%E8%AE%BE%E8%AE%A1%E5%90%91%E5%AF%BC.html">4.设计向导</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%A8%A1.html">5.建立数模</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06%E7%BA%B5%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html">6. 做纵断面设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07%E8%B7%AF%E5%9F%BA%E8%AE%BE%E8%AE%A1%E8%AE%A1%E7%AE%97.html">7 路基设计计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08%E6%A8%AA%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html">8.横断面设计</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">9. 其它构造物的设计</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">桥梁设计</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">涵洞设计</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">挡土墙</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10%E5%87%BA%E5%9B%BE%E4%B8%8E%E8%A1%A8%E6%A0%BC%E8%BE%93%E5%87%BA.html">出图输出表格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%E7%BB%93%E8%AF%AD.html">结语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE.html">参考文献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html">关于我</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#id2">关于本书</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">纬地一学即会</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">9. 其它构造物的设计</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/09其它构造物设计.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>9. 其它构造物的设计<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
+<p>关于其它构造物的设计，知识有限，无法详细说明，所以大家可以自行研究一下。</p>
+<section id="id2">
+<h2>桥梁设计<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
+<blockquote>
+<div><p>这里的桥梁设计只能标注桥梁位置，无法设计桥梁细部构造。</p>
+</div></blockquote>
+<p>虽然说路桥不分家，不过对于个人来说，这个路桥两部分的知识有点庞大，除非在路桥工作有些年限，否则仅凭书本这点内容，是没法掌握那么多的，笔者是道路与桥梁专业主修道路，故而桥梁部分的内容谈不上教学，只能给大家讲软件操作，输入填入的方法，至于设计桥梁，需要大家自己去查阅资料了。</p>
+<p>下面是软件的操作：</p>
+<p>点击数据-控制参数输入</p>
+<p><img alt="image-20201204114409446" src="../_images/f537c5aca1ff43e5b3bb270c1ba785a2.webp" /></p>
+<p>弹出窗口，选择桥梁：</p>
+<p><img alt="image-20201204114638059" src="../_images/b53d7b6e7a044e61a4b0b7459488fdb2.webp" /></p>
+<p>点击插入：</p>
+<p><img alt="image-20201204114710486" src="../_images/00b77193d23b4910b48264a4ab95925b.webp" /></p>
+<p>选中刚才新建的桥梁，输入起始桩号和各部分的桥梁名称：</p>
+<p><img alt="image-20201204114822627" src="../_images/35a51b05d8e1476d8bdcba3cabc7fc45.webp" /></p>
+<p>这里填写桥梁设计的位置，一般过河、农田、即其它地质不稳定的地方，都可以设计桥梁。</p>
+<ul class="simple">
+<li><p>桥梁桩号</p></li>
+</ul>
+<p>这里桥位的选择与地形图有关，而且这里也只是标注位置，就不一一详说。</p>
+<ul class="simple">
+<li><p>桥梁名称</p></li>
+</ul>
+<p>名称随便写一个，比如可以按功能、结构等来命名，比如从 XX 到 XX 桥、预应力混凝土 xxx 桥</p>
+<ul class="simple">
+<li><p>跨径分布</p></li>
+</ul>
+<p>“2*25m”形式填入</p>
+<p>前面的数字 2 表示跨数，即 2 跨</p>
+<p>25m 代表单独一跨的长度，即每一跨有 25m。这座桥总长 50m。</p>
+<p><img alt="image-20201204122321137" src="../_images/965814a9a5a34b4a89c2c511cfd56281.webp" /></p>
+<p>关于跨径的选择，请大家查询《公路桥涵设计通用规范》JTG D60-2015。</p>
+<ul class="simple">
+<li><p>结构型式</p></li>
+</ul>
+<p>板桥、梁桥、钢结构桥。</p>
+<p>填写完成之后，点击存盘</p>
+<p><img alt="image-20201204123208411" src="../_images/7af4a4267c72405abaf9d26862fb9c52.webp" /></p>
+</section>
+<section id="id3">
+<h2>涵洞设计<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h2>
+<p>同样在控制参数输入里进行，点击涵洞通道-插入：</p>
+<p><img alt="image-20201204130854025" src="../_images/be7f25eea5b54ce5bf849d9322a1afb2.webp" /></p>
+<ul class="simple">
+<li><p>中心桩号</p></li>
+</ul>
+<p>填写涵洞的中心桩号</p>
+<ul class="simple">
+<li><p>角度</p></li>
+</ul>
+<p>默认正交，即 90 度。</p>
+<ul class="simple">
+<li><p>跨径说明</p></li>
+</ul>
+<p>盖板涵:1-2.5×4m</p>
+<p>1 跨，盖板涵界面尺寸。</p>
+<p>圆管涵:1-Φ1.5m</p>
+<p>1 跨，圆管涵界面半径。</p>
+<ul class="simple">
+<li><p>结构型式</p></li>
+</ul>
+<p>注释说明该跨径是哪种涵洞型式。下图来自《公路涵洞设计细则》JTGT D65-04-2007</p>
+<p><img alt="image-20201204131552406" src="../_images/79b50926517448faaefcc7921e35aae4.webp" /></p>
+<p>更多详细设计请自行查阅资料。</p>
+</section>
+<section id="id4">
+<h2>挡土墙<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h2>
+<p>设计-支挡构造物处理</p>
+<p><img alt="image-20201204133820836" src="../_images/340ac2941c2a453283ce2649c5ea9ac7.webp" /></p>
+<p>弹出挡墙设计工具：</p>
+<p><img alt="image-20201204134007545" src="../_images/f33100ddf45b4fcfa943d92ad1596c4c.webp" /></p>
+<p>分为标准挡墙和挡墙文件</p>
+<blockquote>
+<div><p>标准挡墙就是一个标准库，这里面都是画好的模型</p>
+<p>挡墙文件是你设计的挡墙段。</p>
+</div></blockquote>
+<p>首先要从挡墙库中拖拽一个标准图下来</p>
+<blockquote>
+<div><p>从左侧挡墙库拖到左侧挡墙文件；</p>
+<p>从右侧挡墙库拖到右侧挡墙文件。</p>
+</div></blockquote>
+<p><img alt="image-20201204134312725" src="../_images/f0f750a5bef94db1b96eb9ff8e61c698.webp" /></p>
+<p>拖到挡墙文件之后，点击那个挡墙文件，设置起始桩号和相关的参数设置。</p>
+<p><img alt="image-20201204134409953" src="../_images/ac9021e1340b45459b89a2f9ec0172ab.webp" /></p>
+<p>具体的设计请自己查阅资料。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="08%E6%A8%AA%E6%96%AD%E9%9D%A2%E8%AE%BE%E8%AE%A1.html" class="btn btn-neutral float-left" title="8.横断面设计" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="10%E5%87%BA%E5%9B%BE%E4%B8%8E%E8%A1%A8%E6%A0%BC%E8%BE%93%E5%87%BA.html" class="btn btn-neutral float-right" title="出图输出表格" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2023, RyzeYang.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
