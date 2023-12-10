@@ -247,6 +247,9 @@
 
 <p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_152057.png" alt="picture2"></p>
 <p>可以看到已经正常拉取了，现在在别的电脑上拉取也能正常拉取到最新的代码了，只不过需要我输入密码进行验证，可以自己配置一个免密登录就行了。</p>
+<p>如果推送的时候报错，需要在服务器端执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入对应的仓库文件夹</span></span><br><span class="line"><span class="built_in">cd</span> Test.git</span><br><span class="line"><span class="comment"># 执行命令</span></span><br><span class="line">git config receive.denyCurrentBranch ignore</span><br></pre></td></tr></table></figure>
+
 <h2 id="创建-Git-服务器-方案-2"><a href="#创建-Git-服务器-方案-2" class="headerlink" title="创建 Git 服务器(方案 2)"></a>创建 Git 服务器(方案 2)</h2><p>第一种方案是先在服务器上创建了一个 git 仓库，然后用客户端拉取代码，还有一种就是<strong>客户端上已经有一个本地仓库了，我需要推送到远程上去，关联一个远程仓库</strong>，其实只要把本地的<code>.git</code>文件夹复制到服务器上就行了</p>
 <p>首先我在本地创建了一个 Test2 的文件夹，然后使用 git 来控制，新加了一个 readme 文件。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br></pre></td></tr></table></figure>
@@ -456,20 +459,20 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/01学习/博客技术/hexoBlog/hexo.webp')"></div>
+    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/01学习/博客技术/我的博客历程.html" class="title">
-                我的博客历程
+            <a href="/post/01学习/git/搭建简易的git服务器.html" class="title">
+                搭建简易的git服务器
             </a>
             <p class="text-gray">
                 <small>
                     <span>发表于2023-12-10，</span>
-                    <span class="hidden-xs">全文2275字，</span>
+                    <span class="hidden-xs">全文2266字，</span>
                     <span>阅读约8分钟</span>
                 </small>
             </p>
@@ -478,21 +481,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
+    <div class="post-img" style="background-image: url('/post/code/CSharpFileIO/csharp-programming.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/01学习/git/git基础教程.html" class="title">
-                git基础教程
+            <a href="/post/code/CSharpFileIO.html" class="title">
+                C#文件IO
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-07-02，</span>
-                    <span class="hidden-xs">全文3414字，</span>
-                    <span>阅读约12分钟</span>
+                    <span>发表于2023-04-08，</span>
+                    <span class="hidden-xs">全文17511字，</span>
+                    <span>阅读约59分钟</span>
                 </small>
             </p>
         </div>
@@ -500,32 +503,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/life/关于硬盘/机械硬盘构件分布.jpg')"></div>
+    <div class="post-img" style="background-image: url('/post/code/sqlite3/sqliteDefault.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#杂谈"
-                    title="杂谈">杂谈</a>
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#随笔"
-                    title="随笔">随笔</a>
-                <span>/</span>
-                
-                
             </div>
-            <a href="/post/life/关于硬盘.html" class="title">
-                关于硬盘
+            <a href="/post/code/sqlite3.html" class="title">
+                sqlite3笔记
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-04-08，</span>
-                    <span class="hidden-xs">全文1499字，</span>
-                    <span>阅读约5分钟</span>
+                    <span>发表于2022-12-27，</span>
+                    <span class="hidden-xs">全文1521字，</span>
+                    <span>阅读约6分钟</span>
                 </small>
             </p>
         </div>
