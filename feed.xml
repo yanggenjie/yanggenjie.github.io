@@ -15,8 +15,83 @@
     <atom:link href="https://selfteachingroad.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Sun, 02 Jul 2023 10:48:35 GMT</pubDate>
+    <pubDate>Sun, 10 Dec 2023 07:48:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>搭建简易的git服务器</title>
+      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8.html</link>
+      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8.html</guid>
+      <pubDate>Sun, 10 Dec 2023 06:49:42 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;程序员的代码仓库，总是需要一份托管在服务器上，这样既方便多台设备间的代码同步，也方便协作，留一份在服务器上，从数据备份的角度来说这是比较安全</description>
+        
+      
+      
+      <enclosure url="https://selfteachingroad.cn/img/git/git.jpg" type="image"/>
+      
+      
+      
+      <category domain="https://selfteachingroad.cn/categories/git%E6%9C%8D%E5%8A%A1%E5%99%A8/">git服务器</category>
+      
+      
+      
+      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo+GitHub Pages 搭建个人博客</title>
+      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog.html</link>
+      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog.html</guid>
+      <pubDate>Sun, 10 Dec 2023 05:05:15 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;环境要求&quot;&gt;&lt;a href=&quot;#环境要求&quot; class=&quot;headerlink&quot; title=&quot;环境要求&quot;&gt;&lt;/a&gt;环境要求&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;nodejs：用来安装 hexo&lt;/li&gt;
+&lt;li&gt;hexo：用来写博客&lt;/li&gt;
+&lt;li&gt;git：用来推送博客</description>
+        
+      
+      
+      <enclosure url="https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog/hexo.webp" type="image"/>
+      
+      
+      
+      <category domain="https://selfteachingroad.cn/categories/%E6%90%AD%E5%BB%BA/">搭建</category>
+      
+      
+      
+      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>我的博客历程</title>
+      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B.html</link>
+      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B.html</guid>
+      <pubDate>Sat, 09 Dec 2023 16:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;折腾个人博客也算有些年限了，从刚毕业开始就在折腾，那时候觉得拥有一个自己网站的人是很厉害的(当然，现在也这么认为的)。那时候什么都不懂，反正</description>
+        
+      
+      
+      <enclosure url="https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog/hexo.webp" type="image"/>
+      
+      
+      
+      <category domain="https://selfteachingroad.cn/categories/%E9%9A%8F%E6%83%B3/">随想</category>
+      
+      
+      
+      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023上半年总结</title>
@@ -47,9 +122,9 @@
     </item>
     
     <item>
-      <title>版本控制git</title>
-      <link>https://selfteachingroad.cn/post/code/git/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6git.html</link>
-      <guid>https://selfteachingroad.cn/post/code/git/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6git.html</guid>
+      <title>git基础教程</title>
+      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html</link>
+      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html</guid>
       <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
       
         
@@ -66,7 +141,7 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/code/git/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6git.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html#disqus_thread</comments>
       
     </item>
     
@@ -127,15 +202,20 @@
     
     <item>
       <title>Revit二次开发必备工具</title>
-      <link>https://selfteachingroad.cn/post/code/revitTools.html</link>
-      <guid>https://selfteachingroad.cn/post/code/revitTools.html</guid>
+      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/BIM%E5%BC%80%E5%8F%91/revitTools.html</link>
+      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/BIM%E5%BC%80%E5%8F%91/revitTools.html</guid>
       <pubDate>Sun, 05 Mar 2023 03:51:24 GMT</pubDate>
       
         
         
-      <description>&lt;p&gt;开发工具&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Visual Studio：&lt;a href=&quot;https://visualstudio.microsoft.com/zh-hans/vs/&quot;&gt;https://visualstudio.microsoft.com/zh-hans/vs/&lt;/</description>
+      <description>&lt;h1 id=&quot;开发工具&quot;&gt;&lt;a href=&quot;#开发工具&quot; class=&quot;headerlink&quot; title=&quot;开发工具&quot;&gt;&lt;/a&gt;开发工具&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;工具&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/</description>
         
       
       
@@ -147,7 +227,7 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/code/revitTools.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/BIM%E5%BC%80%E5%8F%91/revitTools.html#disqus_thread</comments>
       
     </item>
     
@@ -316,8 +396,10 @@
       
         
         
-      <description>&lt;h2 id=&quot;效率&quot;&gt;&lt;a href=&quot;#效率&quot; class=&quot;headerlink&quot; title=&quot;效率&quot;&gt;&lt;/a&gt;效率&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;everything：本地搜索最快的一个软件，想找什么文件，1s 就可以搜索到，几乎 0 延迟。比 windows 自带的搜索好</description>
+      <description>&lt;h1 id=&quot;效率&quot;&gt;&lt;a href=&quot;#效率&quot; class=&quot;headerlink&quot; title=&quot;效率&quot;&gt;&lt;/a&gt;效率&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;div style=&quot;width:50px&quot;&gt;序号&lt;/div&gt;&lt;</description>
         
       
       
@@ -330,33 +412,6 @@
       
       
       <comments>https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Hexo+GitHub Pages 搭建个人博客</title>
-      <link>https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog.html</link>
-      <guid>https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog.html</guid>
-      <pubDate>Fri, 03 Jul 2020 09:18:15 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;环境要求&quot;&gt;&lt;a href=&quot;#环境要求&quot; class=&quot;headerlink&quot; title=&quot;环境要求&quot;&gt;&lt;/a&gt;环境要求&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;nodejs：用来安装 hexo&lt;/li&gt;
-&lt;li&gt;hexo：用来写博客&lt;/li&gt;
-&lt;li&gt;git：用来推送博客</description>
-        
-      
-      
-      <enclosure url="https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog/hexo.webp" type="image"/>
-      
-      
-      
-      <category domain="https://selfteachingroad.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</category>
-      
-      
-      
-      <comments>https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/hexoBlog.html#disqus_thread</comments>
       
     </item>
     
