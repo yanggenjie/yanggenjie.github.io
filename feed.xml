@@ -15,13 +15,13 @@
     <atom:link href="https://selfteachingroad.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Tue, 12 Dec 2023 15:19:01 GMT</pubDate>
+    <pubDate>Tue, 12 Dec 2023 15:43:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>如何搭建git托管平台之gogs篇</title>
-      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87.html</link>
-      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87.html</guid>
+      <link>https://selfteachingroad.cn/2023/12/12/git_Gogs/</link>
+      <guid>https://selfteachingroad.cn/2023/12/12/git_Gogs/</guid>
       <pubDate>Tue, 12 Dec 2023 15:01:59 GMT</pubDate>
       
         
@@ -38,14 +38,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/12/12/git_Gogs/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>如何搭建git托管平台之简易篇</title>
-      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87.html</link>
-      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87.html</guid>
+      <link>https://selfteachingroad.cn/2023/12/10/git_SimpleServer/</link>
+      <guid>https://selfteachingroad.cn/2023/12/10/git_SimpleServer/</guid>
       <pubDate>Sun, 10 Dec 2023 06:49:42 GMT</pubDate>
       
         
@@ -62,14 +62,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/12/10/git_SimpleServer/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Hexo+云服务器搭建个人博客</title>
-      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog.html</link>
-      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog.html</guid>
+      <link>https://selfteachingroad.cn/2023/12/10/index/</link>
+      <guid>https://selfteachingroad.cn/2023/12/10/index/</guid>
       <pubDate>Sun, 10 Dec 2023 05:05:15 GMT</pubDate>
       
         
@@ -89,14 +89,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/12/10/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>我的博客历程</title>
-      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B.html</link>
-      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B.html</guid>
+      <link>https://selfteachingroad.cn/2023/12/10/index/</link>
+      <guid>https://selfteachingroad.cn/2023/12/10/index/</guid>
       <pubDate>Sat, 09 Dec 2023 16:00:00 GMT</pubDate>
       
         
@@ -113,14 +113,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/12/10/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2023上半年总结</title>
-      <link>https://selfteachingroad.cn/post/summary/2023.html</link>
-      <guid>https://selfteachingroad.cn/post/summary/2023.html</guid>
+      <link>https://selfteachingroad.cn/2023/07/02/index/</link>
+      <guid>https://selfteachingroad.cn/2023/07/02/index/</guid>
       <pubDate>Sun, 02 Jul 2023 10:48:34 GMT</pubDate>
       
         
@@ -141,14 +141,14 @@
       <category domain="https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
       
       
-      <comments>https://selfteachingroad.cn/post/summary/2023.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/07/02/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>git基础教程</title>
-      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html</link>
-      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html</guid>
+      <link>https://selfteachingroad.cn/2023/07/02/git_base/</link>
+      <guid>https://selfteachingroad.cn/2023/07/02/git_base/</guid>
       <pubDate>Sun, 02 Jul 2023 10:48:22 GMT</pubDate>
       
         
@@ -165,14 +165,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/07/02/git_base/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>关于硬盘</title>
-      <link>https://selfteachingroad.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98.html</link>
-      <guid>https://selfteachingroad.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98.html</guid>
+      <link>https://selfteachingroad.cn/2023/04/08/index/</link>
+      <guid>https://selfteachingroad.cn/2023/04/08/index/</guid>
       <pubDate>Sat, 08 Apr 2023 12:11:04 GMT</pubDate>
       
         
@@ -193,14 +193,14 @@
       <category domain="https://selfteachingroad.cn/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
       
       
-      <comments>https://selfteachingroad.cn/post/life/%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/04/08/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>C#文件IO</title>
-      <link>https://selfteachingroad.cn/post/code/CSharpFileIO.html</link>
-      <guid>https://selfteachingroad.cn/post/code/CSharpFileIO.html</guid>
+      <link>https://selfteachingroad.cn/2023/04/08/index/</link>
+      <guid>https://selfteachingroad.cn/2023/04/08/index/</guid>
       <pubDate>Sat, 08 Apr 2023 08:51:17 GMT</pubDate>
       
         
@@ -220,14 +220,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/code/CSharpFileIO.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/04/08/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Revit二次开发必备工具</title>
-      <link>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/BIM%E5%BC%80%E5%8F%91/revitTools.html</link>
-      <guid>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/BIM%E5%BC%80%E5%8F%91/revitTools.html</guid>
+      <link>https://selfteachingroad.cn/2023/03/05/index/</link>
+      <guid>https://selfteachingroad.cn/2023/03/05/index/</guid>
       <pubDate>Sun, 05 Mar 2023 03:51:24 GMT</pubDate>
       
         
@@ -251,14 +251,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/BIM%E5%BC%80%E5%8F%91/revitTools.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/03/05/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2023年转行进入新领域</title>
-      <link>https://selfteachingroad.cn/post/summary/2023FirstSum.html</link>
-      <guid>https://selfteachingroad.cn/post/summary/2023FirstSum.html</guid>
+      <link>https://selfteachingroad.cn/2023/02/18/2023%E5%B9%B4%E8%BD%AC%E8%A1%8C%E8%BF%9B%E5%85%A5%E6%96%B0%E9%A2%86%E5%9F%9F/</link>
+      <guid>https://selfteachingroad.cn/2023/02/18/2023%E5%B9%B4%E8%BD%AC%E8%A1%8C%E8%BF%9B%E5%85%A5%E6%96%B0%E9%A2%86%E5%9F%9F/</guid>
       <pubDate>Fri, 17 Feb 2023 17:00:00 GMT</pubDate>
       
         
@@ -279,14 +279,14 @@
       <category domain="https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
       
       
-      <comments>https://selfteachingroad.cn/post/summary/2023FirstSum.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/02/18/2023%E5%B9%B4%E8%BD%AC%E8%A1%8C%E8%BF%9B%E5%85%A5%E6%96%B0%E9%A2%86%E5%9F%9F/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>为c/c++量身定制vim</title>
-      <link>https://selfteachingroad.cn/post/code/vim.html</link>
-      <guid>https://selfteachingroad.cn/post/code/vim.html</guid>
+      <link>https://selfteachingroad.cn/2023/02/04/index/</link>
+      <guid>https://selfteachingroad.cn/2023/02/04/index/</guid>
       <pubDate>Fri, 03 Feb 2023 17:00:00 GMT</pubDate>
       
         
@@ -305,14 +305,14 @@
       <category domain="https://selfteachingroad.cn/tags/vim/">vim</category>
       
       
-      <comments>https://selfteachingroad.cn/post/code/vim.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/02/04/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>饮酒与解酒</title>
-      <link>https://selfteachingroad.cn/post/life/%E9%A5%AE%E9%85%92%E4%B8%8E%E8%A7%A3%E9%85%92.html</link>
-      <guid>https://selfteachingroad.cn/post/life/%E9%A5%AE%E9%85%92%E4%B8%8E%E8%A7%A3%E9%85%92.html</guid>
+      <link>https://selfteachingroad.cn/2023/01/18/index/</link>
+      <guid>https://selfteachingroad.cn/2023/01/18/index/</guid>
       <pubDate>Tue, 17 Jan 2023 17:00:00 GMT</pubDate>
       
         
@@ -331,14 +331,14 @@
       <category domain="https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
       
       
-      <comments>https://selfteachingroad.cn/post/life/%E9%A5%AE%E9%85%92%E4%B8%8E%E8%A7%A3%E9%85%92.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/01/18/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2022 年终总结</title>
-      <link>https://selfteachingroad.cn/post/summary/2022.html</link>
-      <guid>https://selfteachingroad.cn/post/summary/2022.html</guid>
+      <link>https://selfteachingroad.cn/2023/01/08/2022summary/</link>
+      <guid>https://selfteachingroad.cn/2023/01/08/2022summary/</guid>
       <pubDate>Sat, 07 Jan 2023 17:00:00 GMT</pubDate>
       
         
@@ -357,14 +357,14 @@
       <category domain="https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
       
       
-      <comments>https://selfteachingroad.cn/post/summary/2022.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2023/01/08/2022summary/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>sqlite3笔记</title>
-      <link>https://selfteachingroad.cn/post/code/sqlite3.html</link>
-      <guid>https://selfteachingroad.cn/post/code/sqlite3.html</guid>
+      <link>https://selfteachingroad.cn/2022/12/27/index/</link>
+      <guid>https://selfteachingroad.cn/2022/12/27/index/</guid>
       <pubDate>Tue, 27 Dec 2022 03:51:24 GMT</pubDate>
       
         
@@ -381,14 +381,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/code/sqlite3.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2022/12/27/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>关于</title>
-      <link>https://selfteachingroad.cn/post/about/about.html</link>
-      <guid>https://selfteachingroad.cn/post/about/about.html</guid>
+      <link>https://selfteachingroad.cn/2022/12/22/index/</link>
+      <guid>https://selfteachingroad.cn/2022/12/22/index/</guid>
       <pubDate>Thu, 22 Dec 2022 03:51:24 GMT</pubDate>
       
         
@@ -408,14 +408,14 @@
       <category domain="https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</category>
       
       
-      <comments>https://selfteachingroad.cn/post/about/about.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2022/12/22/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>我的软件清单</title>
-      <link>https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist.html</link>
-      <guid>https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist.html</guid>
+      <link>https://selfteachingroad.cn/2022/12/22/index/</link>
+      <guid>https://selfteachingroad.cn/2022/12/22/index/</guid>
       <pubDate>Thu, 22 Dec 2022 03:51:24 GMT</pubDate>
       
         
@@ -435,14 +435,14 @@
       
       
       
-      <comments>https://selfteachingroad.cn/post/%E5%B7%A5%E5%85%B7/mysoftwarelist.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2022/12/22/index/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>友情链接</title>
-      <link>https://selfteachingroad.cn/post/about/link.html</link>
-      <guid>https://selfteachingroad.cn/post/about/link.html</guid>
+      <link>https://selfteachingroad.cn/2017/07/03/index/</link>
+      <guid>https://selfteachingroad.cn/2017/07/03/index/</guid>
       <pubDate>Mon, 03 Jul 2017 03:51:24 GMT</pubDate>
       
       <description>极客兔兔的友情链接</description>
@@ -456,7 +456,7 @@
       <category domain="https://selfteachingroad.cn/tags/%E5%8F%8B%E9%93%BE/">友链</category>
       
       
-      <comments>https://selfteachingroad.cn/post/about/link.html#disqus_thread</comments>
+      <comments>https://selfteachingroad.cn/2017/07/03/index/#disqus_thread</comments>
       
     </item>
     
