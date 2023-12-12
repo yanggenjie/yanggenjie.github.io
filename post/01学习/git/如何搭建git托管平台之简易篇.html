@@ -244,15 +244,15 @@
 <p>执行这条命令以后，一个最简易的 Git 服务器就诞生了。后面，我们就可以通过 SSH 连接，把本地代码推送到这个远程 Git 仓库了。</p>
 <p>示例操作：</p>
 <p>如下图所示，我在虚拟机上装了一个 Ubuntu 系统，就当是我的服务器，在家目录下创建一个 repo 文件夹：</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_151607.webp" alt="picture0"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87/img_20231210_151607.webp" alt="picture0"></p>
 <p>使用命令初始化一个 git 仓库</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init --bare Test.git</span><br></pre></td></tr></table></figure>
 
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_151824.webp" alt="picture1"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87/img_20231210_151824.webp" alt="picture1"></p>
 <p>接下来，在客户端上把这个仓库拉取下来</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># git clone 用户名@服务器地址:仓库的绝对路径</span></span><br><span class="line">git <span class="built_in">clone</span> u1@192.168.56.108:/home/u1/repo/Test.git</span><br></pre></td></tr></table></figure>
 
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_152057.webp" alt="picture2"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87/img_20231210_152057.webp" alt="picture2"></p>
 <p>可以看到已经正常拉取了，现在在别的电脑上拉取也能正常拉取到最新的代码了，只不过需要我输入密码进行验证，可以自己配置一个免密登录就行了。</p>
 <p>如果推送的时候报错，需要在服务器端执行以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入对应的仓库文件夹</span></span><br><span class="line"><span class="built_in">cd</span> Test.git</span><br><span class="line"><span class="comment"># 执行命令</span></span><br><span class="line">git config receive.denyCurrentBranch ignore</span><br></pre></td></tr></table></figure>
@@ -261,15 +261,15 @@
 <p>首先我在本地创建了一个 Test2 的文件夹，然后使用 git 来控制，新加了一个 readme 文件。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_152540.webp" alt="picture3"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87/img_20231210_152540.webp" alt="picture3"></p>
 <p>现在我要把这个仓库放到我的服务器上，服务器上目前还没有 Test2.git 这个目录</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_152829.webp" alt="picture4"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87/img_20231210_152829.webp" alt="picture4"></p>
 <p>接下来使用 scp 命名复制文件到服务器上：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># scp -r 原路径 用户名@服务器地址:目标路径</span></span><br><span class="line"><span class="comment"># -r： 递归复制</span></span><br><span class="line">scp -r .git u1@192.168.56.108:/home/u1/repo/Test2.git</span><br></pre></td></tr></table></figure>
 
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_154132.webp" alt="picture7"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87/img_20231210_154132.webp" alt="picture7"></p>
 <p>接下来看服务器上对应的路径：</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84git%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231210_152949.webp" alt="picture6"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87/img_20231210_152949.webp" alt="picture6"></p>
 <p>已经有对应的仓库文件夹了，要推送拉取，对应执行<code>git clone</code>、<code>git pull</code>、<code>git push</code>这些正常操作就行了</p>
 <p>这种简单的搭建，好处就是方便，轻量，缺点就是没有对应的 web 页面这些，如果是自己用，已经足够了。如果是公司内部的 git 服务器，小团队可以用 gogs，对硬件性能要求很低，安装最简单，当然功能也比较弱，想要功能强大的可以使用 gitea 这些框架。</p>
 
@@ -468,6 +468,28 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
+    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/01学习/git/如何搭建git托管平台之简易篇.html" class="title">
+                如何搭建git托管平台之简易篇
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-12-10，</span>
+                    <span class="hidden-xs">全文2305字，</span>
+                    <span>阅读约8分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
     <div class="post-img" style="background-image: url('/post/01学习/博客技术/hexoBlog/hexo.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
@@ -490,29 +512,7 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
-    <div class="post-info">
-        <div class="post-info-center">
-            <div class="hidden-xs">
-                
-                
-            </div>
-            <a href="/post/01学习/git/git基础教程.html" class="title">
-                git基础教程
-            </a>
-            <p class="text-gray">
-                <small>
-                    <span>发表于2023-07-02，</span>
-                    <span class="hidden-xs">全文3414字，</span>
-                    <span>阅读约12分钟</span>
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-        
-        <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/life/关于硬盘/机械硬盘构件分布.jpg')"></div>
+    <div class="post-img" style="background-image: url('/post/code/vim/vim.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
@@ -520,24 +520,20 @@
                 
                 <span>/</span>
                 
-                <a class="text-gray" href="/tags/#杂谈"
-                    title="杂谈">杂谈</a>
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#随笔"
-                    title="随笔">随笔</a>
+                <a class="text-gray" href="/tags/#vim"
+                    title="vim">vim</a>
                 <span>/</span>
                 
                 
             </div>
-            <a href="/post/life/关于硬盘.html" class="title">
-                关于硬盘
+            <a href="/post/code/vim.html" class="title">
+                为c/c++量身定制vim
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-04-08，</span>
-                    <span class="hidden-xs">全文1499字，</span>
-                    <span>阅读约5分钟</span>
+                    <span>发表于2023-02-04，</span>
+                    <span class="hidden-xs">全文4990字，</span>
+                    <span>阅读约17分钟</span>
                 </small>
             </p>
         </div>
@@ -567,11 +563,11 @@
 </style>
 <div id="featured-tag">
     
-    <a class="post-tag-item" href="/tags/#关于我" title="关于我"
-        rel="5">#关于我 (5) </a>
-    
     <a class="post-tag-item" href="/tags/#友链" title="友链"
         rel="1">#友链 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#关于我" title="关于我"
+        rel="5">#关于我 (5) </a>
     
     <a class="post-tag-item" href="/tags/#vim" title="vim"
         rel="1">#vim (1) </a>

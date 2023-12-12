@@ -1,5 +1,5 @@
-https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87.html
 https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8B%E7%AE%80%E6%98%93%E7%AF%87.html
+https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87.html
 https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/git/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html
 https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/hexoBlog.html
 https://selfteachingroad.cn/post/01%E5%AD%A6%E4%B9%A0/BIM%E5%BC%80%E5%8F%91/revitTools.html
@@ -20,8 +20,8 @@ https://selfteachingroad.cn/archives/index.html
 https://selfteachingroad.cn/post/about/link.html
 https://selfteachingroad.cn/404.html
 https://selfteachingroad.cn/
-https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/
 https://selfteachingroad.cn/tags/%E5%8F%8B%E9%93%BE/
+https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/
 https://selfteachingroad.cn/tags/vim/
 https://selfteachingroad.cn/tags/%E6%9D%82%E8%B0%88/
 https://selfteachingroad.cn/tags/%E9%9A%8F%E7%AC%94/
