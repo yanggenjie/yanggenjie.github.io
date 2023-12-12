@@ -200,6 +200,13 @@
 
   
   <url>
+    <loc>https://selfteachingroad.cn/tags/%E5%8F%8B%E9%93%BE/</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://selfteachingroad.cn/tags/%E5%85%B3%E4%BA%8E%E6%88%91/</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -207,7 +214,7 @@
   </url>
   
   <url>
-    <loc>https://selfteachingroad.cn/tags/%E5%8F%8B%E9%93%BE/</loc>
+    <loc>https://selfteachingroad.cn/tags/vim/</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -227,28 +234,7 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://selfteachingroad.cn/tags/vim/</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://selfteachingroad.cn/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://selfteachingroad.cn/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://selfteachingroad.cn/categories/C/</loc>
@@ -272,7 +258,14 @@
   </url>
   
   <url>
-    <loc>https://selfteachingroad.cn/categories/%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/</loc>
+    <loc>https://selfteachingroad.cn/categories/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://selfteachingroad.cn/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -286,7 +279,7 @@
   </url>
   
   <url>
-    <loc>https://selfteachingroad.cn/categories/%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://selfteachingroad.cn/categories/%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -294,6 +287,13 @@
   
   <url>
     <loc>https://selfteachingroad.cn/categories/Git/</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://selfteachingroad.cn/categories/%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
