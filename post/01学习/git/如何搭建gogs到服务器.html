@@ -15,17 +15,17 @@
   <!-- if page has tags, then add tags to keyword -->
   
   
-  <meta name="keywords" content=",关于我,年终总结,2022">
+  <meta name="keywords" content=",">
   <!-- page.description has higher priority -->
   <meta name="description" content="自学之路博客">
   <link rel="shortcut icon" href="/img/avatar.webp">
   <title>
     
-    饮酒与解酒 | 自学之路
+    如何搭建gogs到服务器 | 自学之路
     
   </title>
 
-  <link rel="canonical" href="https://selfteachingroad.cn/post/life/饮酒与解酒.html">
+  <link rel="canonical" href="https://selfteachingroad.cn/post/01学习/git/如何搭建gogs到服务器.html">
   
 <link rel="stylesheet" href="/css/geektutu.css">
 
@@ -104,7 +104,7 @@
                     
                 </li>
                 
-                <li class="gkt-cate-name float-left active">
+                <li class="gkt-cate-name float-left ">
                     <a class="float-left" href="/post/summary/2022.html">随笔 ▾</a>
                     
                     <ul class="gkt-sub-cate">
@@ -112,7 +112,7 @@
                         <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/summary/2022.html">年终总结</a></li>
                         
-                        <li class="gkt-sub-cate-name active"><a class="float-left"
+                        <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/life/饮酒与解酒.html">生活</a></li>
                         
                         <li class="gkt-sub-cate-name "><a class="float-left"
@@ -137,7 +137,7 @@
                     
                 </li>
                 
-                <li class="gkt-cate-name float-left ">
+                <li class="gkt-cate-name float-left active">
                     <a class="float-left" href="/post/01学习/git/git基础教程.html">Git专题</a>
                     
                 </li>
@@ -194,23 +194,31 @@
 <div class="float-left post-container box-shadow">
     <div class="u-arrow-wrapper hidden-xs">
         
-        <a class="float-left" href="/post/summary/2022.html"><i class="u-arrow-left"></i></a>
+        <a class="float-left" href="/post/01学习/git/搭建简易的git服务器.html"><i class="u-arrow-left"></i></a>
         
-        
-        <a class="float-right" href="/post/code/vim.html"><i class="u-arrow-right"></i></a>
         
     </div>
     <article class="col-xs-12">
-        <h1> 饮酒与解酒 </h1>
+        <h1> 如何搭建gogs到服务器 </h1>
         
         
         <div class="hidden-lg hidden-md series_links">
-            <p> <strong> 生活系列文章链接：</strong></p>
+            <p> <strong> Git系列文章链接：</strong></p>
             <ul>
                 
                 <li>
-                    <a href="/post/life/饮酒与解酒.html">饮酒与解酒</a>
-                    <span class="post-item-date">(Jan 18, 2023)</span>
+                    <a href="/post/01学习/git/git基础教程.html">git基础教程</a>
+                    <span class="post-item-date">(Jul 2, 2023)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/01学习/git/搭建简易的git服务器.html">搭建简易的git服务器</a>
+                    <span class="post-item-date">(Dec 10, 2023)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/01学习/git/如何搭建gogs到服务器.html">如何搭建gogs到服务器</a>
+                    <span class="post-item-date">(Dec 12, 2023)</span>
                 </li>
                 
             </ul>
@@ -218,93 +226,77 @@
         
         
         <div class="gkt-article-start"></div>
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>过年避免不了喝酒，了解酒精在人体内经过了什么器官，产生了什么反应，可以让自己更好的了解自己该喝多少，了解自己的极限，喝酒不拼酒，不要燃烧生命力去拼酒。</p>
-<p>喝完酒后怎么醒酒，怎么减少喝酒对身体的伤害，不喝酒当然是没伤害，但人在江湖身不由己，这里说的是不得不喝的情况下，如何减少酒精对身体的损伤。</p>
-<h1 id="酒精进入人体后的化学反应"><a href="#酒精进入人体后的化学反应" class="headerlink" title="酒精进入人体后的化学反应"></a>酒精进入人体后的化学反应</h1><p>酒精，也就是乙醇，进入人体后，经过乙醇脱氢酶变成<strong>乙醛</strong>，乙醛经乙醛脱氢酶变成<strong>乙酸和水</strong>，再经过三羧酸循环变成尿液排出体外。</p>
-<p>乙醇脱氢酶、乙醛脱氢酶的代谢速率就是千杯不倒的秘诀，目前没有任何办法提高这两个酶的代谢速率，只能重开（重生）。</p>
-<p><img src="/post/life/%E9%A5%AE%E9%85%92%E4%B8%8E%E8%A7%A3%E9%85%92/21333016236113.webp" alt="picture 2"></p>
-<h1 id="如何解酒"><a href="#如何解酒" class="headerlink" title="如何解酒"></a>如何解酒</h1><p>吃下面这些食物，优先吃梨，补水，也提升酶活性。</p>
-<p>食物功能：</p>
-<ul>
-<li>梨、甜酸橙、番茄：增加 ADH、ALDH 活性</li>
-<li>柿子、红参：增加 ADH、ALDH 活性、抗氧化</li>
-<li>姜、大豆：抗氧化、保肝脏活性</li>
-</ul>
-<p>解酒能力排行：</p>
-<ol>
-<li>梨</li>
-<li>黄瓜</li>
-<li>西红柿</li>
-<li>橙子</li>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>之前有介绍过如何配置一个最简单的 git 服务器仓库，简单是简单，但操作过于繁琐，每次都要进入服务器执行命令，修改对应的配置，使用的时候不够简单，今天就介绍使用 gogs 搭建最简易的 git 服务器。</p>
+<p>先看看效果：</p>
+<p>首页：<br><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_214242.webp" alt="picture0"></p>
+<p>仓库管理：</p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_214319.webp" alt="picture1"></p>
+<p>还有其它功能可自行探索，也可以先去使用官网的 demo 体验一下：<a target="_blank" rel="noopener" href="https://gogs.io/">https://gogs.io/</a> ，不过都看到这种教程了，肯定是直接自己部署在本地体验一下了。</p>
+<h1 id="Windows-篇"><a href="#Windows-篇" class="headerlink" title="Windows 篇"></a>Windows 篇</h1><h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><ol>
+<li>去官网下载 gogs 二进制文件：<a target="_blank" rel="noopener" href="https://gogs.io/docs/">https://gogs.io/docs/</a></li>
+<li>解压出来，启动<code>./gogs web</code>默认 3000 端口。</li>
+<li>然后访问<code>http://localhost:3000</code>根据提示操作就行，如果为了方便，可以选择 sqlite3，这样数据库环境都不用配置了。</li>
 </ol>
-<p>优秀的解酒食物：冰糖雪梨、糖拌柿子、橙汁。补水、提升酶活性。</p>
-<h1 id="酒后伤身"><a href="#酒后伤身" class="headerlink" title="酒后伤身"></a>酒后伤身</h1><p>酒精对肝脏伤害较大，可以多吃一些富含维生素 A 的食物来保护肝脏，比如<strong>羊肝、牛肝、苦菊</strong></p>
-<p>其它富含维生素 A 的食物</p>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>含量(μg&#x2F;100g)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>猪肝</td>
-<td>4972</td>
-</tr>
-<tr>
-<td>鸭蛋黄</td>
-<td>1980</td>
-</tr>
-<tr>
-<td>西兰花</td>
-<td>1202</td>
-</tr>
-<tr>
-<td>胡萝卜</td>
-<td>688</td>
-</tr>
-<tr>
-<td>菠菜</td>
-<td>487</td>
-</tr>
-<tr>
-<td>豌豆苗</td>
-<td>445</td>
-</tr>
-<tr>
-<td>鸡蛋黄</td>
-<td>438</td>
-</tr>
-</tbody></table>
-<h1 id="吸收和代谢"><a href="#吸收和代谢" class="headerlink" title="吸收和代谢"></a>吸收和代谢</h1><p>吸收和代谢的概念要分清楚，分不清的话，会误以为”加速酒精吸收”这几个字是好的，吸收是把酒一直往身体里面输入，代谢是把酒精从身体里面排出。</p>
-<p>加速酒精吸收，只会让你<strong>醉得更快</strong></p>
-<p>加速酒精代谢，才是让你<strong>更快清醒</strong></p>
-<h1 id="如何暂时提高战斗力"><a href="#如何暂时提高战斗力" class="headerlink" title="如何暂时提高战斗力"></a>如何暂时提高战斗力</h1><h2 id="延缓吸收"><a href="#延缓吸收" class="headerlink" title="延缓吸收"></a>延缓吸收</h2><ol>
-<li>喝酒之前垫高脂肪的食物。</li>
-</ol>
-<p>因为脂肪在胃中消化吸收的速度最慢、蛋白质次之、碳水化合物最快。因为脂肪在胃中消化慢，会堆积在胃中，酒进入胃之后，会先等脂肪消化，然后才开始吸收酒精，所以酒精吸收的时间延迟了，酒桌上喝的时候看起来不醉而已，后面消化酒精的时候，该醉还是会醉。</p>
-<h2 id="加速代谢"><a href="#加速代谢" class="headerlink" title="加速代谢"></a>加速代谢</h2><ol start="2">
-<li>吃玉米、魔芋、葛根</li>
-</ol>
-<p>原理是喝酒的时候、乙醇脱氢酶(ADH)和乙醛脱氢酶(ALDH)会大量**消耗烟酰胺腺嘌呤二核苷酸(NAD+)**，吃玉米、魔芋、葛根可以暂时增加 NAD+的量，相当于往火坑里加柴火，可以起到醒得快的作用，但是具体要吃多少才有效果不得而知。喝酒还是要适量，不能指望说吃什么食物就能解酒，抱有这种想法的都醉得更快。</p>
-<h1 id="为什么头孢和酒不能同时服用？"><a href="#为什么头孢和酒不能同时服用？" class="headerlink" title="为什么头孢和酒不能同时服用？"></a>为什么头孢和酒不能同时服用？</h1><p>会形成加强版的双硫仑反应。</p>
+<h2 id="操作演示"><a href="#操作演示" class="headerlink" title="操作演示"></a>操作演示</h2><p>先去官网从文档里面找到<a target="_blank" rel="noopener" href="https://gogs.io/docs/installation/install_from_binary">二进制安装</a>，选较新的版本，然后选 windows,下载 zip 压缩包</p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221046.webp" alt="picture0"></p>
+<p>解压出来，进入解压的目录，右键打开 PowerShell 或者 cmd 窗口，输入<code>./gogs.exe web</code>：<br><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221443.webp" alt="picture1"></p>
+<p>回车之后，就会启动服务了</p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221523.webp" alt="picture2"></p>
+<p>然后打开浏览器，访问<code>http://localhost:3000</code></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221620.webp" alt="picture3"></p>
+<p>接下来填写这些配置就行了，这里为了方便体验，<strong>数据库方面选择 Sqlite3，然后其它可以保持默认，直接往下拉，点立即安装</strong>就行了，这些配置内容先使用默认的，后面如果想修改配置，就在 gogs.exe 同级目录下，创建<code>custom/conf/app.ini</code>这个路径的<code>app.ini</code>文件，在<code>app.ini</code><br>文件里面修改这些配置，修改完之后重启服务就行了。</p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221735.webp" alt="picture4"></p>
+<p>安装成功，接下来只需要注册一个账号，然后开始自己体验吧！</p>
 <blockquote>
-<p>双硫仑反应：双硫仑是一种戒酒药，让你喝完酒脸红、头疼、难受，你就不喝了。</p>
+<p>注意：</p>
+<p>注册的<strong>第一个账号就是管理员账号</strong>，之后注册的账号默认都是普通用户</p>
 </blockquote>
-<p>而头孢比双硫仑的<strong>药效更猛烈</strong>，直接抑制乙醛脱氢酶的产生，乙醛无法代谢，乙醛堆积，会引起脸红、头晕、恶心、呕吐、腿软等情况，再严重人就没了。</p>
-<p><strong>吃药后 7 天可饮酒，喝酒后 5 天才能吃药。</strong></p>
-<p>具有同样作用的药物：甲硝唑片、左氧氟沙星、酮康唑、胰岛素、阿司匹林(阵痛类)、氯磺丙脲(降糖)、头孢霉素(抗菌类)、硝苯地平(降压)、苯海拉明(抗过敏)、巴比妥(镇静安眠)</p>
-<p>饮酒不是拼酒，喝个高兴，图个气氛就行。</p>
-<h1 id="喝酒脸红、喝酒脸白区别"><a href="#喝酒脸红、喝酒脸白区别" class="headerlink" title="喝酒脸红、喝酒脸白区别"></a>喝酒脸红、喝酒脸白区别</h1><p><strong>喝酒脸红的人</strong>：是缺少乙醛脱氢酶，乙醇(也就是酒)进入身体后第一阶段先转化为乙醛，第二阶段把乙醛转为乙酸，由于缺少乙醛脱氢酶，会导致乙醛堆积，会引起脸红、头晕、恶心、呕吐、腿软等情况，严重会有生命危险，所以喝酒脸红的，不能喝太多，会导致乙醛堆积在体内。</p>
-<p><img src="/post/life/%E9%A5%AE%E9%85%92%E4%B8%8E%E8%A7%A3%E9%85%92/18293016254872.webp" alt="picture 2"></p>
-<p><strong>喝酒脸白的人</strong>：是缺少乙醇脱氢酶，也就是酒精进入人体的时候，第一阶段把酒精转为乙醛，转化的速率比较慢，所以会导致酒精堆积在体内，喝完酒回到家之后，酒精才慢慢转化为乙醛，所以喝酒脸白的，酒后更难受。因为别人在酒桌上都已经把酒精吸收转化了，难受也是在酒桌上难受，酒后就只剩代谢了，而喝酒脸白的人，回去之后还要等待酒精转化为乙醛，这时候才出现头痛、恶心这些症状，想睡都没法睡。</p>
-<h1 id="酒后注意事项"><a href="#酒后注意事项" class="headerlink" title="酒后注意事项"></a>酒后注意事项</h1><p>喝酒不能喝碳酸饮料、会加速酒精的吸收速率。因为碳酸饮料中含有糖分和二氧化碳、会加速胃肠的蠕动速度，促使酒精吸收程度增加，使体内酒精含量增多，会对人体其它器官造成伤害。</p>
-<ul>
-<li>白酒和啤酒不能混着喝？</li>
-</ul>
-<p>原理和碳酸饮料一样，啤酒中有二氧化碳，会加速酒精的吸收，啤酒白酒都是酒、醉得更快。</p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221929.webp" alt="picture5"></p>
+<h1 id="Linux-篇"><a href="#Linux-篇" class="headerlink" title="Linux 篇"></a>Linux 篇</h1><blockquote>
+<p>这里使用<code>Ubuntu Server2204</code>做演示，Redhat 系的也差不多，就是防火墙这些设置可能要自己搜一下怎么配置。</p>
+</blockquote>
+<h2 id="操作步骤-1"><a href="#操作步骤-1" class="headerlink" title="操作步骤"></a>操作步骤</h2><p>操作步骤和 Windows 基本相似的，都是下载二进制文件，然后解压，运行就行了</p>
+<h2 id="操作演示-1"><a href="#操作演示-1" class="headerlink" title="操作演示"></a>操作演示</h2><p>在文档的二进制安装页面，选择 Linux 的 zip 包，右键复制下载的链接，进入 ubuntu，下载：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一个目录gogs</span></span><br><span class="line"><span class="built_in">mkdir</span> gogs</span><br><span class="line"><span class="built_in">cd</span> gogs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载文件</span></span><br><span class="line">wget https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_amd64.zip</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_223617.webp" alt="picture6"></p>
+<p>下载完成之后，解压，进入解压的文件夹启动服务<code>./gogs web</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 如果没有unzip，需要自己安装一下(可选)</span></span><br><span class="line">sudo apt install unzip -y <span class="comment"># ubuntu安装</span></span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">sudo yum install unzip -y <span class="comment"># centOS安装</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压文件</span></span><br><span class="line">unzip  gogs_0.13.0_linux_amd64.zip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入解压的文件夹</span></span><br><span class="line"><span class="built_in">cd</span> gogs</span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">./gogs web</span><br></pre></td></tr></table></figure>
+
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_224011.webp" alt="picture7"></p>
+<p>这个时候就可以在外面使用使用<code>http://ip:3000</code>访问了，比如我这里虚拟机的 ip 是<code>192.168.56.108</code>，那么我访问的地址就是<code>http://192.168.56.108:3000</code></p>
+<p>如果无法访问，就是防火墙的问题了，你需要先把 3000 端口开放访问的权限：</p>
+<h3 id="开放防火墙端口"><a href="#开放防火墙端口" class="headerlink" title="开放防火墙端口"></a>开放防火墙端口</h3><p>这里使用ufw来管理防火墙，这个用起来简单方便一点，centos如果没有也可以安装一个，这样操作就一致了，不然用firewalld也行。</p>
 <blockquote>
-<p>原兔叭咯视频，记的笔记：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1GM41187Sn/">【医学博士】酒后吐真言是真的吗？| 到底吃什么能解酒？</a></p>
+<p>ubuntu默认已经装了的。</p>
+</blockquote>
+<p>安装ufw防火墙管理工具</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ubuntu</span></span><br><span class="line">sudo apt install ufw -y</span><br><span class="line"><span class="comment"># centos</span></span><br><span class="line">sudo yum install epel-release -y</span><br><span class="line">sudo yum install --enablerepo=<span class="string">&quot;epel&quot;</span> ufw -y</span><br></pre></td></tr></table></figure>
+<p>首先查看当前开放的端口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">sudo ufw status verbose</span><br></pre></td></tr></table></figure>
+
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_224638.webp" alt="picture8"></p>
+<p>开放3000端口，开放tcp协议就行了，</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ufw allow 3000/tcp</span><br></pre></td></tr></table></figure>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225125.webp" alt="picture9">  </p>
+<p>再次检查是否已经开放成功：</p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225228.webp" alt="picture10">  </p>
+<p>OK，再次访问<code>http://192.168.56.108:3000</code></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225322.webp" alt="picture11">  </p>
+<p>已经成功访问，接下来的安装操作和windows是一样的了。</p>
+<h1 id="其它问题"><a href="#其它问题" class="headerlink" title="其它问题"></a>其它问题</h1><h2 id="在公网上的服务器"><a href="#在公网上的服务器" class="headerlink" title="在公网上的服务器"></a>在公网上的服务器</h2><p>对于公网的服务器，首先要防火墙放行 3000 端口，如果是有安装宝塔，还需要进入宝塔再次放行 3000 端口</p>
+<h2 id="gogs-的配置文件"><a href="#gogs-的配置文件" class="headerlink" title="gogs 的配置文件"></a>gogs 的配置文件</h2><p>自己指定端口的话，需要修改 <code>custom/conf/app.ini</code>，如果解压出来的文件夹没有创建这个路径，就要在 gogs 二进制文件所在的目录下，按这个路径创建<code>app.ini</code>文件 ,然后写入内容如下：</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[server]</span></span><br><span class="line"><span class="comment">; 这个是访问的服务器地址，如果有域名，可以设置成自己的域名</span></span><br><span class="line"><span class="attr">DOMAIN</span>           = <span class="number">192.168</span>.<span class="number">56.103</span></span><br><span class="line"><span class="comment">; 这个是访问的端口，默认启动的是3000，在这里就可以修改成你自己自定义的端口</span></span><br><span class="line"><span class="attr">HTTP_PORT</span>        = <span class="number">10087</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; 是否禁用SSH</span></span><br><span class="line"><span class="attr">DISABLE_SSH</span> = <span class="literal">false</span></span><br><span class="line"><span class="comment">; 使用ssh进行git clone的链接，同理可写成域名</span></span><br><span class="line"><span class="attr">SSH_DOMAIN</span> = <span class="number">192.168</span>.<span class="number">56.103</span></span><br><span class="line"><span class="comment">; 这里是指定端口，如果要设置的是默认22端口，需要吧START_SSH_SERVER这个设置为false</span></span><br><span class="line"><span class="attr">SSH_PORT</span> = <span class="number">10022</span></span><br><span class="line"><span class="comment">; 自定义了SSH端口，需要设置为true</span></span><br><span class="line"><span class="attr">START_SSH_SERVER</span> = <span class="literal">true</span></span><br><span class="line"><span class="comment">; SSH的配置文件，写绝对路径</span></span><br><span class="line"><span class="attr">SSH_ROOT_PATH</span> = /home/git/.SSH</span><br><span class="line"><span class="comment">; 监听的ip地址和端口号</span></span><br><span class="line"><span class="attr">SSH_LISTEN_HOST</span> = <span class="number">0.0</span>.<span class="number">0.0</span></span><br><span class="line"><span class="attr">SSH_LISTEN_PORT</span> = <span class="number">10022</span></span><br></pre></td></tr></table></figure>
+
+<p>然后重启gogs就行了</p>
+<h2 id="使用ssh方式无法git-clone仓库"><a href="#使用ssh方式无法git-clone仓库" class="headerlink" title="使用ssh方式无法git clone仓库"></a>使用ssh方式无法git clone仓库</h2><ol>
+<li>如果是自己自定义的端口，也要把端口给开放访问权限，比如我上面的配置文件是指定了10022这个端口，这个也要使用ufw来开放一下10022端口</li>
+<li>开放端口之后，需要自己本地的客户端生成git公钥文件，然后登录 gogs,把公钥上传上去，就可以进行版本控制了</li>
+</ol>
+<blockquote>
+<p>具体操作如下：</p>
+<p>点击头像，进入个人信息，选择SSH秘钥，然后添加秘钥就行，添加生成的公钥</p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225931.webp" alt="picture12">  </p>
 </blockquote>
 
         
@@ -317,20 +309,20 @@
             <p>
                 <span>专题: </span>
                 
-                <a href="/series/#生活">
-                    <code key="生活" class="post-label">生活</code>
+                <a href="/series/#Git">
+                    <code key="Git" class="post-label">Git</code>
                 </a>
                 
             </p>
             
             <p>
-                <span>本文发表于 2023-01-18，最后修改于 2023-08-05。</span>
+                <span>本文发表于 2023-12-12，最后修改于 2023-12-12。</span>
             </p>
             <!-- 文章末尾的提示 start -->
             
             <p>
                 本站永久域名「 <a
-                        href="/post/life/饮酒与解酒.html">selfteachingroad.cn</a>
+                        href="/post/01学习/git/如何搭建gogs到服务器.html">selfteachingroad.cn</a>
                     」，也可搜索「 自学之路 」找到我。
             </p>
             
@@ -341,10 +333,8 @@
         <hr />
         <p name="pagination" style="font-size: 1.2em">
     
-    <a class="float-left" href="/post/summary/2022.html">上一篇 « 2022 年终总结</a>
+    <a class="float-left" href="/post/01学习/git/搭建简易的git服务器.html">上一篇 « 搭建简易的git服务器</a>
     
-    
-    <a class="float-right" href="/post/code/vim.html">下一篇 » 为c/c++量身定制vim</a>
     
 </p>
     </article>
@@ -502,28 +492,21 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/summary/2023/2023.jpeg')"></div>
+    <div class="post-img" style="background-image: url('/post/01学习/博客技术/hexoBlog/hexo.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#关于我"
-                    title="关于我">关于我</a>
-                <span>/</span>
-                
-                
             </div>
-            <a href="/post/summary/2023.html" class="title">
-                2023上半年总结
+            <a href="/post/01学习/博客技术/hexoBlog.html" class="title">
+                Hexo+云服务器搭建个人博客
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-07-02，</span>
-                    <span class="hidden-xs">全文4667字，</span>
-                    <span>阅读约16分钟</span>
+                    <span>发表于2023-12-10，</span>
+                    <span class="hidden-xs">全文3101字，</span>
+                    <span>阅读约11分钟</span>
                 </small>
             </p>
         </div>
@@ -531,21 +514,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
+    <div class="post-img" style="background-image: url('/post/01学习/博客技术/hexoBlog/hexo.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/01学习/git/git基础教程.html" class="title">
-                git基础教程
+            <a href="/post/01学习/博客技术/我的博客历程.html" class="title">
+                我的博客历程
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-07-02，</span>
-                    <span class="hidden-xs">全文3414字，</span>
-                    <span>阅读约12分钟</span>
+                    <span>发表于2023-12-10，</span>
+                    <span class="hidden-xs">全文2275字，</span>
+                    <span>阅读约8分钟</span>
                 </small>
             </p>
         </div>
@@ -553,21 +536,28 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/code/revitTools/revit2020Logo.webp')"></div>
+    <div class="post-img" style="background-image: url('/post/about/link/link.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#友链"
+                    title="友链">友链</a>
+                <span>/</span>
+                
+                
             </div>
-            <a href="/post/01学习/BIM开发/revitTools.html" class="title">
-                Revit二次开发必备工具
+            <a href="/post/about/link.html" class="title">
+                友情链接
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-03-05，</span>
-                    <span class="hidden-xs">全文1297字，</span>
-                    <span>阅读约5分钟</span>
+                    <span>发表于2017-07-03，</span>
+                    <span class="hidden-xs">全文287字，</span>
+                    <span>阅读约1分钟</span>
                 </small>
             </p>
         </div>
@@ -783,19 +773,31 @@
         
         
         <section class="gkt-sidebar-content box-shadow">
-            <strong>生活</strong>
+            <strong>Git</strong>
             <ul>
                 
                 <li>
-                    <a href="/post/life/饮酒与解酒.html"
-                        class="gkt-sidebar-active">饮酒与解酒</a>
+                    <a href="/post/01学习/git/git基础教程.html"
+                        class="">git基础教程</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/01学习/git/搭建简易的git服务器.html"
+                        class="">搭建简易的git服务器</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/01学习/git/如何搭建gogs到服务器.html"
+                        class="gkt-sidebar-active">如何搭建gogs到服务器</a>
                     
                     <!-- Table of Contents -->
 <div id="sidebar-toc">
   <!-- TOC  -->
   
   
-  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E9%85%92%E7%B2%BE%E8%BF%9B%E5%85%A5%E4%BA%BA%E4%BD%93%E5%90%8E%E7%9A%84%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94"><span class="toc-nav-text">酒精进入人体后的化学反应</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E9%85%92"><span class="toc-nav-text">如何解酒</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E9%85%92%E5%90%8E%E4%BC%A4%E8%BA%AB"><span class="toc-nav-text">酒后伤身</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%90%B8%E6%94%B6%E5%92%8C%E4%BB%A3%E8%B0%A2"><span class="toc-nav-text">吸收和代谢</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%A6%82%E4%BD%95%E6%9A%82%E6%97%B6%E6%8F%90%E9%AB%98%E6%88%98%E6%96%97%E5%8A%9B"><span class="toc-nav-text">如何暂时提高战斗力</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%BB%B6%E7%BC%93%E5%90%B8%E6%94%B6"><span class="toc-nav-text">延缓吸收</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%8A%A0%E9%80%9F%E4%BB%A3%E8%B0%A2"><span class="toc-nav-text">加速代谢</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%B4%E5%AD%A2%E5%92%8C%E9%85%92%E4%B8%8D%E8%83%BD%E5%90%8C%E6%97%B6%E6%9C%8D%E7%94%A8%EF%BC%9F"><span class="toc-nav-text">为什么头孢和酒不能同时服用？</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%96%9D%E9%85%92%E8%84%B8%E7%BA%A2%E3%80%81%E5%96%9D%E9%85%92%E8%84%B8%E7%99%BD%E5%8C%BA%E5%88%AB"><span class="toc-nav-text">喝酒脸红、喝酒脸白区别</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E9%85%92%E5%90%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-nav-text">酒后注意事项</span></a></li></ol>
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Windows-%E7%AF%87"><span class="toc-nav-text">Windows 篇</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="toc-nav-text">操作步骤</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%93%8D%E4%BD%9C%E6%BC%94%E7%A4%BA"><span class="toc-nav-text">操作演示</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Linux-%E7%AF%87"><span class="toc-nav-text">Linux 篇</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4-1"><span class="toc-nav-text">操作步骤</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%93%8D%E4%BD%9C%E6%BC%94%E7%A4%BA-1"><span class="toc-nav-text">操作演示</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%85%B6%E5%AE%83%E9%97%AE%E9%A2%98"><span class="toc-nav-text">其它问题</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%9C%A8%E5%85%AC%E7%BD%91%E4%B8%8A%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-nav-text">在公网上的服务器</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#gogs-%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-nav-text">gogs 的配置文件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BD%BF%E7%94%A8ssh%E6%96%B9%E5%BC%8F%E6%97%A0%E6%B3%95git-clone%E4%BB%93%E5%BA%93"><span class="toc-nav-text">使用ssh方式无法git clone仓库</span></a></li></ol></li></ol>
   
 </div>
 
