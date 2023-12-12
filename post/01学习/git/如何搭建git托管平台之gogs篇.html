@@ -228,9 +228,9 @@
         <div class="gkt-article-start"></div>
         <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>之前有介绍过如何配置一个最简单的 git 服务器仓库，简单是简单，但操作过于繁琐，每次都要进入服务器执行命令，修改对应的配置，使用的时候不够简单，今天就介绍使用 gogs 搭建最简易的 git 服务器。</p>
 <p>先看看效果：</p>
-<p>首页：<br><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_214242.webp" alt="picture0"></p>
+<p>首页：<br><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_214242.webp" alt="picture0"></p>
 <p>仓库管理：</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_214319.webp" alt="picture1"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_214319.webp" alt="picture1"></p>
 <p>还有其它功能可自行探索，也可以先去使用官网的 demo 体验一下：<a target="_blank" rel="noopener" href="https://gogs.io/">https://gogs.io/</a> ，不过都看到这种教程了，肯定是直接自己部署在本地体验一下了。</p>
 <h1 id="Windows-篇"><a href="#Windows-篇" class="headerlink" title="Windows 篇"></a>Windows 篇</h1><h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><ol>
 <li>去官网下载 gogs 二进制文件：<a target="_blank" rel="noopener" href="https://gogs.io/docs/">https://gogs.io/docs/</a></li>
@@ -238,20 +238,20 @@
 <li>然后访问<code>http://localhost:3000</code>根据提示操作就行，如果为了方便，可以选择 sqlite3，这样数据库环境都不用配置了。</li>
 </ol>
 <h2 id="操作演示"><a href="#操作演示" class="headerlink" title="操作演示"></a>操作演示</h2><p>先去官网从文档里面找到<a target="_blank" rel="noopener" href="https://gogs.io/docs/installation/install_from_binary">二进制安装</a>，选较新的版本，然后选 windows,下载 zip 压缩包</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221046.webp" alt="picture0"></p>
-<p>解压出来，进入解压的目录，右键打开 PowerShell 或者 cmd 窗口，输入<code>./gogs.exe web</code>：<br><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221443.webp" alt="picture1"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_221046.webp" alt="picture0"></p>
+<p>解压出来，进入解压的目录，右键打开 PowerShell 或者 cmd 窗口，输入<code>./gogs.exe web</code>：<br><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_221443.webp" alt="picture1"></p>
 <p>回车之后，就会启动服务了</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221523.webp" alt="picture2"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_221523.webp" alt="picture2"></p>
 <p>然后打开浏览器，访问<code>http://localhost:3000</code></p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221620.webp" alt="picture3"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_221620.webp" alt="picture3"></p>
 <p>接下来填写这些配置就行了，这里为了方便体验，<strong>数据库方面选择 Sqlite3，然后其它可以保持默认，直接往下拉，点立即安装</strong>就行了，这些配置内容先使用默认的，后面如果想修改配置，就在 gogs.exe 同级目录下，创建<code>custom/conf/app.ini</code>这个路径的<code>app.ini</code>文件，在<code>app.ini</code><br>文件里面修改这些配置，修改完之后重启服务就行了。</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221735.webp" alt="picture4"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_221735.webp" alt="picture4"></p>
 <p>安装成功，接下来只需要注册一个账号，然后开始自己体验吧！</p>
 <blockquote>
 <p>注意：</p>
 <p>注册的<strong>第一个账号就是管理员账号</strong>，之后注册的账号默认都是普通用户</p>
 </blockquote>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_221929.webp" alt="picture5"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_221929.webp" alt="picture5"></p>
 <h1 id="Linux-篇"><a href="#Linux-篇" class="headerlink" title="Linux 篇"></a>Linux 篇</h1><blockquote>
 <p>这里使用<code>Ubuntu Server2204</code>做演示，Redhat 系的也差不多，就是防火墙这些设置可能要自己搜一下怎么配置。</p>
 </blockquote>
@@ -259,11 +259,11 @@
 <h2 id="操作演示-1"><a href="#操作演示-1" class="headerlink" title="操作演示"></a>操作演示</h2><p>在文档的二进制安装页面，选择 Linux 的 zip 包，右键复制下载的链接，进入 ubuntu，下载：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一个目录gogs</span></span><br><span class="line"><span class="built_in">mkdir</span> gogs</span><br><span class="line"><span class="built_in">cd</span> gogs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载文件</span></span><br><span class="line">wget https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_amd64.zip</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_223617.webp" alt="picture6"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_223617.webp" alt="picture6"></p>
 <p>下载完成之后，解压，进入解压的文件夹启动服务<code>./gogs web</code></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 如果没有unzip，需要自己安装一下(可选)</span></span><br><span class="line">sudo apt install unzip -y <span class="comment"># ubuntu安装</span></span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">sudo yum install unzip -y <span class="comment"># centOS安装</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压文件</span></span><br><span class="line">unzip  gogs_0.13.0_linux_amd64.zip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入解压的文件夹</span></span><br><span class="line"><span class="built_in">cd</span> gogs</span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">./gogs web</span><br></pre></td></tr></table></figure>
 
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_224011.webp" alt="picture7"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_224011.webp" alt="picture7"></p>
 <p>这个时候就可以在外面使用使用<code>http://ip:3000</code>访问了，比如我这里虚拟机的 ip 是<code>192.168.56.108</code>，那么我访问的地址就是<code>http://192.168.56.108:3000</code></p>
 <p>如果无法访问，就是防火墙的问题了，你需要先把 3000 端口开放访问的权限：</p>
 <h3 id="开放防火墙端口"><a href="#开放防火墙端口" class="headerlink" title="开放防火墙端口"></a>开放防火墙端口</h3><p>这里使用ufw来管理防火墙，这个用起来简单方便一点，centos如果没有也可以安装一个，这样操作就一致了，不然用firewalld也行。</p>
@@ -275,14 +275,14 @@
 <p>首先查看当前开放的端口</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">sudo ufw status verbose</span><br></pre></td></tr></table></figure>
 
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_224638.webp" alt="picture8"></p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_224638.webp" alt="picture8"></p>
 <p>开放3000端口，开放tcp协议就行了，</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ufw allow 3000/tcp</span><br></pre></td></tr></table></figure>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225125.webp" alt="picture9">  </p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_225125.webp" alt="picture9">  </p>
 <p>再次检查是否已经开放成功：</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225228.webp" alt="picture10">  </p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_225228.webp" alt="picture10">  </p>
 <p>OK，再次访问<code>http://192.168.56.108:3000</code></p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225322.webp" alt="picture11">  </p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_225322.webp" alt="picture11">  </p>
 <p>已经成功访问，接下来的安装操作和windows是一样的了。</p>
 <h1 id="其它问题"><a href="#其它问题" class="headerlink" title="其它问题"></a>其它问题</h1><h2 id="在公网上的服务器"><a href="#在公网上的服务器" class="headerlink" title="在公网上的服务器"></a>在公网上的服务器</h2><p>对于公网的服务器，首先要防火墙放行 3000 端口，如果是有安装宝塔，还需要进入宝塔再次放行 3000 端口</p>
 <h2 id="gogs-的配置文件"><a href="#gogs-的配置文件" class="headerlink" title="gogs 的配置文件"></a>gogs 的配置文件</h2><p>自己指定端口的话，需要修改 <code>custom/conf/app.ini</code>，如果解压出来的文件夹没有创建这个路径，就要在 gogs 二进制文件所在的目录下，按这个路径创建<code>app.ini</code>文件 ,然后写入内容如下：</p>
@@ -296,7 +296,7 @@
 <blockquote>
 <p>具体操作如下：</p>
 <p>点击头像，进入个人信息，选择SSH秘钥，然后添加秘钥就行，添加生成的公钥</p>
-<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgogs%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/img_20231212_225931.webp" alt="picture12">  </p>
+<p><img src="/post/01%E5%AD%A6%E4%B9%A0/git/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAgit%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%E4%B9%8Bgogs%E7%AF%87/img_20231212_225931.webp" alt="picture12">  </p>
 </blockquote>
 
         
@@ -505,7 +505,7 @@
             <p class="text-gray">
                 <small>
                     <span>发表于2023-12-12，</span>
-                    <span class="hidden-xs">全文3999字，</span>
+                    <span class="hidden-xs">全文4074字，</span>
                     <span>阅读约14分钟</span>
                 </small>
             </p>
@@ -514,21 +514,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/code/revitTools/revit2020Logo.webp')"></div>
+    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/01学习/BIM开发/revitTools.html" class="title">
-                Revit二次开发必备工具
+            <a href="/post/01学习/git/git基础教程.html" class="title">
+                git基础教程
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-03-05，</span>
-                    <span class="hidden-xs">全文1297字，</span>
-                    <span>阅读约5分钟</span>
+                    <span>发表于2023-07-02，</span>
+                    <span class="hidden-xs">全文3414字，</span>
+                    <span>阅读约12分钟</span>
                 </small>
             </p>
         </div>
@@ -536,21 +536,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/code/sqlite3/sqliteDefault.webp')"></div>
+    <div class="post-img" style="background-image: url('/post/code/CSharpFileIO/csharp-programming.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/code/sqlite3.html" class="title">
-                sqlite3笔记
+            <a href="/post/code/CSharpFileIO.html" class="title">
+                C#文件IO
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2022-12-27，</span>
-                    <span class="hidden-xs">全文1521字，</span>
-                    <span>阅读约6分钟</span>
+                    <span>发表于2023-04-08，</span>
+                    <span class="hidden-xs">全文17511字，</span>
+                    <span>阅读约59分钟</span>
                 </small>
             </p>
         </div>
