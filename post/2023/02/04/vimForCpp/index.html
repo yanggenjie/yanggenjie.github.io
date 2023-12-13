@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  <meta name="baidu-site-verification" content="p7Pz3jlx4t" />
+  <meta name="google-site-verification" content="19ixTFj-X-rXuvZFvR1PMkqSHMXZ5GjN7nhYdYYFm-c" />
+  <meta name="msvalidate.01" content="7E2AEE3378AC93764DEAB411177A21A1" />
+  <meta name="360-site-verification" content="5c7e8a1fdbf35ed6003c48733208f705" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- if page has tags, then add tags to keyword -->
+  
+  
+  <meta name="keywords" content=",vim,vim">
+  <!-- page.description has higher priority -->
+  <meta name="description" content="自学之路博客">
+  <link rel="shortcut icon" href="/img/avatar.webp">
+  <title>
+    
+    为c/c++量身定制vim | 自学之路
+    
+  </title>
+
+  <link rel="canonical" href="https://selfteachingroad.cn/post/2023/02/04/vimForCpp/">
+  
+<link rel="stylesheet" href="/css/geektutu.css">
+
+  <!-- global function -->
+  <script>
+    window.globalAddScript = function (url, onload, onerror) {
+      var s = document.createElement('script');
+      s.src = url;
+      onload && (s.onload = onload);
+      onerror && (s.onerror = onerror);
+      document.body.appendChild(s);
+    }
+    window.globalAddCss = function (url) {
+      var s = document.createElement('link');
+      s.rel = 'stylesheet';
+      s.href = url;
+      document.body.appendChild(s);
+    }
+    window.getPosition = function (ele) {
+      var x = 0, y = 0;
+      while (ele) {
+        x += (ele.offsetLeft - ele.scrollLeft + ele.clientLeft);
+        y += (ele.offsetTop - ele.scrollTop + ele.clientTop);
+        ele = ele.offsetParent;
+      }
+      return { x: x, y: y };
+    }
+    window.getDom = function (str) { return document.querySelector(str) }
+  </script>
+  <!-- google ad -->
+  
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/feed.xml" title="自学之路" type="application/rss+xml">
+</head>
+
+<body>
+    
+<header class="gkt-header col-xs-12 padding-0">
+    <div id="gkt-nav" class="gkt-header-container">
+        <a href="/" class="gkt-header-title float-left">
+            <img class="float-left" src="/img/avatar.webp" alt="">
+            <span>自学之路</span>
+        </a>
+        <nav class="gkt-header-nav text-right">
+            <ul>
+                <li><a class="hidden-xs" href="/feed.xml">订阅</a></li>
+                <li><a href="/series/">专题</a></li>
+                <li><a href="/archives/">归档</a></li>
+                <li><a href="/post/about/link.html">友链</a></li>
+                <li><a href="/post/about/about.html">关于</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="gkt-cate-nav" class="gkt-header-container hidden-xs">
+        
+        <nav class="gkt-header-nav float-left">
+            <ul>
+                
+                
+                <li class="gkt-cate-name float-left active">
+                    <a class="float-left" href="/post/2022/12/22/mysoftwarelist/">工具 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2022/12/22/mysoftwarelist/">软件清单</a></li>
+                        
+                        <li class="gkt-sub-cate-name active"><a class="float-left"
+                                href="/post/2023/02/04/vimForCpp/">Vim</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2022/12/27/sqlite3Note/">数据库</a>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2023/01/08/2022summary/">随笔 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/01/08/2022summary/">年终总结</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/01/18/DrinkAndWake/">生活</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/04/08/aboutHardDisk/">杂谈</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2023/03/05/index/">Revit专题 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/03/05/index/">二次开发</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/04/08/CSharpFileIO/">C#</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2023/07/02/git_base/">Git专题</a>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2023/12/10/buildBlogByHexo/">博客技术 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/12/10/buildBlogByHexo/">搭建</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/12/10/myBlogJournal/">随想</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="gkt-header-placeholder" style="height: 44px"></div>
+<div class="gkt-header-placeholder hidden-xs" style="height: 44px"></div>
+<script>
+    (function () {
+        window.addEventListener('scroll', function () {
+            if (window.innerWidth < 768) {
+                return;
+            }
+            var nav = document.querySelector('#gkt-nav');
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            scrollTop > 50 && (nav.classList.add('hide'));
+            scrollTop <= 50 && (nav.classList.remove('hide'));
+        });
+        var cateNavs = document.querySelectorAll('#gkt-cate-nav>nav>ul>li');
+        [].slice.call(cateNavs).forEach(function (item) {
+            var sub = item.querySelector('.gkt-sub-cate');
+            if (!sub) return;
+            item.addEventListener('mouseenter', function (e) { sub.style.display = 'block'; }, false);
+            item.addEventListener('mouseleave', function (e) { sub.style.display = 'none'; }, false);
+        })
+    })();
+</script>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Main Content -->
+<main class="col-xs-12 padding-0 markdown-it">
+    <!-- Post Container -->
+    
+    
+    <!-- Post Content -->
+<div class="float-left post-container box-shadow">
+    <div class="u-arrow-wrapper hidden-xs">
+        
+        <a class="float-left" href="/post/2023/01/18/DrinkAndWake/"><i class="u-arrow-left"></i></a>
+        
+        
+        <a class="float-right" href="/post/2023/02/18/2023FirstSum/"><i class="u-arrow-right"></i></a>
+        
+    </div>
+    <article class="col-xs-12">
+        <h1> 为c/c++量身定制vim </h1>
+        
+        
+        <div class="hidden-lg hidden-md series_links">
+            <p> <strong> Vim系列文章链接：</strong></p>
+            <ul>
+                
+                <li>
+                    <a href="/post/2023/02/04/vimForCpp/">为c/c++量身定制vim</a>
+                    <span class="post-item-date">(Feb 4, 2023)</span>
+                </li>
+                
+            </ul>
+        </div>
+        
+        
+        <div class="gkt-article-start"></div>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>本文介绍如何配置 vim，搭建一个简易的 c&#x2F;c++编码环境，主要配置:树形目录文件查看、代码格式化、代码自动补全、括号配对</p>
+<h1 id="安装-vim-要求-8-0-以上"><a href="#安装-vim-要求-8-0-以上" class="headerlink" title="安装 vim(要求 8.0 以上)"></a>安装 vim(要求 8.0 以上)</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install vim -y</span><br><span class="line"><span class="comment"># 安装vim  vim</span></span><br><span class="line"><span class="comment"># 查看vim版本</span></span><br><span class="line"><span class="comment"># 其它安装</span></span><br><span class="line"><span class="comment"># 安装git:vimplug插件执行的时候需要git</span></span><br><span class="line"><span class="comment"># unzip:解压zip包用</span></span><br><span class="line">sudo apt install git unzip -y</span><br></pre></td></tr></table></figure>
+
+<h1 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h1><p>因为 git 拉取网速很慢，我安装插件都是用离线的方法安装的，就是先下载 github 仓库的 zip 包下来，然后自己解压放到指定的文件夹就可以了，这样压缩包可以反复使用。下面的所有插件都是基于 vim-plug 插件来管理的，用 vim-plug 插件管理其它插件。</p>
+<h2 id="安装-vim-plug-插件管理器-必备"><a href="#安装-vim-plug-插件管理器-必备" class="headerlink" title="安装 vim-plug:插件管理器(必备)"></a>安装 vim-plug:插件管理器(必备)</h2><p>github 地址:<a target="_blank" rel="noopener" href="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a></p>
+<p>安装方式:下载 vim-plug 仓库下的<code>plug.vim</code>文件放到<code>~/.vim/autoload/</code>目录下，就安装成功了。</p>
+<h2 id="nerdtree-树形目录插件"><a href="#nerdtree-树形目录插件" class="headerlink" title="nerdtree:树形目录插件"></a>nerdtree:树形目录插件</h2><p>github 地址:<a target="_blank" rel="noopener" href="https://github.com/preservim/nerdtree">https://github.com/preservim/nerdtree</a></p>
+<p>安装方式:下载 nerdtree 插件的 github 仓库源码，<strong>解压</strong>放到<code>~/.vim/</code>目录下，然后修改 vimrc 配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">call plug#begin() &quot;vimplug插件开始</span><br><span class="line">Plug &#x27;~/.vim/nerdtree-master&#x27; &quot;主要添加这一行，路径就是刚才解压的路径</span><br><span class="line">call plug#end()	&quot;vimplug插件结束</span><br><span class="line"></span><br><span class="line">&quot; nerdtree插件的快捷键设置，按ctrl n就可以显示、隐藏目录</span><br><span class="line">map &lt;C-n&gt; :NERDTreeToggle&lt;CR&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="vim-autoformat-代码格式化插件"><a href="#vim-autoformat-代码格式化插件" class="headerlink" title="vim-autoformat:代码格式化插件"></a>vim-autoformat:代码格式化插件</h2><p>github 地址:<a target="_blank" rel="noopener" href="https://github.com/vim-autoformat/vim-autoformat">https://github.com/vim-autoformat/vim-autoformat</a></p>
+<p>安装方式:下载 vim-autoformat 插件的 github 仓库源码，解压放到<code>~/.vim/</code>目录下，然后修改 vimrc 配置文件,主要在 vimplug 插件的内部添加解压好的路径，在外部添加快捷键设置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">call plug#begin()</span><br><span class="line">Plug &#x27;~/.vim/vim-autoformat-master&#x27; &quot;主要添加这一行，路径就是刚才解压的路径</span><br><span class="line">call plug#end()</span><br><span class="line"></span><br><span class="line">&quot; Autoformat插件的快捷键设置，按F3自动格式化</span><br><span class="line">noremap &lt;F3&gt; :Autoformat&lt;CR&gt;</span><br><span class="line"></span><br><span class="line">&quot; Autoformat插件设置，保存时自动格式化</span><br><span class="line">au BufWrite \* :Autoformat</span><br></pre></td></tr></table></figure>
+
+<p>修改 vimrc 配置完成之后，还要安装 clang-format，不然代码格式化插件没法工作</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装clang</span></span><br><span class="line">sudo apt install clang clang-format -y</span><br><span class="line"><span class="comment"># 生成.clang-format文件</span></span><br><span class="line">clang-format -style=LLVM -dump-config &gt; .clang-format</span><br></pre></td></tr></table></figure>
+
+<p>安装完 clang-format，并且生成 clang-format 文件之后，vim 的代码格式化插件才可以正常工作</p>
+<p>另:单独使用 clang-format 命令去格式化代码，语法如下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clang-format 源代码.c -style=llvm</span><br><span class="line"><span class="comment"># -style指定要用什么样式去格式化代码</span></span><br><span class="line"><span class="comment"># 可选项有:GNU、LLVM、 Google、Chromium、 Mozilla、WebKit.</span></span><br><span class="line"><span class="comment"># 我一般用LLVM</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="coc-vim-代码自动补全插件"><a href="#coc-vim-代码自动补全插件" class="headerlink" title="coc.vim:代码自动补全插件"></a>coc.vim:代码自动补全插件</h2><p><code>coc.vim</code>基于 nodejs，所以需要安装 nodejs，这里使用绿色版方式安装 nodejs(即:解压文件、添加到环境变量)</p>
+<blockquote>
+<p>注意，解压文件，添加到环境变量这种方式安装 nodejs，在 ubuntu server 上似乎没有效果，在 desktop 版本下可以正常使用，server 版本可以用 apt 方式安装 nodejs</p>
+</blockquote>
+<p><code>coc.vim</code>相当于另一个插件管理，安装完之后，要用<code>coc.vim</code>去安装自动补全插件，比如 clangd 之类的。</p>
+<blockquote>
+<p>这里的逻辑是:先安装 vim-plug 插件，用<code>vim-plug</code>插件安装<code>coc.vim</code>，然后用<code>coc.vim</code>安装各种代码自动补全的功能。</p>
+</blockquote>
+<p>安装代码补全、括号配对等插件步骤：</p>
+<ol>
+<li>安装 nodejs</li>
+<li>安装 coc.vim</li>
+<li>安装代码补全、括号配对等功能</li>
+</ol>
+<p>前面两个步骤只需执行一次，之后需要安装什么功能，只需要用 coc.vim 去安装就可以了。</p>
+<ul>
+<li>1.安装 nodejs</li>
+</ul>
+<p>nodejs 压缩包下载：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/">https://nodejs.org/dist/</a></p>
+<blockquote>
+<p>我目前使用 18.13.0 版本</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个目录，存放解压的文件</span></span><br><span class="line"><span class="built_in">mkdir</span> -p ~/programs/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压文件到该目录</span></span><br><span class="line">tar xvf node-v18.13.0-linux-x64.tar.xz -C ~/programs/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加bin路径到环境变量</span></span><br><span class="line">sudo <span class="built_in">ln</span> -s /home/<span class="variable">$&#123;USER&#125;</span>/programs/node-v18.13.0-linux-x64/bin/npm /usr/local/bin/npm</span><br><span class="line">sudo <span class="built_in">ln</span> -s /home/<span class="variable">$&#123;USER&#125;</span>/programs/node-v18.13.0-linux-x64/bin/node /usr/local/bin/node</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这里也可以使用apt安装nodejs，只不过不好指定版本</span></span><br><span class="line"><span class="comment"># sudo apt install node npm -y</span></span><br><span class="line"><span class="comment"># 切换为淘宝镜像</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装yarn，可不装</span></span><br><span class="line"><span class="comment"># npm install -g yarn</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>2.安装 coc.vim 插件</li>
+</ul>
+<p>github:<a target="_blank" rel="noopener" href="https://github.com/neoclide/coc.nvim">https://github.com/neoclide/coc.nvim</a></p>
+<p>安装方式：下载源码压缩包，解压到<code>~/.vim/</code>目录下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装coc.vim，即解压到.vim目录下即可</span><br><span class="line">unzip coc.nvim-0.0.82.zip -d ~/.vim/</span><br></pre></td></tr></table></figure>
+
+<p>然后修改 vimrc 配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">call plug#begin()</span><br><span class="line">Plug &#x27;~/.vim/coc.nvim-0.0.82&#x27; &quot; 添加插件路径</span><br><span class="line">call plug#end()</span><br><span class="line">&quot; coc.vim插件配置</span><br><span class="line">&quot; utf-8</span><br><span class="line">set encoding=utf-8</span><br><span class="line">&quot; 不自动备份，某些服务器的备份文件有问题</span><br><span class="line">set nobackup</span><br><span class="line">set nowritebackup</span><br><span class="line">&quot; 代码补全更新时间，毫秒</span><br><span class="line">set updatetime=300</span><br><span class="line">&quot; 始终显示符号列，否则每次都会移动文本</span><br><span class="line">set signcolumn=yes</span><br><span class="line">&quot; tab键补全</span><br><span class="line">inoremap &lt;silent&gt;&lt;expr&gt; &lt;TAB&gt;</span><br><span class="line">                        \ coc#pum#visible() ? coc#pum#next(1) :</span><br><span class="line">                        \ CheckBackspace() ? &quot;\&lt;Tab&gt;&quot; :</span><br><span class="line">                        \ coc#refresh()</span><br><span class="line">inoremap &lt;expr&gt;&lt;S-TAB&gt; coc#pum#visible() ? coc#pum#prev(1) : &quot;\&lt;C-h&gt;&quot;</span><br><span class="line">&quot; 回车键补全</span><br><span class="line">inoremap &lt;silent&gt;&lt;expr&gt; &lt;CR&gt; coc#pum#visible() ? coc#pum#confirm()</span><br><span class="line">                        \: &quot;\&lt;C-g&gt;u\&lt;CR&gt;\&lt;c-r&gt;=coc#on_enter()\&lt;CR&gt;&quot;</span><br><span class="line"></span><br><span class="line">function! CheckBackspace() abort</span><br><span class="line">        let col = col(&#x27;.&#x27;) - 1</span><br><span class="line">        return !col || getline(&#x27;.&#x27;)[col - 1]  =~# &#x27;\s&#x27;</span><br><span class="line">endfunction</span><br><span class="line">&quot; 按住光标时高亮显示符号及其引用</span><br><span class="line">autocmd CursorHold * silent call CocActionAsync(&#x27;highlight&#x27;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>3.安装代码补全、括号自动配对等功能</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1.安装 C/C++/Objective-C扩展，vim下输入</span><br><span class="line"># 在vim的命令模式下输入以下代码，</span><br><span class="line">:CocInstall coc-clangd # 代码补全</span><br><span class="line">:CocInstall coc-pairs # 括号自动配对</span><br></pre></td></tr></table></figure>
+
+<p>安装 clangd 代码补全依赖(代码补全必备)</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install clangd -y</span><br></pre></td></tr></table></figure>
+
+<h2 id="其它-vimrc-配置"><a href="#其它-vimrc-配置" class="headerlink" title="其它 vimrc 配置"></a>其它 vimrc 配置</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot; 其它设置</span><br><span class="line">&quot; 开启行号显示</span><br><span class="line">set nu</span><br><span class="line">&quot; 语法高亮</span><br><span class="line">syntax on</span><br><span class="line">&quot; 自动缩进</span><br><span class="line">set autoindent</span><br><span class="line">&quot; 调整tab键宽度</span><br><span class="line">set tabstop=4</span><br></pre></td></tr></table></figure>
+
+<h1 id="shell-脚本一键安装"><a href="#shell-脚本一键安装" class="headerlink" title="shell 脚本一键安装"></a>shell 脚本一键安装</h1><p>把压缩包和 shell 脚本放到同一个目录下，执行以下脚本</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># 安装vimplug插件管理器</span></span><br><span class="line"><span class="built_in">mkdir</span> -p ~/.vim/autoload/</span><br><span class="line">unzip vim-plug-master.zip -d ~/Downloads/</span><br><span class="line"><span class="built_in">cp</span> ~/Downloads/vim-plug-master/plug.vim ~/.vim/autoload/</span><br><span class="line"><span class="comment"># 清理解压的垃圾文件</span></span><br><span class="line"><span class="built_in">rm</span> -r  ~/Downloads/vim-plug-master/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装插件</span></span><br><span class="line"><span class="comment"># nertree插件:树形目录插件，配置ctrl+n快捷键调用</span></span><br><span class="line">unzip nerdtree-master.zip -d ~/.vim/</span><br><span class="line"><span class="comment"># vim-autoformat:自动格式化插件，配置 F3 快捷键调用，保存时自动调用</span></span><br><span class="line">unzip vim-autoformat-master.zip -d  ~/.vim</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装clang-formater,自动格式化插件需要</span></span><br><span class="line">sudo apt install clang clang-format -y</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成.clang-format文件</span></span><br><span class="line">clang-format -style=LLVM -dump-config &gt; .clang-format</span><br></pre></td></tr></table></figure>
+
+<p>然后手动修改 vimrc 配置，代码补全插件还是手动安装吧。</p>
+
+        
+<script src="/js/qrious.min.js"></script>
+
+
+        <hr style="margin-top: 2rem;">
+        <div>
+            
+            <p>
+                <span>专题: </span>
+                
+                <a href="/series/#Vim">
+                    <code key="Vim" class="post-label">Vim</code>
+                </a>
+                
+            </p>
+            
+            <p>
+                <span>本文发表于 2023-02-04，最后修改于 2023-12-13。</span>
+            </p>
+            <!-- 文章末尾的提示 start -->
+            
+            <p>
+                本站永久域名「 <a
+                        href="/post/2023/02/04/vimForCpp/">selfteachingroad.cn</a>
+                    」，也可搜索「 自学之路 」找到我。
+            </p>
+            
+            
+                
+            <!-- 文章末尾的提示 end -->
+        </div>
+        <hr />
+        <p name="pagination" style="font-size: 1.2em">
+    
+    <a class="float-left" href="/post/2023/01/18/DrinkAndWake/">上一篇 « 饮酒与解酒</a>
+    
+    
+    <a class="float-right" href="/post/2023/02/18/2023FirstSum/">下一篇 » 2023年转行进入新领域</a>
+    
+</p>
+    </article>
+    <!-- 赞赏 -->
+    <!--打赏-->
+
+<style>
+    #reward .reward-btn-wrapper {
+        width: 100px;
+        padding-top: 35px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    #reward .reward-btn {
+        padding: 2px 15px;
+        color: #fff;
+        background-color: #ea6f5a;
+        border-radius: 20px;
+    }
+
+    #reward .reward-code {
+        position: absolute;
+        top: -220px;
+        left: 50%;
+        display: none;
+        width: 360px;
+        height: 240px;
+        margin-left: -180px;
+        padding: 15px 20px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        box-shadow: 0 1px 1px 1px #efefef;
+    }
+
+    #reward .reward-code:after,
+    #reward .reward-code:before {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent
+    }
+
+    #reward .reward-code:after {
+        bottom: -19px;
+        left: 50%;
+        margin-left: -10px;
+        border-top-color: #fff
+    }
+
+    #reward .reward-code:before {
+        bottom: -20px;
+        left: 50%;
+        margin-left: -10px;
+        border-top-color: #e6e6e6
+    }
+
+    #reward .qr-code {
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+
+    #reward .qr-code p {
+        margin-top: -6px;
+    }
+
+    #reward img {
+        transform: none;
+        -webkit-transform: none;
+        margin-left: 0;
+    }
+
+    #reward img[alt='i'] {
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+        position: absolute;
+        margin: 65px 0 0 65px;
+    }
+
+    #reward img[alt="ali"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 5px solid #0f9be0;
+    }
+
+    #reward img[alt="wechat"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 5px solid #3db034;
+    }
+
+    #reward .reward-tip {
+        font-size: 1.2em;
+        margin-bottom: 0;
+        color: #ea6f5a;
+    }
+</style>
+<div id="reward" class="col-xs-12">
+    <div class="reward-btn-wrapper">
+        <div class="reward-btn text-center">赞赏支持</div>
+    </div>
+    <div class="reward-code text-center">
+        <p class="text-center reward-tip"><strong>请我吃胡萝卜 =^_^= </strong></p>
+        <div class="qr-code">
+            <img src="/img/avatar.webp" alt="i">
+            <img id="reward-ali" src="" alt="ali">
+            <p><small>支付宝</small></p>
+        </div>
+        <div class="qr-code">
+            <img src="/img/avatar.webp" alt="i">
+            <img id="reward-wechat" src="" alt="wechat">
+            <p><small>微信</small></p>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window, document) {
+        var aliQr = new QRious({ value: 'https://qr.alipay.com/fkx138897dxajbuuasxei20' });
+        var wechatQr = new QRious({ value: 'wxp://f2f0MQDjah3F4EQPKuzw4C-BxmGkSLvfYLnrp9GnzF2o7nM' });
+        document.querySelector('#reward-ali').src = aliQr.toDataURL();
+        document.querySelector('#reward-wechat').src = wechatQr.toDataURL();
+
+        var rewardBtn = document.querySelector('#reward .reward-btn-wrapper');
+        var qrCode = document.querySelector('#reward .reward-code')
+        var activeFunc = function (e) {
+            qrCode.style.display = 'block';
+        }
+        var hideFunc = function (e) {
+            qrCode.style.display = 'none';
+        }
+
+        rewardBtn.addEventListener('mouseenter', activeFunc, false)
+        rewardBtn.addEventListener('mouseover', activeFunc, false)
+        rewardBtn.addEventListener('mouseleave', hideFunc, false)
+        qrCode.addEventListener('mouseenter', activeFunc, false)
+        qrCode.addEventListener('mouseover', activeFunc, false)
+        qrCode.addEventListener('mouseleave', hideFunc, false)
+    })(window, document);
+</script>
+
+    
+<div class="col-xs-12 text-center" style="margin-top: 30px;">
+    
+    <a style="display:inline-block;" target="_blank" rel="noopener" href="https://github.com/yanggenjie" title=""><img style="padding:5px;width:30px;margin-left:0;transform:none;-webkit-transform:none;" src="/img/related_links/github.png" /></a>
+    
+    <a style="display:inline-block;" target="_blank" rel="noopener" href="https://gitee.com/yanggenjie" title=""><img style="padding:5px;width:30px;margin-left:0;transform:none;-webkit-transform:none;" src="/img/related_links/gitee.png" /></a>
+    
+    <a style="display:inline-block;" target="_blank" rel="noopener" href="https://space.bilibili.com/4360487" title=""><img style="padding:5px;width:30px;margin-left:0;transform:none;-webkit-transform:none;" src="/img/related_links/bilibili.png" /></a>
+    
+</div>
+
+    <!-- 推荐阅读三篇文章 -->
+    <div class="col-xs-12">
+        <h3>推荐阅读</h3>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/2023/01/18/DrinkAndWake/我只想喝个烂醉.webp')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#关于我"
+                    title="关于我">关于我</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a href="/post/2023/01/18/DrinkAndWake/" class="title">
+                饮酒与解酒
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-01-18，</span>
+                    <span class="hidden-xs">全文2413字，</span>
+                    <span>阅读约9分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/2022/12/27/sqlite3Note/sqliteDefault.webp')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/2022/12/27/sqlite3Note/" class="title">
+                sqlite3笔记
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2022-12-27，</span>
+                    <span class="hidden-xs">全文1552字，</span>
+                    <span>阅读约6分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/about/about/link/link.png')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#友链"
+                    title="友链">友链</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a target="_blank" rel="noopener" href="//post/about/link.html" class="title">
+                友情链接
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2017-07-03，</span>
+                    <span class="hidden-xs">全文339字，</span>
+                    <span>阅读约2分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <div class="col-xs-12">
+        <!-- 标签列表 -->
+        <!-- Featured Tags -->
+<style>
+    #featured-tag .post-tag-item {
+        font-size: 12px;
+        line-height: 30px;
+        display: inline-block;
+        height: 30px;
+        margin: 5px 0px;
+        padding: 0 7px;
+        color: #333;
+        border-radius: 15px;
+        background: #f6f6f6;
+    }
+
+    #featured-tag .post-tag-item:hover {
+        color: #337ab7;
+    }
+</style>
+<div id="featured-tag">
+    
+    <a class="post-tag-item" href="/tags/#关于我" title="关于我"
+        rel="6">#关于我 (6) </a>
+    
+    <a class="post-tag-item" href="/tags/#友链" title="友链"
+        rel="1">#友链 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#vim" title="vim"
+        rel="1">#vim (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#杂谈" title="杂谈"
+        rel="1">#杂谈 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#随笔" title="随笔"
+        rel="1">#随笔 (1) </a>
+    
+</div>
+    </div>
+    <!-- 评论 -->
+    
+    <div class="col-xs-12">
+        
+<div class="col-xs-12 padding-0">
+    <div id="gitalk-container">
+        <div class="gt-container text-center" style="margin-top: 50px;">
+            <button class="gt-btn gt-btn-public"><span class="gt-btn-text">去 Github 评论</span></button>
+        </div>
+    </div>
+    <div id="gitalk-related"></div>
+</div>
+
+<link rel="stylesheet" href="/css/gitalk.css">
+
+
+<script src="/js/gitalk.min.js"></script>
+
+<script>
+    window.addEventListener('load', function () {
+        function renderCommentUrl(data) {
+            var url = (data[window.location.pathname] || {}).url
+            url && getDom('#gitalk-container button').addEventListener('click', function (e) { window.open(url)})
+            url || (getDom('#gitalk-container').style.display = 'none')
+        }
+        const gitalk = new Gitalk({
+            clientID: '6310e171ec2342642d41',
+            clientSecret: '1e3b0d58f9db4f5683b72d4b8673217919b93a39',
+            accessToken: '',
+            repo: 'yanggenjie.github.io',
+            owner: 'yanggenjie',
+            admin: ['yanggenjie'],
+            id: window.location.pathname,
+            distractionFreeMode: false
+        });
+        fetch("https://api.github.com/user").then(function(resp){
+            gitalk.render('gitalk-container');
+        }).catch(function(e){
+            fetch('/tool/issues.json').then(function (r) { return r.json() }).then(renderCommentUrl).catch(function (e) { })
+        })
+        getDom('#gitalk-container').addEventListener('click', function (e) {
+            e && e.stopPropagation && e.stopPropagation();
+        });
+    })
+</script>
+<script>
+    window.addEventListener('load', function () {
+        function render(comments) {
+            var template = '<a href="${comment.url}?utm_source=gitalk" class="dis-item-url"><h3 class="dis-item-title">${comment.title}</h3>' +
+                '<p class="dis-item-des">${comment.count} 评论 ● ${comment.date}</p>' +
+                '<div class="dis-item-content"><img class="dis-item-img" src="${comment.icon}" alt="icon"><p><b><span class="dis-item-user">${comment.user}</span></b>&nbsp;——&nbsp;${comment.body}</p></div>' +
+                '</a>'
+
+            var wrapper = getDom('#gitalk-related');
+            comments = shuffle(comments);
+            comments.slice(0, 4).forEach(function (c) {
+                var div = document.createElement('div');
+                div.classList.add('dis-item');
+                div.innerHTML = template.replace("${comment.url}", c.url)
+                    .replace("${comment.title}", c.title)
+                    .replace("${comment.count}", c.count)
+                    .replace("${comment.date}", c.date)
+                    .replace("${comment.icon}", c.icon)
+                    .replace("${comment.user}", c.user)
+                    .replace("${comment.body}", c.body)
+                wrapper.appendChild(div)
+            })
+            var p = document.createElement('p')
+            p.innerHTML = '<a target="_blank" rel="noopener" href="https://geektutu.com/post/blog-experience-7.html">Gitalk Plus</a>';
+            p.classList.add('dis-divide');
+            wrapper.appendChild(p);
+            wrapper.classList.add('dis-wrapper')
+        }
+        function shuffle(a) {
+            for (var i = a.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+        fetch('/tool/comments.json').then(function (r) { return r.json() }).then(render).catch(function (e) { })
+    })
+</script>
+
+    </div>
+    
+</div>
+<aside class="float-left gkt-sidebar hidden-xs hidden-sm">
+    <div style="clear: both"></div>
+    <div class="gkt-sidebar-wrapper">
+        <section class="box-shadow"><style>
+    .gkt-summary {
+        border: 1px solid #DDDDDD;
+        border-radius: 3px;
+        padding: 5px;
+        width: 100%;
+    }
+
+
+    .gkt-summary nav {
+        overflow: hidden;
+    }
+
+    .gkt-summary nav a {
+        display: inline-block;
+        text-align: center;
+        color: #333;
+        font-size: 12px;
+    }
+
+    .gkt-summary nav span {
+        display: block;
+    }
+
+    .gkt-summary nav .middle {
+        border-left: 1px solid #eaecef;
+        border-right: 1px solid #eaecef;
+    }
+
+    .gkt-summary .number {
+        font-weight: bold;
+    }
+
+    .gkt-summary .link-list {
+        margin-top: 5px;
+        margin-bottom: -5px;
+        padding-top: 7px;
+        border-top: 1px dashed #999;
+        display: flex;
+    }
+
+    .gkt-summary .link-list a {
+        flex: 1;
+    }
+
+    .gkt-summary .link-list img {
+        width: 25px;
+        height: 25px;
+    }
+</style>
+
+<div class="gkt-summary">
+    <nav>
+        <a href="/" class="col-xs-4">
+            <span class="number">18</span><span>文章</span>
+        </a>
+        <a href="/series" class="col-xs-4 middle">
+            <span class="number">11</span><span>专题</span>
+        </a>
+        <a href="/tags" class="col-xs-4">
+            <span class="number">5</span><span>标签</span>
+        </a>
+    </nav>
+
+    
+    <div class="link-list">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/yanggenjie"><img src="/img/related_links/github.png" /></a>
+        
+        <a target="_blank" rel="noopener" href="https://gitee.com/yanggenjie"><img src="/img/related_links/gitee.png" /></a>
+        
+        <a target="_blank" rel="noopener" href="https://space.bilibili.com/4360487"><img src="/img/related_links/bilibili.png" /></a>
+        
+    </div>
+    
+</div></section>
+        
+        
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>Vim</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/2023/02/04/vimForCpp/"
+                        class="gkt-sidebar-active">为c/c++量身定制vim</a>
+                    
+                    <!-- Table of Contents -->
+<div id="sidebar-toc">
+  <!-- TOC  -->
+  
+  
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85-vim-%E8%A6%81%E6%B1%82-8-0-%E4%BB%A5%E4%B8%8A"><span class="toc-nav-text">安装 vim(要求 8.0 以上)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-nav-text">插件安装</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85-vim-plug-%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8-%E5%BF%85%E5%A4%87"><span class="toc-nav-text">安装 vim-plug:插件管理器(必备)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#nerdtree-%E6%A0%91%E5%BD%A2%E7%9B%AE%E5%BD%95%E6%8F%92%E4%BB%B6"><span class="toc-nav-text">nerdtree:树形目录插件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#vim-autoformat-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6"><span class="toc-nav-text">vim-autoformat:代码格式化插件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#coc-vim-%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E6%8F%92%E4%BB%B6"><span class="toc-nav-text">coc.vim:代码自动补全插件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%85%B6%E5%AE%83-vimrc-%E9%85%8D%E7%BD%AE"><span class="toc-nav-text">其它 vimrc 配置</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#shell-%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85"><span class="toc-nav-text">shell 脚本一键安装</span></a></li></ol>
+  
+</div>
+
+<script>
+  (function () {
+    var h2 = document.querySelectorAll('article h2');
+    var h3 = document.querySelectorAll('article h3');
+    var linkList = document.querySelectorAll('#sidebar-toc a');
+
+    function findLinkElement(name) {
+      for (var i = 0; i < linkList.length; i++) {
+        var items = linkList[i].href.split('#');
+        if (items && items[items.length - 1] === encodeURIComponent(name)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function activeLink(titleList) {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = titleList.length - 1; i >= 0; i--) {
+        if (scrollTop - titleList[i].offsetTop > 0) {
+          var index = findLinkElement(titleList[i].id);
+          index != -1 && linkList[index].classList.add('gkt-sidebar-active');
+          break;
+        }
+      }
+    }
+
+    window.addEventListener("scroll", function (e) {
+      [].slice.call(linkList).forEach(function (link) {
+        link.classList.remove('gkt-sidebar-active');
+      })
+      activeLink(h2);
+    })
+  })();
+</script>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
+        
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>最近的文章</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/2023/12/14/2023summary/">2023 年终总结</a>
+                </li>
+                
+                <li>
+                    <a href="/post/2023/12/12/git_Gogs/">如何搭建git托管平台之gogs篇</a>
+                </li>
+                
+                <li>
+                    <a href="/post/2023/12/10/myBlogJournal/">我的博客历程</a>
+                </li>
+                
+            </ul>
+        </section>
+        
+    </div>
+</aside>
+
+<script>
+    (function () {
+        function resizeUArrow() {
+            var s = getDom('.u-arrow-wrapper').style
+            var pc = getDom('.post-container')
+            s.left = getPosition(pc).x + 'px';
+            s.width = pc.clientWidth + 'px';
+        }
+        resizeUArrow()
+        window.addEventListener('resize', resizeUArrow);
+    })();
+</script>
+
+    
+
+<script>
+    (function () {
+        var ele = getDom('.gkt-sidebar-content')
+        if(!ele) return;
+        var wrapper = getDom('.gkt-sidebar-wrapper')
+        var last = 0
+        ele.style.maxHeight = ((window.innerHeight || 798) - 200) + 'px'
+        var f = function (e) {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var isDown = scrollTop > last;
+            var pos = getPosition(ele).y - scrollTop;
+            var downLimit = 50;
+            var upLimit = -100;
+            // uarrow.style.marginTop = scrollTop + 'px';
+            isDown && pos <= downLimit && wrapper.classList.add("gkt-sidebar-fixed");
+            !isDown && pos > upLimit && wrapper.classList.remove("gkt-sidebar-fixed");
+            last = scrollTop
+        }
+        f()
+        window.addEventListener("scroll", f)
+    })();
+</script>
+
+</main>
+    </div>
+    <style>
+    img#go-top {
+        position: fixed;
+        bottom: 100px;
+        width: 50px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+</style>
+<img id="go-top" src="/icon/top.png" class="hidden-xs" style="display: none" />
+<script>
+    (function () {
+        var goTop = document.getElementById('go-top');
+        var mainContainer = document.querySelector('.main-container');
+        
+        goTop.addEventListener('click', function () {
+            window.scroll(0, 0);
+        }, false);
+        window.addEventListener('scroll', function () {
+            var right = document.body.offsetWidth - mainContainer.getBoundingClientRect().right;
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            goTop.style.right = right + 10 + 'px'
+            scrollTop > 700 && (goTop.style.display = "block");
+            scrollTop <= 700 && (goTop.style.display = "none");
+        });
+    })();
+</script>
+    <style>
+    #geektutu-click-img-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+        z-index: 9999;
+    }
+
+    #geektutu-click-img-container img {
+        object-fit: contain;
+        background: #eaecef;
+        padding: 15px;
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        vertical-align: middle;
+    }
+</style>
+
+
+<div id="geektutu-click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+<script>
+    (function () {
+        var container = document.querySelector('#geektutu-click-img-container')
+        var targetImg = container.querySelector('img')
+        var imgs = document.querySelectorAll('article img');
+        targetImg.addEventListener('click', function (e) {
+            container.style.display = 'none';
+            e && e.stopPropagation && e.stopPropagation();
+        }, false);
+
+        for (var i = 0; i < imgs.length; ++i) {
+            var img = imgs[i];
+            img.addEventListener('click', (function (src, rate) {
+                return function (e) {
+                    e && e.stopPropagation && e.stopPropagation();
+                    if (window.innerWidth < 980) {
+                        return
+                    }
+                    targetImg.style.height = targetImg.style.width = 'auto';
+                    if (window.innerWidth / window.innerHeight > rate) {
+                        targetImg.style.height = (window.innerHeight - 20) + 'px';
+                    } else {
+                        targetImg.style.width = (window.innerWidth - 20) + 'px';
+                    }
+                    container.style.height = window.innerHeight + 'px'
+                    container.style.lineHeight = window.innerHeight + 'px'
+                    container.style.display = 'block';
+                    targetImg.src = src;
+                };
+            }(img.src, img.width / img.height)), false)
+        }
+    })();
+</script>
+    <!-- Footer -->
+    <!-- Footer -->
+<style>
+    footer {
+        width: 100%;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .footer-hexo img {
+        height: 20px;
+        margin-bottom: -5px;
+    }
+
+    .footer-hexo a {
+        color: #337ab7;
+    }
+</style>
+<footer class="text-center col-xs-12">
+    <p>
+        <small>© 2023 - 杨根杰 - </small>
+        <small>
+            <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn/">黔ICP备2022009665号-1</a>
+        </small>
+    </p>
+    <p class="footer-hexo">
+        <!-- 但若直接使用或修改主题，请务必保留这段声明 -->
+        <small>Powered by <a target="_blank" href="https://hexo.io">Hexo</a> | Theme
+            <a target="_blank" href="https://geektutu.com">Geektutu</a>
+            <a target="_blank" rel="noopener" href="https://github.com/geektutu/hexo-theme-geektutu">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIACIAUAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQQFBwIDBgj/2gAIAQEAAAAA9KrHSgAYL5/z6zZGuJd12uugbhq3uKtmuRtix20IS7lTLAfAAAn/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oACAECEAAAAAAB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAxAAAAAAAf/EADEQAAICAQIEBQEGBwAAAAAAAAECAwQFAAYREhORBxQhUlQxQVFic5KxJDJCYYGC0f/aAAgBAQABPwCFHnjWUzuvN6hV4cANSRLGjO9yRVUcSzMoA7jVXJYe5N0a2dhmk9kc0bN2GvLN8mbuNeWb5M3ca8s3yZu415Y/Jm7jXlm+TN3H/NeVPyZu40vOk3TZywK8wJ+v3EHVM/wsI/Dq2lrxN3Nnca16eti8chSAIoMbzByhMwP14kHVfwIiSaF5c96J6kwwCOTnHsYk8uvCrdmQy1TI4rJuz3cZLyGR/wCd4+YoOf8AEpUjXitubLYPG4paFsUxcuiGe7yc5gTW3LW44szXmobsi3Dhmic2+Z4+vCVH9CpraPiQ+QvbgTJrPFBWd5YpWrmNIIEXiRO32Pqt4p7cnfHk18lFBdmEVW1LVdIZGOrniTt6plrWKaO69yCykDRxwF+LMAewB0Txtr+Sf31VI8tEPw62fZt7N3Humtbpzz13ucX6CGSWMSuzpLyD1eNgeUka3PuvHbaxq3biTMHfkiSNCS78CwU+3Xg7Vu3MhuTcU6cq3Zemn3Eh2dv8Lzcut+29x1atKbHYqLJUhLwyNMwiZ3j9yDWOxUOV3tgb+3No5LDx1pi9+aeIwRlNY6bc+Jv+IFGrhLxtXJZ7VKcw81diiAAEn0JOrkWZyNfbEr0tz27UGQgkuGzXdIIvyowq99bRxk9ffO/L81SZBPZgEEroQroIxxMZOgeNsfkn99QypHGqO4Vl9CDrN4LDZkwyzyyQ2IgRHZrzGCZVP1XnQglT9oOtw4LC7iqV6uRkZoYpxKFSQpzFRw4EjVRMfSrQ1qqwxQxKFjjTgFUD7BoWYR6iVe+mtxt9Zwf9teaj4AdccPu5tedX5A/VrzUR+sy/q1CwksF19VEfDj/cnQRW+qg66cfsXtrpx+xe2unH7F7a6cfsXtrpx+xe2unH7F7a6cfsXtoxx+xe2gAAOA1//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAwEBPwB//9k="
+                    alt="Github Star">
+            </a>
+        </small>
+    </p>
+    
+    <p>
+        <small>
+            <span id="busuanzi_container_site_pv">👁<span id="busuanzi_value_site_pv"></span></span> &nbsp;
+            <span id="busuanzi_container_page_pv">📚<span id="busuanzi_value_page_pv"></span></span>
+        </small>
+    </p>
+    
+    
+
+</footer>
+
+
+<script>
+    window.addEventListener('load', function () {
+        globalAddScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+    })
+</script>
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- baidu auto push for seo -->
+<script>
+    window.addEventListener('load', function () {
+        var src = 'http://push.zhanzhang.baidu.com/push.js'
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        globalAddScript(src);
+    })
+</script>
+
+
+
+    <script>
+        // 非本站网址，新开tab页签
+        (function () {
+            var stopBubble = function (e) {
+                e && e.stopPropagation && e.stopPropagation();
+            }
+            var links = document.querySelectorAll('a');
+            [].slice.call(links).forEach(function (item) {
+                if (item.href && item.href.indexOf(window.location.host) === -1) {
+                    item.target = '_blank'
+                }
+                // 阻止冒泡，不触发彩蛋。
+                item.addEventListener('click', stopBubble, false);
+            });
+            var article = document.querySelector('article');
+            article && article.addEventListener('click', stopBubble, false)
+        })();
+    </script>
+    
+<script>
+    (function (window, document, undefined) {
+        var hearts = [];
+        var keywords = ["点个赞", "留个言", "赞赏一下", "自学之路", "selfteachingroad.cn"];
+        function randomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+        window.addEventListener('click', createWord)
+
+        function createWord(e) {
+            var d = document.createElement("span");
+            d.style.position = 'fixed';
+            d.style.zIndex = 9999;
+            d.style.color = 'rgb(' + [randomInt(255), randomInt(255), randomInt(255)].join(',') + ')';
+            d.innerHTML = keywords[randomInt(keywords.length)];
+            d.onselectstart = function () { return false; }
+
+            hearts.push({ el: d, x: e.clientX - 5, y: e.clientY - 5, alpha: 1, scale: 1 });
+            document.body.appendChild(d);
+        }
+        (function gameloop() {
+            for (var i = 0; i < hearts.length; i++) {
+                heart = hearts[i];
+                if (heart.alpha <= 0) {
+                    document.body.removeChild(heart.el);
+                    hearts.splice(i, 1);
+                    continue;
+                }
+                heart.y -= heart.alpha < 0.5 ? 2 : 1;
+                heart.scale += 0.002;
+                heart.alpha -= 0.013;
+                heart.el.style.transform = 'scale(' + heart.scale + ')';
+                heart.el.style.left = heart.x + 'px';
+                heart.el.style.top = heart.y + 'px';
+            }
+            setTimeout(gameloop, 10)
+        })();
+    })(window, document);
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  <meta name="baidu-site-verification" content="p7Pz3jlx4t" />
+  <meta name="google-site-verification" content="19ixTFj-X-rXuvZFvR1PMkqSHMXZ5GjN7nhYdYYFm-c" />
+  <meta name="msvalidate.01" content="7E2AEE3378AC93764DEAB411177A21A1" />
+  <meta name="360-site-verification" content="5c7e8a1fdbf35ed6003c48733208f705" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- if page has tags, then add tags to keyword -->
+  
+  
+  <meta name="keywords" content=",关于我,年终总结,2023">
+  <!-- page.description has higher priority -->
+  <meta name="description" content="自学之路博客">
+  <link rel="shortcut icon" href="/img/avatar.webp">
+  <title>
+    
+    2023上半年总结 | 自学之路
+    
+  </title>
+
+  <link rel="canonical" href="https://selfteachingroad.cn/post/2023/07/02/2023SummaryFirsthalf/">
+  
+<link rel="stylesheet" href="/css/geektutu.css">
+
+  <!-- global function -->
+  <script>
+    window.globalAddScript = function (url, onload, onerror) {
+      var s = document.createElement('script');
+      s.src = url;
+      onload && (s.onload = onload);
+      onerror && (s.onerror = onerror);
+      document.body.appendChild(s);
+    }
+    window.globalAddCss = function (url) {
+      var s = document.createElement('link');
+      s.rel = 'stylesheet';
+      s.href = url;
+      document.body.appendChild(s);
+    }
+    window.getPosition = function (ele) {
+      var x = 0, y = 0;
+      while (ele) {
+        x += (ele.offsetLeft - ele.scrollLeft + ele.clientLeft);
+        y += (ele.offsetTop - ele.scrollTop + ele.clientTop);
+        ele = ele.offsetParent;
+      }
+      return { x: x, y: y };
+    }
+    window.getDom = function (str) { return document.querySelector(str) }
+  </script>
+  <!-- google ad -->
+  
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/feed.xml" title="自学之路" type="application/rss+xml">
+</head>
+
+<body>
+    
+<header class="gkt-header col-xs-12 padding-0">
+    <div id="gkt-nav" class="gkt-header-container">
+        <a href="/" class="gkt-header-title float-left">
+            <img class="float-left" src="/img/avatar.webp" alt="">
+            <span>自学之路</span>
+        </a>
+        <nav class="gkt-header-nav text-right">
+            <ul>
+                <li><a class="hidden-xs" href="/feed.xml">订阅</a></li>
+                <li><a href="/series/">专题</a></li>
+                <li><a href="/archives/">归档</a></li>
+                <li><a href="/post/about/link.html">友链</a></li>
+                <li><a href="/post/about/about.html">关于</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="gkt-cate-nav" class="gkt-header-container hidden-xs">
+        
+        <nav class="gkt-header-nav float-left">
+            <ul>
+                
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2022/12/22/mysoftwarelist/">工具 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2022/12/22/mysoftwarelist/">软件清单</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/02/04/vimForCpp/">Vim</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2022/12/27/sqlite3Note/">数据库</a>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left active">
+                    <a class="float-left" href="/post/2023/01/08/2022summary/">随笔 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name active"><a class="float-left"
+                                href="/post/2023/01/08/2022summary/">年终总结</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/01/18/DrinkAndWake/">生活</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/04/08/aboutHardDisk/">杂谈</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2023/03/05/index/">Revit专题 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/03/05/index/">二次开发</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/04/08/CSharpFileIO/">C#</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2023/07/02/git_base/">Git专题</a>
+                    
+                </li>
+                
+                <li class="gkt-cate-name float-left ">
+                    <a class="float-left" href="/post/2023/12/10/buildBlogByHexo/">博客技术 ▾</a>
+                    
+                    <ul class="gkt-sub-cate">
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/12/10/buildBlogByHexo/">搭建</a></li>
+                        
+                        <li class="gkt-sub-cate-name "><a class="float-left"
+                                href="/post/2023/12/10/myBlogJournal/">随想</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="gkt-header-placeholder" style="height: 44px"></div>
+<div class="gkt-header-placeholder hidden-xs" style="height: 44px"></div>
+<script>
+    (function () {
+        window.addEventListener('scroll', function () {
+            if (window.innerWidth < 768) {
+                return;
+            }
+            var nav = document.querySelector('#gkt-nav');
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            scrollTop > 50 && (nav.classList.add('hide'));
+            scrollTop <= 50 && (nav.classList.remove('hide'));
+        });
+        var cateNavs = document.querySelectorAll('#gkt-cate-nav>nav>ul>li');
+        [].slice.call(cateNavs).forEach(function (item) {
+            var sub = item.querySelector('.gkt-sub-cate');
+            if (!sub) return;
+            item.addEventListener('mouseenter', function (e) { sub.style.display = 'block'; }, false);
+            item.addEventListener('mouseleave', function (e) { sub.style.display = 'none'; }, false);
+        })
+    })();
+</script>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Main Content -->
+<main class="col-xs-12 padding-0 markdown-it">
+    <!-- Post Container -->
+    
+    
+    <!-- Post Content -->
+<div class="float-left post-container box-shadow">
+    <div class="u-arrow-wrapper hidden-xs">
+        
+        <a class="float-left" href="/post/2023/07/02/git_base/"><i class="u-arrow-left"></i></a>
+        
+        
+        <a class="float-right" href="/post/2023/12/10/buildBlogByHexo/"><i class="u-arrow-right"></i></a>
+        
+    </div>
+    <article class="col-xs-12">
+        <h1> 2023上半年总结 </h1>
+        
+        
+        <div class="hidden-lg hidden-md series_links">
+            <p> <strong> 年终总结系列文章链接：</strong></p>
+            <ul>
+                
+                <li>
+                    <a href="/post/2023/01/08/2022summary/">2022 年终总结</a>
+                    <span class="post-item-date">(Jan 8, 2023)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/2023/02/18/2023FirstSum/">2023年转行进入新领域</a>
+                    <span class="post-item-date">(Feb 18, 2023)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/2023/07/02/2023SummaryFirsthalf/">2023上半年总结</a>
+                    <span class="post-item-date">(Jul 2, 2023)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/2023/12/14/2023summary/">2023 年终总结</a>
+                    <span class="post-item-date">(Dec 14, 2023)</span>
+                </li>
+                
+            </ul>
+        </div>
+        
+        
+        <div class="gkt-article-start"></div>
+        <p>很久没有写总结笔记了，回顾这几个月来做二开的感受，到现在还有一种不真实的感觉，一开始我是自学的C++，后面阴差阳错的进入了二开的领域，现在感觉也还不错。</p>
+<p>尽管也有加班，也有怎么都做不完的活，但想来工作也都差不多，都是永远会有加班，永远会有做不完的活。</p>
+<blockquote>
+<p>以前做BIM的时候，活一多，自己就不太想做了，也是因为自己经历太少，心中总存在一种念想，想拥有一份轻松的、稳定的工作，拥有足够多的自由时间，工作是业余，不被工作占满所有的时间.</p>
+<p>但这些年的经历让我感觉这些想法都太天真了，那种生活在目前来说基本不存在，尤其是欠缺工作经验的，真实的情况永远是工作会占用绝大多数的时间，所以对加班，对于永远做不完的工作，也释怀了，只要自己对工作要做的事不反感，那工作就是修行，提升自己的最好方式。</p>
+</blockquote>
+<h1 id="关于转行"><a href="#关于转行" class="headerlink" title="关于转行"></a>关于转行</h1><p>我转行到BIM二开这事，很多粉丝同学都不知道，因为也是今年刚转行成功的，有些让我分享一下转行的经验，或者是说经历，但其实我觉得没有什么可以分享的，因为我自己也不知道怎么就转行成功了，虽然不算完全转行到纯IT行业，不就是从工地转到BIM二开而已嘛，其实想来也挺简单的，但对我来说，我感觉还是有点蜿蜒曲折的。</p>
+<p>我是自学转行的，在我看来，自学的最大阻碍不是你的学习能力，而是对自己选择的道路是否拥有足够坚定的信念，因为学习新知识这种事，其实也挺简单的，尤其是学习技术知识，读书百遍其义自见，重复重复再重复，孰能生巧等等，只要不断重复，就能掌握，但在重复的过程，自己很容易自我怀疑，这个东西真的有用吗？我选择的是对的吗？学完真的能找到工作吗？会不会学完，这个行业又凉了？我对这个东西真的感兴趣吗？…等等之类的怀疑，自学之路上，没有人可以坚定的对你说：“你只管学就好，学完一定能有大作为”，选择是有成本的，选择是要付出代价的。很多时候转行成功，完全凭一口气，一股冲劲，还有运气。</p>
+<p>我刚毕业那会，在工地，自学了Linux运维，折腾各种Linux发行版的使用，学习运维部署的知识，学习了git的使用，在当时看来，我以为已经学得很多了，准备转行运维，因为自己根本没学过任何编程语言，听说运维入门门槛低，所以就选择了运维方向，但没转成功，因为运维要求的也不少，自己学的那点东西，当时就自我感觉良好而已，完全上不了台面。</p>
+<p>但接触BIM之后，也不想在工地继续混了，所以就先暂时转去做BIM建模，我觉得能转BIM建模，也是运气很好，感觉遇到的都是很好的老板，在招聘软件上聊了很久，我说我折腾了各种Linux发行版，折腾了git、docker之类的，可能是觉得我的折腾能力还可以，也许就是看中了这份折腾能力，所以我就很幸运的去做了BIM工程师。做了将近一年之久，后面因为加班太多， 连续加班了半年，每天工作到11-12点，有时候还通宵，虽然老板也没有强制说要加班，其实自己可以完全就摆烂，反正时间就这么紧，根本就做不完，老板后面也是直接说实在不行就直接让我们摆烂了，因为我们都是接着项目直接对接客户的，老板自己也在做项目，毕竟小公司，每个人都负责自己的项目。</p>
+<p>但当时也没想太多，都是想着要怎么尽快做完，但折腾了大半年，发现自己做得东西好像也没有什么技术含量， 都是在拧螺丝，我觉得整个生活都完全被工作占满了，完全没有任何时间学习总结新知识，自己工作效率完全得不到提升，因为没有时间学习新知识，工作效率得不到提升，工作越堆积越多，导致更没有时间去学习新知识来提升效率，进入了恶性循环中。</p>
+<p>那段时间，加班到生病，得的是肠胃炎，因为经常熬夜加班，压力大，生物钟紊乱，吃东西吃出个肠胃炎，生病那段时间，半夜被惊醒的那一幕，我记忆犹新，凌晨2-3点，毫无预兆的惊醒，那时第一想法是，是身体防御机制开始工作了，突然惊醒是防御机制触发，是检测你是否还活着，如果没醒来，那很可能就永远醒不过来了，那段时间之后，就好像突然觉悟了，觉得生命充满了意外，很多事如果不做，可能就再也没有机会了，于是我毅然决然的辞职，老板对我也很好，几次辞职都极力挽留，看得出来并不是客套，也是因为我工作态度负责，都是想把事情做好的那一类人，虽然经验差了一点，但工作态度、折腾能力是很难培养的，我也很惋惜，但每个人都有自己的宿命，我觉得进入编程是我最终的目标，感觉像是有什么东西在召唤，吸引我进入编程领域，我觉得不能再得过且过的工作了，无论如何自己也要去尝试一下，所以我就直接裸辞，直接报名培训班加自学。</p>
+<p>我花了2万多块钱，报名学的C++，最开始我反对报名培训班的，觉得自己自学能力还可以，根本不用报班，但我还是选择报班，因为上一段自学Linux运维的经历，我很容易找不到方向，学着学着，觉得永远有很多东西学不完，报名培训班，会有一定的课程路线，只要跟着路线学就好，有一定的重点方向，就算中途自己心学来潮去学习其他的，迷失方向的时候，也能继续走培训班规划好的学习方向继续上路。</p>
+<p>一开始学习的时候，顶着一股冲劲，一直脱产学习了大半年，但越学到后面，越觉得培训班的课程不行，本来是奔着找工作去的，但培训的内容就只是一些基础，完全不涉及工作的东西，找嵌入式工作完全找不到，后面也看开了，就当是买了一个教训。</p>
+<p>然后就快速调整方向，找和自己BIM工作相关的二次开发，比较没有开发经验，也有业务经验，转行起来会容易一点，而且之前做BIM的时候，自己也折腾过Dynamo这种可视化编程，学习了大半年的C++，面向对象的基础还是有的，所以我就直接看一本书快速入门了C#，就赶紧找Revit二次开发的工作。我感觉也是运气好，本来面试的时候，我是属于完全小白，又没有开发经验，所以很多公司基本都不看，都是要有经验的，然后不知道怎么的，就遇到了现在的公司，本来也是不太想要我的，因为完全没有经验，后面不知怎么的，可能是刚好也要招新人，就给了自己这么一个机会，也就误打误撞的进入到这个行业。</p>
+<p>所以回顾起来，怎么转行成功的，很多我也不清楚，我觉得还是运气占了很大的部分，也庆幸自己能保留着折腾能力，虽然运气部分自己无法掌控，但我能一直保持良好的折腾能力，学习能力，有新东西能自己主动去折腾，这一点也很重要，如果不是喜欢折腾学习，自己也不可能坚定的学完C++，也不可能快速入门C#。</p>
+<p>刚开始工作的前3个月，自己每天都在疯狂学习，上下班，出差路上，坐地铁上都在用手机看电子书，疯狂的恶补各种知识，我进步也很快，也乐在其中，所以我试用期很快就通过了，虽然还有很多内容没有那么的熟悉，但总算囫囵吞枣的上手了二开的工作。</p>
+<p>很多人问我的时候，总是在问C#好学吗？二开好找工作吗？这些问题我真的没有想过，我就是误打误撞，我学习C++的时候，并不知道我会来做Revit二开，C#好学吗？我一周就入门了，因为我学过C++，认认真真看完一本C#教程书就入门了，每个人的情况都不一样，我也很难解释。即便快速入门了C#，还有一些基础的东西，比如版本控制git这些基本的东西，有些同学因为是完全小白，也是不懂，但我是刚毕业就直接开始折腾了，我折腾学习的时候，也不知道这玩意有什么用，但我就是能基本使用了，而且一直在用，一直在积累，这些提前积累的基本功，让我在入行二开的时候，学习压力轻松了不少，我只要熟悉一下C#语法，熟悉WPF语法，就基本可以上手了，因为我业务知识，也就是Revit软件的使用，也有一年的使用经验，所以相对来说压力小一点。</p>
+<p>这些都不是一蹴而就的，不是说我裸辞了半年就学会了二开，就成功进入了二开，我觉得我就是一个普通得再不能普通的人了，有些人学了半年，学了两三个月就真的可以完全进入到IT行业中，而且得到一份不错的薪资，我就从来没有这种仅凭学习一段时间就能有所成就，并且找到工作的经验，都是蜿蜒曲折的，我觉得我懂的并不比他们少，但别人就是找到工作了，我就怎么都进不了。</p>
+<p>但也不用过于焦虑，我觉得最好的积累就是从现在开始积累学习，不用羡慕为什么别人早就有那么多经验，自己为什么没有，不要再感慨“要是我也有xxx就好了”，就是因为没有，所以从当下开始积累，过一两年之后，两三年之后，再回头看，也不过如此。</p>
+<h1 id="IT梦实现了，好像更迷茫了"><a href="#IT梦实现了，好像更迷茫了" class="headerlink" title="IT梦实现了，好像更迷茫了"></a>IT梦实现了，好像更迷茫了</h1><p>我毕业的时候，就一直想转去IT，但因种种原因都没有转行成功，转行的过程有各种感慨，如今转行成功了，梦想实现了，有一种丢失了目标的感觉，以前喜欢发朋友圈，抒发各种追梦的信念，现在反倒没有那么多感慨了，然后也有些怀疑自己以后要怎么继续走，也许进入编程只是目标的第一步，梦才刚刚开始吧。</p>
+<h1 id="今年的工作态度有哪些变化？"><a href="#今年的工作态度有哪些变化？" class="headerlink" title="今年的工作态度有哪些变化？"></a>今年的工作态度有哪些变化？</h1><p>之前我工作的时候，太想把事情做好了，觉得工作是对自己的修炼，虽然工资不高，但自己什么都不懂，再怎么被“压榨”，自己也是赚的，因为自己能力得到成倍的提升。</p>
+<p>但现在有一种不太一样的想法，自己工作虽然能力也得到了提升，但相对薪资来说，如果工作太多，自己也不会一直在做工作的事，与其整日被工作占满，还不如自己多看点书，提升一下基础的理论知识，提升一些其他的技能，毕竟要在这个领域深耕很久，所以心态开始放慢下来了，基本不会再出现通宵去做工作的情况了。每个人的时间是有限的，再怎么加班都会有源源不断的工作，整日沉浸在工作中，只会成为工作的机器。</p>
+<p>这也是对工作上的一些新的想法，没有以前那么“傻”，觉得做不完就对不起谁，什么愧疚感之类的，现在完全没有，也可以说，现在的责任心没有那么强了，以前做不完还觉得有些恐慌，会有愧疚感，所以有时候经常还通宵加班，现在不可能通宵的了，如果为了完成当前的事而用身体健康去换取工作结果，基本不可能出现的。</p>
+<h1 id="学习态度的转变"><a href="#学习态度的转变" class="headerlink" title="学习态度的转变"></a>学习态度的转变</h1><p>不知道是因为刚入行的时候，因为不懂的太多，加上想要拿下这份编程工作的强烈信念，所以试用期的时候，自己学习强度极高，基本每天都会记录总结，都会持续学习，但好像最近开始，学习的欲望没那么强了，下班回去只想躺着修行，节假日的时候也是都在打游戏娱乐，以前节假日就是自己学习最好的时间，现在节假日只想打游戏。</p>
+<p>感觉持续学习的态度还是要重新捡起来，自己能入行，大部分原因还是因为自己愿意学习，学习能力还算可以，如果自己以为入行之后就不用学习的话，那我感觉倒霉就要开始了，所以今年下半年，自己也要重新规划一下，看看怎么提升自己的二开技巧，学习编程的基础四大件，提升自己的编程技能。</p>
+<p>哈哈，每次我有这种提升编程技能的想法的时候，我都会想到骆驼祥子，祥子以为一直努力拉车，就会拥有属于自己的一辆黄包车，我以为努力提升编程技能，就会拥有自己的一片天地，可到头来，也许，终究是一场梦罢了。</p>
+<p>但佛家告诉我们，我们未必是第一次来到这世上，也不是最后一次来，我们前世、再前世，都来到过这个世界，我们在前世或者再前世所做的种种事情，并不是做完以后就什么也没有了，它造了业，形成一种力量，叫业力，我们人生在世做事情，做这样的事而不是做那样的事，能做那样的事而做不了这样的事，都是因各自有自己的业要消。</p>
+<p>做事情就是消业。所以，按自己的想法去做就好了，梦里真真假假，又何必过于上心。</p>
+
+        
+<script src="/js/qrious.min.js"></script>
+
+
+        <hr style="margin-top: 2rem;">
+        <div>
+            
+            <p>
+                <span>专题: </span>
+                
+                <a href="/series/#年终总结">
+                    <code key="年终总结" class="post-label">年终总结</code>
+                </a>
+                
+            </p>
+            
+            <p>
+                <span>本文发表于 2023-07-02，最后修改于 2023-12-13。</span>
+            </p>
+            <!-- 文章末尾的提示 start -->
+            
+            <p>
+                本站永久域名「 <a
+                        href="/post/2023/07/02/2023SummaryFirsthalf/">selfteachingroad.cn</a>
+                    」，也可搜索「 自学之路 」找到我。
+            </p>
+            
+            
+                
+            <!-- 文章末尾的提示 end -->
+        </div>
+        <hr />
+        <p name="pagination" style="font-size: 1.2em">
+    
+    <a class="float-left" href="/post/2023/07/02/git_base/">上一篇 « git基础教程</a>
+    
+    
+    <a class="float-right" href="/post/2023/12/10/buildBlogByHexo/">下一篇 » Hexo+云服务器搭建个人博客</a>
+    
+</p>
+    </article>
+    <!-- 赞赏 -->
+    <!--打赏-->
+
+<style>
+    #reward .reward-btn-wrapper {
+        width: 100px;
+        padding-top: 35px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    #reward .reward-btn {
+        padding: 2px 15px;
+        color: #fff;
+        background-color: #ea6f5a;
+        border-radius: 20px;
+    }
+
+    #reward .reward-code {
+        position: absolute;
+        top: -220px;
+        left: 50%;
+        display: none;
+        width: 360px;
+        height: 240px;
+        margin-left: -180px;
+        padding: 15px 20px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        box-shadow: 0 1px 1px 1px #efefef;
+    }
+
+    #reward .reward-code:after,
+    #reward .reward-code:before {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent
+    }
+
+    #reward .reward-code:after {
+        bottom: -19px;
+        left: 50%;
+        margin-left: -10px;
+        border-top-color: #fff
+    }
+
+    #reward .reward-code:before {
+        bottom: -20px;
+        left: 50%;
+        margin-left: -10px;
+        border-top-color: #e6e6e6
+    }
+
+    #reward .qr-code {
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+
+    #reward .qr-code p {
+        margin-top: -6px;
+    }
+
+    #reward img {
+        transform: none;
+        -webkit-transform: none;
+        margin-left: 0;
+    }
+
+    #reward img[alt='i'] {
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+        position: absolute;
+        margin: 65px 0 0 65px;
+    }
+
+    #reward img[alt="ali"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 5px solid #0f9be0;
+    }
+
+    #reward img[alt="wechat"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 5px solid #3db034;
+    }
+
+    #reward .reward-tip {
+        font-size: 1.2em;
+        margin-bottom: 0;
+        color: #ea6f5a;
+    }
+</style>
+<div id="reward" class="col-xs-12">
+    <div class="reward-btn-wrapper">
+        <div class="reward-btn text-center">赞赏支持</div>
+    </div>
+    <div class="reward-code text-center">
+        <p class="text-center reward-tip"><strong>请我吃胡萝卜 =^_^= </strong></p>
+        <div class="qr-code">
+            <img src="/img/avatar.webp" alt="i">
+            <img id="reward-ali" src="" alt="ali">
+            <p><small>支付宝</small></p>
+        </div>
+        <div class="qr-code">
+            <img src="/img/avatar.webp" alt="i">
+            <img id="reward-wechat" src="" alt="wechat">
+            <p><small>微信</small></p>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window, document) {
+        var aliQr = new QRious({ value: 'https://qr.alipay.com/fkx138897dxajbuuasxei20' });
+        var wechatQr = new QRious({ value: 'wxp://f2f0MQDjah3F4EQPKuzw4C-BxmGkSLvfYLnrp9GnzF2o7nM' });
+        document.querySelector('#reward-ali').src = aliQr.toDataURL();
+        document.querySelector('#reward-wechat').src = wechatQr.toDataURL();
+
+        var rewardBtn = document.querySelector('#reward .reward-btn-wrapper');
+        var qrCode = document.querySelector('#reward .reward-code')
+        var activeFunc = function (e) {
+            qrCode.style.display = 'block';
+        }
+        var hideFunc = function (e) {
+            qrCode.style.display = 'none';
+        }
+
+        rewardBtn.addEventListener('mouseenter', activeFunc, false)
+        rewardBtn.addEventListener('mouseover', activeFunc, false)
+        rewardBtn.addEventListener('mouseleave', hideFunc, false)
+        qrCode.addEventListener('mouseenter', activeFunc, false)
+        qrCode.addEventListener('mouseover', activeFunc, false)
+        qrCode.addEventListener('mouseleave', hideFunc, false)
+    })(window, document);
+</script>
+
+    
+<div class="col-xs-12 text-center" style="margin-top: 30px;">
+    
+    <a style="display:inline-block;" target="_blank" rel="noopener" href="https://github.com/yanggenjie" title=""><img style="padding:5px;width:30px;margin-left:0;transform:none;-webkit-transform:none;" src="/img/related_links/github.png" /></a>
+    
+    <a style="display:inline-block;" target="_blank" rel="noopener" href="https://gitee.com/yanggenjie" title=""><img style="padding:5px;width:30px;margin-left:0;transform:none;-webkit-transform:none;" src="/img/related_links/gitee.png" /></a>
+    
+    <a style="display:inline-block;" target="_blank" rel="noopener" href="https://space.bilibili.com/4360487" title=""><img style="padding:5px;width:30px;margin-left:0;transform:none;-webkit-transform:none;" src="/img/related_links/bilibili.png" /></a>
+    
+</div>
+
+    <!-- 推荐阅读三篇文章 -->
+    <div class="col-xs-12">
+        <h3>推荐阅读</h3>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/2023/12/12/git_Gogs/" class="title">
+                如何搭建git托管平台之gogs篇
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-12-12，</span>
+                    <span class="hidden-xs">全文3987字，</span>
+                    <span>阅读约14分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/2023/07/02/2023SummaryFirsthalf/2023.jpeg')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#关于我"
+                    title="关于我">关于我</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a href="/post/2023/07/02/2023SummaryFirsthalf/" class="title">
+                2023上半年总结
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-07-02，</span>
+                    <span class="hidden-xs">全文4718字，</span>
+                    <span>阅读约16分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/2023/04/08/CSharpFileIO/csharp-programming.webp')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/2023/04/08/CSharpFileIO/" class="title">
+                C#文件IO
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-04-08，</span>
+                    <span class="hidden-xs">全文17539字，</span>
+                    <span>阅读约59分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <div class="col-xs-12">
+        <!-- 标签列表 -->
+        <!-- Featured Tags -->
+<style>
+    #featured-tag .post-tag-item {
+        font-size: 12px;
+        line-height: 30px;
+        display: inline-block;
+        height: 30px;
+        margin: 5px 0px;
+        padding: 0 7px;
+        color: #333;
+        border-radius: 15px;
+        background: #f6f6f6;
+    }
+
+    #featured-tag .post-tag-item:hover {
+        color: #337ab7;
+    }
+</style>
+<div id="featured-tag">
+    
+    <a class="post-tag-item" href="/tags/#关于我" title="关于我"
+        rel="6">#关于我 (6) </a>
+    
+    <a class="post-tag-item" href="/tags/#友链" title="友链"
+        rel="1">#友链 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#vim" title="vim"
+        rel="1">#vim (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#杂谈" title="杂谈"
+        rel="1">#杂谈 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#随笔" title="随笔"
+        rel="1">#随笔 (1) </a>
+    
+</div>
+    </div>
+    <!-- 评论 -->
+    
+    <div class="col-xs-12">
+        
+<div class="col-xs-12 padding-0">
+    <div id="gitalk-container">
+        <div class="gt-container text-center" style="margin-top: 50px;">
+            <button class="gt-btn gt-btn-public"><span class="gt-btn-text">去 Github 评论</span></button>
+        </div>
+    </div>
+    <div id="gitalk-related"></div>
+</div>
+
+<link rel="stylesheet" href="/css/gitalk.css">
+
+
+<script src="/js/gitalk.min.js"></script>
+
+<script>
+    window.addEventListener('load', function () {
+        function renderCommentUrl(data) {
+            var url = (data[window.location.pathname] || {}).url
+            url && getDom('#gitalk-container button').addEventListener('click', function (e) { window.open(url)})
+            url || (getDom('#gitalk-container').style.display = 'none')
+        }
+        const gitalk = new Gitalk({
+            clientID: '6310e171ec2342642d41',
+            clientSecret: '1e3b0d58f9db4f5683b72d4b8673217919b93a39',
+            accessToken: '',
+            repo: 'yanggenjie.github.io',
+            owner: 'yanggenjie',
+            admin: ['yanggenjie'],
+            id: window.location.pathname,
+            distractionFreeMode: false
+        });
+        fetch("https://api.github.com/user").then(function(resp){
+            gitalk.render('gitalk-container');
+        }).catch(function(e){
+            fetch('/tool/issues.json').then(function (r) { return r.json() }).then(renderCommentUrl).catch(function (e) { })
+        })
+        getDom('#gitalk-container').addEventListener('click', function (e) {
+            e && e.stopPropagation && e.stopPropagation();
+        });
+    })
+</script>
+<script>
+    window.addEventListener('load', function () {
+        function render(comments) {
+            var template = '<a href="${comment.url}?utm_source=gitalk" class="dis-item-url"><h3 class="dis-item-title">${comment.title}</h3>' +
+                '<p class="dis-item-des">${comment.count} 评论 ● ${comment.date}</p>' +
+                '<div class="dis-item-content"><img class="dis-item-img" src="${comment.icon}" alt="icon"><p><b><span class="dis-item-user">${comment.user}</span></b>&nbsp;——&nbsp;${comment.body}</p></div>' +
+                '</a>'
+
+            var wrapper = getDom('#gitalk-related');
+            comments = shuffle(comments);
+            comments.slice(0, 4).forEach(function (c) {
+                var div = document.createElement('div');
+                div.classList.add('dis-item');
+                div.innerHTML = template.replace("${comment.url}", c.url)
+                    .replace("${comment.title}", c.title)
+                    .replace("${comment.count}", c.count)
+                    .replace("${comment.date}", c.date)
+                    .replace("${comment.icon}", c.icon)
+                    .replace("${comment.user}", c.user)
+                    .replace("${comment.body}", c.body)
+                wrapper.appendChild(div)
+            })
+            var p = document.createElement('p')
+            p.innerHTML = '<a target="_blank" rel="noopener" href="https://geektutu.com/post/blog-experience-7.html">Gitalk Plus</a>';
+            p.classList.add('dis-divide');
+            wrapper.appendChild(p);
+            wrapper.classList.add('dis-wrapper')
+        }
+        function shuffle(a) {
+            for (var i = a.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+        fetch('/tool/comments.json').then(function (r) { return r.json() }).then(render).catch(function (e) { })
+    })
+</script>
+
+    </div>
+    
+</div>
+<aside class="float-left gkt-sidebar hidden-xs hidden-sm">
+    <div style="clear: both"></div>
+    <div class="gkt-sidebar-wrapper">
+        <section class="box-shadow"><style>
+    .gkt-summary {
+        border: 1px solid #DDDDDD;
+        border-radius: 3px;
+        padding: 5px;
+        width: 100%;
+    }
+
+
+    .gkt-summary nav {
+        overflow: hidden;
+    }
+
+    .gkt-summary nav a {
+        display: inline-block;
+        text-align: center;
+        color: #333;
+        font-size: 12px;
+    }
+
+    .gkt-summary nav span {
+        display: block;
+    }
+
+    .gkt-summary nav .middle {
+        border-left: 1px solid #eaecef;
+        border-right: 1px solid #eaecef;
+    }
+
+    .gkt-summary .number {
+        font-weight: bold;
+    }
+
+    .gkt-summary .link-list {
+        margin-top: 5px;
+        margin-bottom: -5px;
+        padding-top: 7px;
+        border-top: 1px dashed #999;
+        display: flex;
+    }
+
+    .gkt-summary .link-list a {
+        flex: 1;
+    }
+
+    .gkt-summary .link-list img {
+        width: 25px;
+        height: 25px;
+    }
+</style>
+
+<div class="gkt-summary">
+    <nav>
+        <a href="/" class="col-xs-4">
+            <span class="number">18</span><span>文章</span>
+        </a>
+        <a href="/series" class="col-xs-4 middle">
+            <span class="number">11</span><span>专题</span>
+        </a>
+        <a href="/tags" class="col-xs-4">
+            <span class="number">5</span><span>标签</span>
+        </a>
+    </nav>
+
+    
+    <div class="link-list">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/yanggenjie"><img src="/img/related_links/github.png" /></a>
+        
+        <a target="_blank" rel="noopener" href="https://gitee.com/yanggenjie"><img src="/img/related_links/gitee.png" /></a>
+        
+        <a target="_blank" rel="noopener" href="https://space.bilibili.com/4360487"><img src="/img/related_links/bilibili.png" /></a>
+        
+    </div>
+    
+</div></section>
+        
+        
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>年终总结</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/2023/01/08/2022summary/"
+                        class="">2022 年终总结</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/2023/02/18/2023FirstSum/"
+                        class="">2023年转行进入新领域</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/2023/07/02/2023SummaryFirsthalf/"
+                        class="gkt-sidebar-active">2023上半年总结</a>
+                    
+                    <!-- Table of Contents -->
+<div id="sidebar-toc">
+  <!-- TOC  -->
+  
+  
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%85%B3%E4%BA%8E%E8%BD%AC%E8%A1%8C"><span class="toc-nav-text">关于转行</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#IT%E6%A2%A6%E5%AE%9E%E7%8E%B0%E4%BA%86%EF%BC%8C%E5%A5%BD%E5%83%8F%E6%9B%B4%E8%BF%B7%E8%8C%AB%E4%BA%86"><span class="toc-nav-text">IT梦实现了，好像更迷茫了</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%BB%8A%E5%B9%B4%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%80%81%E5%BA%A6%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%98%E5%8C%96%EF%BC%9F"><span class="toc-nav-text">今年的工作态度有哪些变化？</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AD%A6%E4%B9%A0%E6%80%81%E5%BA%A6%E7%9A%84%E8%BD%AC%E5%8F%98"><span class="toc-nav-text">学习态度的转变</span></a></li></ol>
+  
+</div>
+
+<script>
+  (function () {
+    var h2 = document.querySelectorAll('article h2');
+    var h3 = document.querySelectorAll('article h3');
+    var linkList = document.querySelectorAll('#sidebar-toc a');
+
+    function findLinkElement(name) {
+      for (var i = 0; i < linkList.length; i++) {
+        var items = linkList[i].href.split('#');
+        if (items && items[items.length - 1] === encodeURIComponent(name)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function activeLink(titleList) {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = titleList.length - 1; i >= 0; i--) {
+        if (scrollTop - titleList[i].offsetTop > 0) {
+          var index = findLinkElement(titleList[i].id);
+          index != -1 && linkList[index].classList.add('gkt-sidebar-active');
+          break;
+        }
+      }
+    }
+
+    window.addEventListener("scroll", function (e) {
+      [].slice.call(linkList).forEach(function (link) {
+        link.classList.remove('gkt-sidebar-active');
+      })
+      activeLink(h2);
+    })
+  })();
+</script>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/2023/12/14/2023summary/"
+                        class="">2023 年终总结</a>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
+        
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>最近的文章</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/2023/12/14/2023summary/">2023 年终总结</a>
+                </li>
+                
+                <li>
+                    <a href="/post/2023/12/12/git_Gogs/">如何搭建git托管平台之gogs篇</a>
+                </li>
+                
+                <li>
+                    <a href="/post/2023/12/10/myBlogJournal/">我的博客历程</a>
+                </li>
+                
+            </ul>
+        </section>
+        
+    </div>
+</aside>
+
+<script>
+    (function () {
+        function resizeUArrow() {
+            var s = getDom('.u-arrow-wrapper').style
+            var pc = getDom('.post-container')
+            s.left = getPosition(pc).x + 'px';
+            s.width = pc.clientWidth + 'px';
+        }
+        resizeUArrow()
+        window.addEventListener('resize', resizeUArrow);
+    })();
+</script>
+
+    
+
+<script>
+    (function () {
+        var ele = getDom('.gkt-sidebar-content')
+        if(!ele) return;
+        var wrapper = getDom('.gkt-sidebar-wrapper')
+        var last = 0
+        ele.style.maxHeight = ((window.innerHeight || 798) - 200) + 'px'
+        var f = function (e) {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var isDown = scrollTop > last;
+            var pos = getPosition(ele).y - scrollTop;
+            var downLimit = 50;
+            var upLimit = -100;
+            // uarrow.style.marginTop = scrollTop + 'px';
+            isDown && pos <= downLimit && wrapper.classList.add("gkt-sidebar-fixed");
+            !isDown && pos > upLimit && wrapper.classList.remove("gkt-sidebar-fixed");
+            last = scrollTop
+        }
+        f()
+        window.addEventListener("scroll", f)
+    })();
+</script>
+
+</main>
+    </div>
+    <style>
+    img#go-top {
+        position: fixed;
+        bottom: 100px;
+        width: 50px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+</style>
+<img id="go-top" src="/icon/top.png" class="hidden-xs" style="display: none" />
+<script>
+    (function () {
+        var goTop = document.getElementById('go-top');
+        var mainContainer = document.querySelector('.main-container');
+        
+        goTop.addEventListener('click', function () {
+            window.scroll(0, 0);
+        }, false);
+        window.addEventListener('scroll', function () {
+            var right = document.body.offsetWidth - mainContainer.getBoundingClientRect().right;
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            goTop.style.right = right + 10 + 'px'
+            scrollTop > 700 && (goTop.style.display = "block");
+            scrollTop <= 700 && (goTop.style.display = "none");
+        });
+    })();
+</script>
+    <style>
+    #geektutu-click-img-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+        z-index: 9999;
+    }
+
+    #geektutu-click-img-container img {
+        object-fit: contain;
+        background: #eaecef;
+        padding: 15px;
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        vertical-align: middle;
+    }
+</style>
+
+
+<div id="geektutu-click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+<script>
+    (function () {
+        var container = document.querySelector('#geektutu-click-img-container')
+        var targetImg = container.querySelector('img')
+        var imgs = document.querySelectorAll('article img');
+        targetImg.addEventListener('click', function (e) {
+            container.style.display = 'none';
+            e && e.stopPropagation && e.stopPropagation();
+        }, false);
+
+        for (var i = 0; i < imgs.length; ++i) {
+            var img = imgs[i];
+            img.addEventListener('click', (function (src, rate) {
+                return function (e) {
+                    e && e.stopPropagation && e.stopPropagation();
+                    if (window.innerWidth < 980) {
+                        return
+                    }
+                    targetImg.style.height = targetImg.style.width = 'auto';
+                    if (window.innerWidth / window.innerHeight > rate) {
+                        targetImg.style.height = (window.innerHeight - 20) + 'px';
+                    } else {
+                        targetImg.style.width = (window.innerWidth - 20) + 'px';
+                    }
+                    container.style.height = window.innerHeight + 'px'
+                    container.style.lineHeight = window.innerHeight + 'px'
+                    container.style.display = 'block';
+                    targetImg.src = src;
+                };
+            }(img.src, img.width / img.height)), false)
+        }
+    })();
+</script>
+    <!-- Footer -->
+    <!-- Footer -->
+<style>
+    footer {
+        width: 100%;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .footer-hexo img {
+        height: 20px;
+        margin-bottom: -5px;
+    }
+
+    .footer-hexo a {
+        color: #337ab7;
+    }
+</style>
+<footer class="text-center col-xs-12">
+    <p>
+        <small>© 2023 - 杨根杰 - </small>
+        <small>
+            <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn/">黔ICP备2022009665号-1</a>
+        </small>
+    </p>
+    <p class="footer-hexo">
+        <!-- 但若直接使用或修改主题，请务必保留这段声明 -->
+        <small>Powered by <a target="_blank" href="https://hexo.io">Hexo</a> | Theme
+            <a target="_blank" href="https://geektutu.com">Geektutu</a>
+            <a target="_blank" rel="noopener" href="https://github.com/geektutu/hexo-theme-geektutu">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIACIAUAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQQFBwIDBgj/2gAIAQEAAAAA9KrHSgAYL5/z6zZGuJd12uugbhq3uKtmuRtix20IS7lTLAfAAAn/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oACAECEAAAAAAB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAxAAAAAAAf/EADEQAAICAQIEBQEGBwAAAAAAAAECAwQFAAYREhORBxQhUlQxQVFic5KxJDJCYYGC0f/aAAgBAQABPwCFHnjWUzuvN6hV4cANSRLGjO9yRVUcSzMoA7jVXJYe5N0a2dhmk9kc0bN2GvLN8mbuNeWb5M3ca8s3yZu415Y/Jm7jXlm+TN3H/NeVPyZu40vOk3TZywK8wJ+v3EHVM/wsI/Dq2lrxN3Nnca16eti8chSAIoMbzByhMwP14kHVfwIiSaF5c96J6kwwCOTnHsYk8uvCrdmQy1TI4rJuz3cZLyGR/wCd4+YoOf8AEpUjXitubLYPG4paFsUxcuiGe7yc5gTW3LW44szXmobsi3Dhmic2+Z4+vCVH9CpraPiQ+QvbgTJrPFBWd5YpWrmNIIEXiRO32Pqt4p7cnfHk18lFBdmEVW1LVdIZGOrniTt6plrWKaO69yCykDRxwF+LMAewB0Txtr+Sf31VI8tEPw62fZt7N3Humtbpzz13ucX6CGSWMSuzpLyD1eNgeUka3PuvHbaxq3biTMHfkiSNCS78CwU+3Xg7Vu3MhuTcU6cq3Zemn3Eh2dv8Lzcut+29x1atKbHYqLJUhLwyNMwiZ3j9yDWOxUOV3tgb+3No5LDx1pi9+aeIwRlNY6bc+Jv+IFGrhLxtXJZ7VKcw81diiAAEn0JOrkWZyNfbEr0tz27UGQgkuGzXdIIvyowq99bRxk9ffO/L81SZBPZgEEroQroIxxMZOgeNsfkn99QypHGqO4Vl9CDrN4LDZkwyzyyQ2IgRHZrzGCZVP1XnQglT9oOtw4LC7iqV6uRkZoYpxKFSQpzFRw4EjVRMfSrQ1qqwxQxKFjjTgFUD7BoWYR6iVe+mtxt9Zwf9teaj4AdccPu5tedX5A/VrzUR+sy/q1CwksF19VEfDj/cnQRW+qg66cfsXtrpx+xe2unH7F7a6cfsXtrpx+xe2unH7F7a6cfsXtoxx+xe2gAAOA1//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAwEBPwB//9k="
+                    alt="Github Star">
+            </a>
+        </small>
+    </p>
+    
+    <p>
+        <small>
+            <span id="busuanzi_container_site_pv">👁<span id="busuanzi_value_site_pv"></span></span> &nbsp;
+            <span id="busuanzi_container_page_pv">📚<span id="busuanzi_value_page_pv"></span></span>
+        </small>
+    </p>
+    
+    
+
+</footer>
+
+
+<script>
+    window.addEventListener('load', function () {
+        globalAddScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+    })
+</script>
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- baidu auto push for seo -->
+<script>
+    window.addEventListener('load', function () {
+        var src = 'http://push.zhanzhang.baidu.com/push.js'
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        globalAddScript(src);
+    })
+</script>
+
+
+
+    <script>
+        // 非本站网址，新开tab页签
+        (function () {
+            var stopBubble = function (e) {
+                e && e.stopPropagation && e.stopPropagation();
+            }
+            var links = document.querySelectorAll('a');
+            [].slice.call(links).forEach(function (item) {
+                if (item.href && item.href.indexOf(window.location.host) === -1) {
+                    item.target = '_blank'
+                }
+                // 阻止冒泡，不触发彩蛋。
+                item.addEventListener('click', stopBubble, false);
+            });
+            var article = document.querySelector('article');
+            article && article.addEventListener('click', stopBubble, false)
+        })();
+    </script>
+    
+<script>
+    (function (window, document, undefined) {
+        var hearts = [];
+        var keywords = ["点个赞", "留个言", "赞赏一下", "自学之路", "selfteachingroad.cn"];
+        function randomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+        window.addEventListener('click', createWord)
+
+        function createWord(e) {
+            var d = document.createElement("span");
+            d.style.position = 'fixed';
+            d.style.zIndex = 9999;
+            d.style.color = 'rgb(' + [randomInt(255), randomInt(255), randomInt(255)].join(',') + ')';
+            d.innerHTML = keywords[randomInt(keywords.length)];
+            d.onselectstart = function () { return false; }
+
+            hearts.push({ el: d, x: e.clientX - 5, y: e.clientY - 5, alpha: 1, scale: 1 });
+            document.body.appendChild(d);
+        }
+        (function gameloop() {
+            for (var i = 0; i < hearts.length; i++) {
+                heart = hearts[i];
+                if (heart.alpha <= 0) {
+                    document.body.removeChild(heart.el);
+                    hearts.splice(i, 1);
+                    continue;
+                }
+                heart.y -= heart.alpha < 0.5 ? 2 : 1;
+                heart.scale += 0.002;
+                heart.alpha -= 0.013;
+                heart.el.style.transform = 'scale(' + heart.scale + ')';
+                heart.el.style.left = heart.x + 'px';
+                heart.el.style.top = heart.y + 'px';
+            }
+            setTimeout(gameloop, 10)
+        })();
+    })(window, document);
+</script>
+
+</body>
+
+</html>
