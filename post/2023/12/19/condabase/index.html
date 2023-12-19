@@ -21,11 +21,11 @@
   <link rel="shortcut icon" href="/img/avatar.webp">
   <title>
     
-    sqlite3笔记 | 自学之路
+    conda入门 | 自学之路
     
   </title>
 
-  <link rel="canonical" href="https://selfteachingroad.cn/post/2022/12/27/sqlite3Note/">
+  <link rel="canonical" href="https://selfteachingroad.cn/post/2023/12/19/condabase/">
   
 <link rel="stylesheet" href="/css/geektutu.css">
 
@@ -92,7 +92,7 @@
                         <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/2022/12/22/mysoftwarelist/">软件清单</a></li>
                         
-                        <li class="gkt-sub-cate-name active"><a class="float-left"
+                        <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/2022/12/27/sqlite3Note/">SQLite3</a></li>
                         
                         <li class="gkt-sub-cate-name "><a class="float-left"
@@ -101,7 +101,7 @@
                         <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/2023/07/02/git_base/">Git</a></li>
                         
-                        <li class="gkt-sub-cate-name "><a class="float-left"
+                        <li class="gkt-sub-cate-name active"><a class="float-left"
                                 href="/post/2023/12/19/condabase/">python</a></li>
                         
                     </ul>
@@ -193,23 +193,21 @@
 <div class="float-left post-container box-shadow">
     <div class="u-arrow-wrapper hidden-xs">
         
-        <a class="float-left" target="_blank" rel="noopener" href="//post/about/about.html"><i class="u-arrow-left"></i></a>
+        <a class="float-left" href="/post/2023/12/14/2023summary/"><i class="u-arrow-left"></i></a>
         
-        
-        <a class="float-right" href="/post/2023/01/08/2022summary/"><i class="u-arrow-right"></i></a>
         
     </div>
     <article class="col-xs-12">
-        <h1> sqlite3笔记 </h1>
+        <h1> conda入门 </h1>
         
         
         <div class="hidden-lg hidden-md series_links">
-            <p> <strong> SQLite3系列文章链接：</strong></p>
+            <p> <strong> python系列文章链接：</strong></p>
             <ul>
                 
                 <li>
-                    <a href="/post/2022/12/27/sqlite3Note/">sqlite3笔记</a>
-                    <span class="post-item-date">(Dec 27, 2022)</span>
+                    <a href="/post/2023/12/19/condabase/">conda入门</a>
+                    <span class="post-item-date">(Dec 19, 2023)</span>
                 </li>
                 
             </ul>
@@ -217,41 +215,106 @@
         
         
         <div class="gkt-article-start"></div>
-        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>下载地址：<a target="_blank" rel="noopener" href="https://www.sqlite.org/download.html">https://www.sqlite.org/download.html</a></p>
-<p>主要下载 dll 文件和 tools 文件。dll 有 32 位、64 位，根据自己系统类型选择。</p>
-<p>下载解压出来，把这个文件夹路径<strong>添加到环境变量</strong>。就安装完成了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装成功检测</span><br><span class="line"># 命令行输入，看看结果是否显示sqlite版本号</span><br><span class="line">sqlite3</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line">sqlite3 --version</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><ul>
-<li>新建&#x2F;打开数据库</li>
+        <h1 id="conda-简介"><a href="#conda-简介" class="headerlink" title="conda 简介"></a>conda 简介</h1><p>在日常项目中，经常会面临同时管理多个项目，不同项目需要不同版本的软件包，如下面有三个项目，每个项目所需的 python 版本可能不一样，所需的库版本也不一样。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>python</th>
+<th>pkg1</th>
+<th>pkg2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>project1</td>
+<td>3.9</td>
+<td>V1</td>
+<td>V1</td>
+</tr>
+<tr>
+<td>project2</td>
+<td>3.10</td>
+<td>V1</td>
+<td>V2</td>
+</tr>
+<tr>
+<td>project3</td>
+<td>3.10</td>
+<td>V2</td>
+<td>V2</td>
+</tr>
+</tbody></table>
+<p>而 Python 的版本比较多，并且它的库也非常广泛，同时库和库之间存在很多依赖关系，所以在库的安装和版本的管理上很麻烦。Conda 是一个管理版本和 Python 环境的工具，可以将各个应用环境隔离起来，互相不受影响。</p>
+<h1 id="安装-conda"><a href="#安装-conda" class="headerlink" title="安装 conda"></a>安装 conda</h1><p>目前可以安装 anaconda 和 miniconda，这两者之间的关系，就像 QQ 和 TIM 类似，QQ 提供了很多很强大的功能，而 TIM 只提供聊天、网盘文件等比较精简的核心功能，anaconda 和 miniconda 也有类似的关系，对于 anaconda，提供了 conda,python,以及其它一些科学计算的如 SciPy,NumPy 等等之类的众多工具，而 miniconda 只提供了一些比较核心的工具，比如 python,conda,以及它们所依赖的一些包，因此 miniconda 就是 anaconda 的一个精简版。</p>
+<p>这里推荐安装 miniconda，后续有什么需要安装的，再使用 conda 来自己安装环境。</p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官方下载：<a target="_blank" rel="noopener" href="https://docs.conda.io/projects/miniconda/en/latest/">Miniconda miniconda documentation</a></p>
+<p>镜像下载：<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/">Index of &#x2F;anaconda&#x2F;miniconda&#x2F; | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>windows</li>
 </ul>
-<p>语法：<code>sqlite3 数据库名字.db</code></p>
-<p>解释：新建或者打开数据库，如果原先不存在就新建，已存在就是打开</p>
-<p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sqlite3 DatabaseName.db</span><br></pre></td></tr></table></figure>
+<p>安装之前，确保电脑里面没有安装 python 环境，如果有，先卸载再安装，因为 miniconda 本身自带了一个 python,很有可能会和你电脑上的产生冲突。</p>
+<p>下载 exe 文件，双击安装就行，注意使用默认的选项就行，不要添加到环境变量。</p>
+<p>安装完之后，就会有一个 Anacoda Prompt 的 Shell 程序，一个是 cmd 版本的，一个是 powershell 版本的。打开 cmd 版本，输入<code>conda -h</code>，看到下面这个界面就说明安装完成了。</p>
+<p><img src="/conda/2023-12-19-21-01-02-image.png"></p>
+<h2 id="更换源"><a href="#更换源" class="headerlink" title="更换源"></a>更换源</h2><p>由于 conda 默认安装源是在国外，安装各种软件包的时候可能会下载很慢，可以更换安装源为国内的镜像源，安装软件的时候会快很多。</p>
+<p>无论是 windows、macOS 还是 Linux，更换源的方式都是修改家目录下的<code>.condarc</code>文件即可</p>
+<p>如果没有<code>.condarc</code>文件，使用一下命令生成该文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment"># windows路径： D:\Users\%USERNAME%\.condarc</span></span><br><span class="line"><span class="comment"># Linux、MacOS路径：~/.condarc</span></span><br></pre></td></tr></table></figure>
 
-<p>打开数据库</p>
-<p>语法：<code>.open 数据库名称.db</code></p>
-<p>解释：在 sqlite 命令行中使用，打开已存在的数据库</p>
-<p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.open DatabaseName.db</span><br><span class="line"></span><br><span class="line"># 示例</span><br><span class="line">sqlite&gt;.open DatabaseName.db</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>执行该命令后，会在 home 目录下生成该文件，编辑<code>.condarc</code>该文件，将其中内容清空，替换成以下内容</p>
+<blockquote>
+<p>此处配置为清华大学开源软件镜像站: <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">channels:</span><br><span class="line">  - defaults</span><br><span class="line">show_channel_urls: true</span><br><span class="line">default_channels:</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/r</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2</span><br><span class="line">custom_channels:</span><br><span class="line">  conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  msys2: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  bioconda: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  menpo: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch-lts: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  deepmodeling: https://mirrors.bfsu.edu.cn/anaconda/cloud/</span><br></pre></td></tr></table></figure>
 
-<p>查看数据库列表</p>
-<p>语法：<code>.databases</code></p>
-<p>解释：查看当前打开的数据库的信息，包括数据库位置，读写权限</p>
-<p>示例:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.databases</span><br><span class="line"># 示例</span><br><span class="line">sqlite&gt; .databases</span><br><span class="line">main: C:\Users\Administrator\Documents\source\test\liveDB.db r/w</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>其它镜像源：</p>
+<ul>
+<li>北京外国语大学开源软件镜像站: <a target="_blank" rel="noopener" href="https://mirrors.bfsu.edu.cn/help/anaconda/">https://mirrors.bfsu.edu.cn/help/anaconda/</a></li>
+<li>上海交通大学开源软件镜像站: <a target="_blank" rel="noopener" href="https://mirror.sjtu.edu.cn/docs/anaconda">https://mirror.sjtu.edu.cn/docs/anaconda</a></li>
+<li>南京邮电大学开源软件镜像站: <a target="_blank" rel="noopener" href="https://mirrors.njupt.edu.cn/help/anaconda/">https://mirrors.njupt.edu.cn/help/anaconda/</a></li>
+<li>北京大学开源镜像站: <a target="_blank" rel="noopener" href="https://mirrors.pku.edu.cn/Help/Anaconda">https://mirrors.pku.edu.cn/Help/Anaconda</a></li>
+<li>重庆邮电大学开源镜像站: <a target="_blank" rel="noopener" href="https://mirrors.cqupt.edu.cn/">https://mirrors.cqupt.edu.cn</a></li>
+<li>上海科技大学开源镜像站: <a target="_blank" rel="noopener" href="https://mirrors.shanghaitech.edu.cn/">https://mirrors.shanghaitech.edu.cn</a></li>
+<li>阿里巴巴开源软件镜像站: <a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/anaconda">https://developer.aliyun.com/mirror/anaconda</a></li>
+<li>其它更多的校园联合镜像站： <a target="_blank" rel="noopener" href="https://mirrors.cernet.edu.cn/list/anaconda">https://mirrors.cernet.edu.cn/list/anaconda</a></li>
+</ul>
+<h2 id="查看安装源"><a href="#查看安装源" class="headerlink" title="查看安装源"></a>查看安装源</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda config --show-sources</span><br><span class="line"># 看到以下结果说明换源成功</span><br></pre></td></tr></table></figure>
 
-<p>退出数据库</p>
-<p>语法：<code>.quit</code></p>
-<p>解释：退出数据库<br>创建表</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名(字段名 数据类型 属性,...);</span><br><span class="line"># 常用字段属性</span><br><span class="line">primary key #每张表只有一个主键，主键自带unique属性</span><br><span class="line">not null # 非空</span><br><span class="line">unique # 不能重复</span><br><span class="line">autuincrement # 自增</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="/conda/2023-12-19-21-24-22-1702992244428.png"></p>
+<h1 id="conda-环境管理"><a href="#conda-环境管理" class="headerlink" title="conda 环境管理"></a>conda 环境管理</h1><h2 id="创建环境"><a href="#创建环境" class="headerlink" title="创建环境"></a>创建环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># conda create --name 环境名称 需要安装的包名=包的版本号</span></span><br><span class="line"><span class="comment"># 如下：创建一个名字叫test1的环境，其中安装了python3.9版本</span></span><br><span class="line">conda create --name test1 python=3.9</span><br></pre></td></tr></table></figure>
 
-<p>插入元素</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"># 插入元素</span><br><span class="line">intsert into 表名(字段1，字段2) values(字段1的值，字段2的值);</span><br><span class="line"></span><br><span class="line"># 查看表内元素</span><br><span class="line">select 字段1,字段2 from 表名  where 筛选条件;</span><br><span class="line"></span><br><span class="line"># 清空表</span><br><span class="line">select * from userInfo;</span><br><span class="line">delete from userInfo;</span><br><span class="line">update sqlite_sequence set seq=0 where name =&#x27;userInfo&#x27;;</span><br></pre></td></tr></table></figure>
+<p><img src="/conda/2023-12-19-21-30-40-image.png"></p>
+<h2 id="激活环境"><a href="#激活环境" class="headerlink" title="激活环境"></a>激活环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># conda activate 环境名称</span></span><br><span class="line">conda activate test1</span><br></pre></td></tr></table></figure>
 
-<p>修改字段</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Sqlite 不支持直接修改字段的名称。</span><br><span class="line"># 我们可以使用别的方法来实现修改字段名。</span><br><span class="line"></span><br><span class="line">#  1、修改原表的名称</span><br><span class="line">ALTER TABLE table RENAME TO tableOld;</span><br><span class="line"></span><br><span class="line">#  2、新建修改字段后的表</span><br><span class="line">CREATE TABLE table(ID INTEGER PRIMARY KEY AUTOINCREMENT, Modify_Username text not null);</span><br><span class="line"></span><br><span class="line"># 3、从旧表中查询出数据 并插入新表</span><br><span class="line">INSERT INTO table SELECT ID,Username FROM tableOld;</span><br><span class="line"></span><br><span class="line"># 4、删除旧表</span><br><span class="line">DROP TABLE tableOld;</span><br></pre></td></tr></table></figure>
+<p>当激活之后，环境会从 base，切换为 test1</p>
+<p><img src="/conda/2023-12-19-21-33-04-image.png"></p>
+<h2 id="退出环境"><a href="#退出环境" class="headerlink" title="退出环境"></a>退出环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看已安装的环境"><a href="#查看已安装的环境" class="headerlink" title="查看已安装的环境"></a>查看已安装的环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
+<p><img src="/conda/2023-12-19-21-36-50-image.png"></p>
+<h2 id="删除环境"><a href="#删除环境" class="headerlink" title="删除环境"></a>删除环境</h2><ul>
+<li>删除环境中所有的包</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># conda remove --name 环境名 参数</span></span><br><span class="line">conda remove --name test1 --all</span><br><span class="line"><span class="comment"># --all: 删除环境以及其中的所有包</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/conda/2023-12-19-21-40-57-image.png"></p>
+<ul>
+<li>删除虚拟环境中的某个包</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># conda remove -n 环境名 包名</span><br><span class="line">conda remove -n test2 python</span><br></pre></td></tr></table></figure>
+
+<h1 id="conda-包管理"><a href="#conda-包管理" class="headerlink" title="conda 包管理"></a>conda 包管理</h1><h2 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包"></a>安装软件包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 注意先激活环境</span><br><span class="line"># conda activate test2</span><br><span class="line"># 安装软件包：conda install 包名=包的版本</span><br><span class="line">conda install python=3.10</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看已安装的包"><a href="#查看已安装的包" class="headerlink" title="查看已安装的包"></a>查看已安装的包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 注意先激活环境</span><br><span class="line"># conda activate test2</span><br><span class="line"># 查看当前安装的包</span><br><span class="line"></span><br><span class="line">conda list</span><br></pre></td></tr></table></figure>
+
+<p><img src="/conda/2023-12-19-21-47-46-image.png"></p>
+<h2 id="导出环境包"><a href="#导出环境包" class="headerlink" title="导出环境包"></a>导出环境包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 先激活环境</span><br><span class="line"># 导出环境内安装的包，保存到桌面下的test.txt文件</span><br><span class="line"># conda list --explicit &gt; 文件路径</span><br><span class="line">conda list --explicit &gt; D:\Users\ryzeyang\Desktop\test.txt</span><br></pre></td></tr></table></figure>
+
+<p>查看导出的 test.txt 文件</p>
+<p><img src="/conda/2023-12-19-21-53-36-image.png"></p>
+<h2 id="导入环境包"><a href="#导入环境包" class="headerlink" title="导入环境包"></a>导入环境包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 切换到test1环境</span><br><span class="line">conda deactivate</span><br><span class="line">conda activate test1</span><br><span class="line"># 安装导出的包</span><br><span class="line"># conda install --file 文件路径</span><br><span class="line">conda install --file D:\Users\ryzeyang\Desktop\test.txt</span><br></pre></td></tr></table></figure>
+
+<p><img src="/conda/2023-12-19-21-55-55-image.png"></p>
 
         
 <script src="/js/qrious.min.js"></script>
@@ -263,20 +326,20 @@
             <p>
                 <span>专题: </span>
                 
-                <a href="/series/#SQLite3">
-                    <code key="SQLite3" class="post-label">SQLite3</code>
+                <a href="/series/#python">
+                    <code key="python" class="post-label">python</code>
                 </a>
                 
             </p>
             
             <p>
-                <span>本文发表于 2022-12-27，最后修改于 2023-12-19。</span>
+                <span>本文发表于 2023-12-19，最后修改于 2023-12-19。</span>
             </p>
             <!-- 文章末尾的提示 start -->
             
             <p>
                 本站永久域名「 <a
-                        href="/post/2022/12/27/sqlite3Note/">selfteachingroad.cn</a>
+                        href="/post/2023/12/19/condabase/">selfteachingroad.cn</a>
                     」，也可搜索「 自学之路 」找到我。
             </p>
             
@@ -287,10 +350,8 @@
         <hr />
         <p name="pagination" style="font-size: 1.2em">
     
-    <a class="float-left" target="_blank" rel="noopener" href="//post/about/about.html">上一篇 « 关于</a>
+    <a class="float-left" href="/post/2023/12/14/2023summary/">上一篇 « 2023 年终总结</a>
     
-    
-    <a class="float-right" href="/post/2023/01/08/2022summary/">下一篇 » 2022 年终总结</a>
     
 </p>
     </article>
@@ -448,21 +509,28 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/img/python/PythonCover.jpg')"></div>
+    <div class="post-img" style="background-image: url('/post/2023/01/08/2022summary/2022.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#关于我"
+                    title="关于我">关于我</a>
+                <span>/</span>
+                
+                
             </div>
-            <a href="/post/2023/12/19/condabase/" class="title">
-                conda入门
+            <a href="/post/2023/01/08/2022summary/" class="title">
+                2022 年终总结
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-12-19，</span>
-                    <span class="hidden-xs">全文4401字，</span>
-                    <span>阅读约15分钟</span>
+                    <span>发表于2023-01-08，</span>
+                    <span class="hidden-xs">全文2382字，</span>
+                    <span>阅读约8分钟</span>
                 </small>
             </p>
         </div>
@@ -470,31 +538,20 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/2023/04/08/aboutHardDisk/机械硬盘构件分布.jpg')"></div>
+    <div class="post-img" style="background-image: url('/post/2022/12/27/sqlite3Note/sqliteDefault.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#杂谈"
-                    title="杂谈">杂谈</a>
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#随笔"
-                    title="随笔">随笔</a>
-                <span>/</span>
-                
-                
             </div>
-            <a href="/post/2023/04/08/aboutHardDisk/" class="title">
-                关于硬盘
+            <a href="/post/2022/12/27/sqlite3Note/" class="title">
+                sqlite3笔记
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-04-08，</span>
-                    <span class="hidden-xs">全文1552字，</span>
+                    <span>发表于2022-12-27，</span>
+                    <span class="hidden-xs">全文1551字，</span>
                     <span>阅读约6分钟</span>
                 </small>
             </p>
@@ -503,28 +560,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/about/about/link/link.png')"></div>
+    <div class="post-img" style="background-image: url('/post/2022/12/22/mysoftwarelist/software-417880640.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#友链"
-                    title="友链">友链</a>
-                <span>/</span>
-                
-                
             </div>
-            <a target="_blank" rel="noopener" href="//post/about/link.html" class="title">
-                友情链接
+            <a href="/post/2022/12/22/mysoftwarelist/" class="title">
+                我的软件清单
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2017-07-03，</span>
-                    <span class="hidden-xs">全文339字，</span>
-                    <span>阅读约2分钟</span>
+                    <span>发表于2022-12-22，</span>
+                    <span class="hidden-xs">全文7607字，</span>
+                    <span>阅读约26分钟</span>
                 </small>
             </p>
         </div>
@@ -740,19 +790,19 @@
         
         
         <section class="gkt-sidebar-content box-shadow">
-            <strong>SQLite3</strong>
+            <strong>python</strong>
             <ul>
                 
                 <li>
-                    <a href="/post/2022/12/27/sqlite3Note/"
-                        class="gkt-sidebar-active">sqlite3笔记</a>
+                    <a href="/post/2023/12/19/condabase/"
+                        class="gkt-sidebar-active">conda入门</a>
                     
                     <!-- Table of Contents -->
 <div id="sidebar-toc">
   <!-- TOC  -->
   
   
-  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-nav-text">安装</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-nav-text">使用</span></a></li></ol>
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">conda 简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85-conda"><span class="toc-nav-text">安装 conda</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-nav-text">下载</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-nav-text">安装</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9B%B4%E6%8D%A2%E6%BA%90"><span class="toc-nav-text">更换源</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%89%E8%A3%85%E6%BA%90"><span class="toc-nav-text">查看安装源</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86"><span class="toc-nav-text">conda 环境管理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%9B%E5%BB%BA%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">创建环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%BF%80%E6%B4%BB%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">激活环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E9%80%80%E5%87%BA%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">退出环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">查看已安装的环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%A0%E9%99%A4%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">删除环境</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-nav-text">conda 包管理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-nav-text">安装软件包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85"><span class="toc-nav-text">查看已安装的包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AF%BC%E5%87%BA%E7%8E%AF%E5%A2%83%E5%8C%85"><span class="toc-nav-text">导出环境包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AF%BC%E5%85%A5%E7%8E%AF%E5%A2%83%E5%8C%85"><span class="toc-nav-text">导入环境包</span></a></li></ol></li></ol>
   
 </div>
 

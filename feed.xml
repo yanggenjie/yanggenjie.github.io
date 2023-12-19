@@ -15,8 +15,32 @@
     <atom:link href="https://selfteachingroad.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Wed, 13 Dec 2023 16:18:24 GMT</pubDate>
+    <pubDate>Tue, 19 Dec 2023 14:08:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>conda入门</title>
+      <link>https://selfteachingroad.cn/post/2023/12/19/condabase/</link>
+      <guid>https://selfteachingroad.cn/post/2023/12/19/condabase/</guid>
+      <pubDate>Tue, 19 Dec 2023 14:08:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;conda-简介&quot;&gt;&lt;a href=&quot;#conda-简介&quot; class=&quot;headerlink&quot; title=&quot;conda 简介&quot;&gt;&lt;/a&gt;conda 简介&lt;/h1&gt;&lt;p&gt;在日常项目中，经常会面临同时管理多个项目，不同项目需要不同版本的软件包，如下面有三个项目，每</description>
+        
+      
+      
+      <enclosure url="https://selfteachingroad.cn/img/python/PythonCover.jpg" type="image"/>
+      
+      
+      
+      <category domain="https://selfteachingroad.cn/categories/python/">python</category>
+      
+      
+      
+      <comments>https://selfteachingroad.cn/post/2023/12/19/condabase/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023 年终总结</title>
