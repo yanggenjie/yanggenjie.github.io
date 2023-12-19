@@ -193,8 +193,10 @@
 <div class="float-left post-container box-shadow">
     <div class="u-arrow-wrapper hidden-xs">
         
-        <a class="float-left" href="/post/2023/12/14/2023summary/"><i class="u-arrow-left"></i></a>
+        <a class="float-left" href="/post/2023/12/12/git_Gogs/"><i class="u-arrow-left"></i></a>
         
+        
+        <a class="float-right" href="/post/2023/12/20/2023summary/"><i class="u-arrow-right"></i></a>
         
     </div>
     <article class="col-xs-12">
@@ -254,8 +256,13 @@
 </ul>
 <p>安装之前，确保电脑里面没有安装 python 环境，如果有，先卸载再安装，因为 miniconda 本身自带了一个 python,很有可能会和你电脑上的产生冲突。</p>
 <p>下载 exe 文件，双击安装就行，注意使用默认的选项就行，不要添加到环境变量。</p>
-<p>安装完之后，就会有一个 Anacoda Prompt 的 Shell 程序，一个是 cmd 版本的，一个是 powershell 版本的。打开 cmd 版本，输入<code>conda -h</code>，看到下面这个界面就说明安装完成了。</p>
+<h2 id="激活conda"><a href="#激活conda" class="headerlink" title="激活conda"></a>激活conda</h2><ul>
+<li>windows<br>安装完之后，就会有一个 Anacoda Prompt 的 Shell 程序，一个是 cmd 版本的，一个是 powershell 版本的。打开 cmd 版本，输入<code>conda -h</code>，看到下面这个界面就说明安装完成了。</li>
+</ul>
 <p><img src="/post/2023/12/19/condabase/2023-12-19-21-01-02-image.png"></p>
+<ul>
+<li>Linux</li>
+</ul>
 <h2 id="更换源"><a href="#更换源" class="headerlink" title="更换源"></a>更换源</h2><p>由于 conda 默认安装源是在国外，安装各种软件包的时候可能会下载很慢，可以更换安装源为国内的镜像源，安装软件的时候会快很多。</p>
 <p>无论是 windows、macOS 还是 Linux，更换源的方式都是修改家目录下的<code>.condarc</code>文件即可</p>
 <p>如果没有<code>.condarc</code>文件，使用一下命令生成该文件</p>
@@ -350,8 +357,10 @@
         <hr />
         <p name="pagination" style="font-size: 1.2em">
     
-    <a class="float-left" href="/post/2023/12/14/2023summary/">上一篇 « 2023 年终总结</a>
+    <a class="float-left" href="/post/2023/12/12/git_Gogs/">上一篇 « 如何搭建git托管平台之gogs篇</a>
     
+    
+    <a class="float-right" href="/post/2023/12/20/2023summary/">下一篇 » 2023 年终总结</a>
     
 </p>
     </article>
@@ -509,7 +518,7 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/2023/04/08/aboutHardDisk/机械硬盘构件分布.jpg')"></div>
+    <div class="post-img" style="background-image: url('/post/2023/01/08/2022summary/2022.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
@@ -517,24 +526,20 @@
                 
                 <span>/</span>
                 
-                <a class="text-gray" href="/tags/#杂谈"
-                    title="杂谈">杂谈</a>
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#随笔"
-                    title="随笔">随笔</a>
+                <a class="text-gray" href="/tags/#关于我"
+                    title="关于我">关于我</a>
                 <span>/</span>
                 
                 
             </div>
-            <a href="/post/2023/04/08/aboutHardDisk/" class="title">
-                关于硬盘
+            <a href="/post/2023/01/08/2022summary/" class="title">
+                2022 年终总结
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-04-08，</span>
-                    <span class="hidden-xs">全文1552字，</span>
-                    <span>阅读约6分钟</span>
+                    <span>发表于2023-01-08，</span>
+                    <span class="hidden-xs">全文2382字，</span>
+                    <span>阅读约8分钟</span>
                 </small>
             </p>
         </div>
@@ -542,21 +547,21 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/code/revitTools/revit2020Logo.webp')"></div>
+    <div class="post-img" style="background-image: url('/post/2022/12/22/mysoftwarelist/software-417880640.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/2023/03/05/index/" class="title">
-                Revit二次开发必备工具
+            <a href="/post/2022/12/22/mysoftwarelist/" class="title">
+                我的软件清单
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-03-05，</span>
-                    <span class="hidden-xs">全文1297字，</span>
-                    <span>阅读约5分钟</span>
+                    <span>发表于2022-12-22，</span>
+                    <span class="hidden-xs">全文7607字，</span>
+                    <span>阅读约26分钟</span>
                 </small>
             </p>
         </div>
@@ -564,21 +569,28 @@
 </div>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/2022/12/27/sqlite3Note/sqliteDefault.webp')"></div>
+    <div class="post-img" style="background-image: url('/post/about/about/link/link.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#友链"
+                    title="友链">友链</a>
+                <span>/</span>
+                
+                
             </div>
-            <a href="/post/2022/12/27/sqlite3Note/" class="title">
-                sqlite3笔记
+            <a target="_blank" rel="noopener" href="//post/about/link.html" class="title">
+                友情链接
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2022-12-27，</span>
-                    <span class="hidden-xs">全文1551字，</span>
-                    <span>阅读约6分钟</span>
+                    <span>发表于2017-07-03，</span>
+                    <span class="hidden-xs">全文339字，</span>
+                    <span>阅读约2分钟</span>
                 </small>
             </p>
         </div>
@@ -806,7 +818,7 @@
   <!-- TOC  -->
   
   
-  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">conda 简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85-conda"><span class="toc-nav-text">安装 conda</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-nav-text">下载</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-nav-text">安装</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9B%B4%E6%8D%A2%E6%BA%90"><span class="toc-nav-text">更换源</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%89%E8%A3%85%E6%BA%90"><span class="toc-nav-text">查看安装源</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86"><span class="toc-nav-text">conda 环境管理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%9B%E5%BB%BA%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">创建环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%BF%80%E6%B4%BB%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">激活环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E9%80%80%E5%87%BA%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">退出环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">查看已安装的环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%A0%E9%99%A4%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">删除环境</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-nav-text">conda 包管理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-nav-text">安装软件包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85"><span class="toc-nav-text">查看已安装的包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AF%BC%E5%87%BA%E7%8E%AF%E5%A2%83%E5%8C%85"><span class="toc-nav-text">导出环境包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AF%BC%E5%85%A5%E7%8E%AF%E5%A2%83%E5%8C%85"><span class="toc-nav-text">导入环境包</span></a></li></ol></li></ol>
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">conda 简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85-conda"><span class="toc-nav-text">安装 conda</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-nav-text">下载</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-nav-text">安装</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%BF%80%E6%B4%BBconda"><span class="toc-nav-text">激活conda</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9B%B4%E6%8D%A2%E6%BA%90"><span class="toc-nav-text">更换源</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%89%E8%A3%85%E6%BA%90"><span class="toc-nav-text">查看安装源</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86"><span class="toc-nav-text">conda 环境管理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%9B%E5%BB%BA%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">创建环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%BF%80%E6%B4%BB%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">激活环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E9%80%80%E5%87%BA%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">退出环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">查看已安装的环境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%A0%E9%99%A4%E7%8E%AF%E5%A2%83"><span class="toc-nav-text">删除环境</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#conda-%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-nav-text">conda 包管理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-nav-text">安装软件包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85"><span class="toc-nav-text">查看已安装的包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AF%BC%E5%87%BA%E7%8E%AF%E5%A2%83%E5%8C%85"><span class="toc-nav-text">导出环境包</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AF%BC%E5%85%A5%E7%8E%AF%E5%A2%83%E5%8C%85"><span class="toc-nav-text">导入环境包</span></a></li></ol></li></ol>
   
 </div>
 
@@ -857,11 +869,11 @@
             <ul>
                 
                 <li>
-                    <a href="/post/2023/12/19/condabase/">conda入门</a>
+                    <a href="/post/2023/12/20/2023summary/">2023 年终总结</a>
                 </li>
                 
                 <li>
-                    <a href="/post/2023/12/14/2023summary/">2023 年终总结</a>
+                    <a href="/post/2023/12/19/condabase/">conda入门</a>
                 </li>
                 
                 <li>

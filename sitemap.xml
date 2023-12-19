@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://selfteachingroad.cn/post/2023/12/20/2023summary/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://selfteachingroad.cn/post/2023/12/19/condabase/</loc>
     
     <lastmod>2023-12-19</lastmod>
@@ -41,15 +50,6 @@
     <loc>https://selfteachingroad.cn/post/2022/12/27/sqlite3Note/</loc>
     
     <lastmod>2023-12-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://selfteachingroad.cn/post/2023/12/14/2023summary/</loc>
-    
-    <lastmod>2023-12-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -276,20 +276,6 @@
   </url>
   
   <url>
-    <loc>https://selfteachingroad.cn/categories/%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2023-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://selfteachingroad.cn/categories/%E9%9A%8F%E6%83%B3/</loc>
-    <lastmod>2023-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://selfteachingroad.cn/categories/C/</loc>
     <lastmod>2023-12-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -304,6 +290,13 @@
   </url>
   
   <url>
+    <loc>https://selfteachingroad.cn/categories/%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2023-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://selfteachingroad.cn/categories/SQLite3/</loc>
     <lastmod>2023-12-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -312,6 +305,13 @@
   
   <url>
     <loc>https://selfteachingroad.cn/categories/Vim/</loc>
+    <lastmod>2023-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://selfteachingroad.cn/categories/%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2023-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
