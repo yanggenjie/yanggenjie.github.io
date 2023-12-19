@@ -255,7 +255,7 @@
 <p>安装之前，确保电脑里面没有安装 python 环境，如果有，先卸载再安装，因为 miniconda 本身自带了一个 python,很有可能会和你电脑上的产生冲突。</p>
 <p>下载 exe 文件，双击安装就行，注意使用默认的选项就行，不要添加到环境变量。</p>
 <p>安装完之后，就会有一个 Anacoda Prompt 的 Shell 程序，一个是 cmd 版本的，一个是 powershell 版本的。打开 cmd 版本，输入<code>conda -h</code>，看到下面这个界面就说明安装完成了。</p>
-<p><img src="/conda/2023-12-19-21-01-02-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-01-02-image.png"></p>
 <h2 id="更换源"><a href="#更换源" class="headerlink" title="更换源"></a>更换源</h2><p>由于 conda 默认安装源是在国外，安装各种软件包的时候可能会下载很慢，可以更换安装源为国内的镜像源，安装软件的时候会快很多。</p>
 <p>无论是 windows、macOS 还是 Linux，更换源的方式都是修改家目录下的<code>.condarc</code>文件即可</p>
 <p>如果没有<code>.condarc</code>文件，使用一下命令生成该文件</p>
@@ -280,24 +280,24 @@
 </ul>
 <h2 id="查看安装源"><a href="#查看安装源" class="headerlink" title="查看安装源"></a>查看安装源</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda config --show-sources</span><br><span class="line"># 看到以下结果说明换源成功</span><br></pre></td></tr></table></figure>
 
-<p><img src="/conda/2023-12-19-21-24-22-1702992244428.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-24-22-1702992244428.png"></p>
 <h1 id="conda-环境管理"><a href="#conda-环境管理" class="headerlink" title="conda 环境管理"></a>conda 环境管理</h1><h2 id="创建环境"><a href="#创建环境" class="headerlink" title="创建环境"></a>创建环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># conda create --name 环境名称 需要安装的包名=包的版本号</span></span><br><span class="line"><span class="comment"># 如下：创建一个名字叫test1的环境，其中安装了python3.9版本</span></span><br><span class="line">conda create --name test1 python=3.9</span><br></pre></td></tr></table></figure>
 
-<p><img src="/conda/2023-12-19-21-30-40-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-30-40-image.png"></p>
 <h2 id="激活环境"><a href="#激活环境" class="headerlink" title="激活环境"></a>激活环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># conda activate 环境名称</span></span><br><span class="line">conda activate test1</span><br></pre></td></tr></table></figure>
 
 <p>当激活之后，环境会从 base，切换为 test1</p>
-<p><img src="/conda/2023-12-19-21-33-04-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-33-04-image.png"></p>
 <h2 id="退出环境"><a href="#退出环境" class="headerlink" title="退出环境"></a>退出环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
 
 <h2 id="查看已安装的环境"><a href="#查看已安装的环境" class="headerlink" title="查看已安装的环境"></a>查看已安装的环境</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
-<p><img src="/conda/2023-12-19-21-36-50-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-36-50-image.png"></p>
 <h2 id="删除环境"><a href="#删除环境" class="headerlink" title="删除环境"></a>删除环境</h2><ul>
 <li>删除环境中所有的包</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># conda remove --name 环境名 参数</span></span><br><span class="line">conda remove --name test1 --all</span><br><span class="line"><span class="comment"># --all: 删除环境以及其中的所有包</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/conda/2023-12-19-21-40-57-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-40-57-image.png"></p>
 <ul>
 <li>删除虚拟环境中的某个包</li>
 </ul>
@@ -307,14 +307,14 @@
 
 <h2 id="查看已安装的包"><a href="#查看已安装的包" class="headerlink" title="查看已安装的包"></a>查看已安装的包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 注意先激活环境</span><br><span class="line"># conda activate test2</span><br><span class="line"># 查看当前安装的包</span><br><span class="line"></span><br><span class="line">conda list</span><br></pre></td></tr></table></figure>
 
-<p><img src="/conda/2023-12-19-21-47-46-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-47-46-image.png"></p>
 <h2 id="导出环境包"><a href="#导出环境包" class="headerlink" title="导出环境包"></a>导出环境包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 先激活环境</span><br><span class="line"># 导出环境内安装的包，保存到桌面下的test.txt文件</span><br><span class="line"># conda list --explicit &gt; 文件路径</span><br><span class="line">conda list --explicit &gt; D:\Users\ryzeyang\Desktop\test.txt</span><br></pre></td></tr></table></figure>
 
 <p>查看导出的 test.txt 文件</p>
-<p><img src="/conda/2023-12-19-21-53-36-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-53-36-image.png"></p>
 <h2 id="导入环境包"><a href="#导入环境包" class="headerlink" title="导入环境包"></a>导入环境包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 切换到test1环境</span><br><span class="line">conda deactivate</span><br><span class="line">conda activate test1</span><br><span class="line"># 安装导出的包</span><br><span class="line"># conda install --file 文件路径</span><br><span class="line">conda install --file D:\Users\ryzeyang\Desktop\test.txt</span><br></pre></td></tr></table></figure>
 
-<p><img src="/conda/2023-12-19-21-55-55-image.png"></p>
+<p><img src="/post/2023/12/19/condabase/2023-12-19-21-55-55-image.png"></p>
 
         
 <script src="/js/qrious.min.js"></script>
@@ -509,6 +509,50 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
+    <div class="post-img" style="background-image: url('/img/hexo/hexo.webp')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/2023/12/10/buildBlogByHexo/" class="title">
+                Hexo+云服务器搭建个人博客
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-12-10，</span>
+                    <span class="hidden-xs">全文3111字，</span>
+                    <span>阅读约11分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+            </div>
+            <a href="/post/2023/07/02/git_base/" class="title">
+                git基础教程
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-07-02，</span>
+                    <span class="hidden-xs">全文3571字，</span>
+                    <span>阅读约12分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
     <div class="post-img" style="background-image: url('/post/2023/01/08/2022summary/2022.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
@@ -531,50 +575,6 @@
                     <span>发表于2023-01-08，</span>
                     <span class="hidden-xs">全文2382字，</span>
                     <span>阅读约8分钟</span>
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-        
-        <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/2022/12/27/sqlite3Note/sqliteDefault.webp')"></div>
-    <div class="post-info">
-        <div class="post-info-center">
-            <div class="hidden-xs">
-                
-                
-            </div>
-            <a href="/post/2022/12/27/sqlite3Note/" class="title">
-                sqlite3笔记
-            </a>
-            <p class="text-gray">
-                <small>
-                    <span>发表于2022-12-27，</span>
-                    <span class="hidden-xs">全文1551字，</span>
-                    <span>阅读约6分钟</span>
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-        
-        <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/2022/12/22/mysoftwarelist/software-417880640.webp')"></div>
-    <div class="post-info">
-        <div class="post-info-center">
-            <div class="hidden-xs">
-                
-                
-            </div>
-            <a href="/post/2022/12/22/mysoftwarelist/" class="title">
-                我的软件清单
-            </a>
-            <p class="text-gray">
-                <small>
-                    <span>发表于2022-12-22，</span>
-                    <span class="hidden-xs">全文7607字，</span>
-                    <span>阅读约26分钟</span>
                 </small>
             </p>
         </div>
