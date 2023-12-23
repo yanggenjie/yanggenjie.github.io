@@ -15,8 +15,33 @@
     <atom:link href="https://selfteachingroad.cn/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>自学之路博客</description>
-    <pubDate>Tue, 19 Dec 2023 16:11:53 GMT</pubDate>
+    <pubDate>Sat, 23 Dec 2023 06:05:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>node版本控制——nvm</title>
+      <link>https://selfteachingroad.cn/post/2023/12/23/nodeVc_nvm/</link>
+      <guid>https://selfteachingroad.cn/post/2023/12/23/nodeVc_nvm/</guid>
+      <pubDate>Sat, 23 Dec 2023 05:42:13 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Linux&amp;#x2F;MacOS: &lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;https:</description>
+        
+      
+      
+      <enclosure url="https://selfteachingroad.cn/post/2023/12/23/nodeVc_nvm/nvm_cover.jpg" type="image"/>
+      
+      
+      
+      <category domain="https://selfteachingroad.cn/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</category>
+      
+      
+      
+      <comments>https://selfteachingroad.cn/post/2023/12/23/nodeVc_nvm/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023 年终总结</title>

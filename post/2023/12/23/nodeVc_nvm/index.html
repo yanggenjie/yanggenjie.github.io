@@ -21,11 +21,11 @@
   <link rel="shortcut icon" href="/img/avatar.webp">
   <title>
     
-    我的博客历程 | 自学之路
+    node版本控制——nvm | 自学之路
     
   </title>
 
-  <link rel="canonical" href="https://selfteachingroad.cn/post/2023/12/10/myBlogJournal/">
+  <link rel="canonical" href="https://selfteachingroad.cn/post/2023/12/23/nodeVc_nvm/">
   
 <link rel="stylesheet" href="/css/geektutu.css">
 
@@ -84,7 +84,7 @@
             <ul>
                 
                 
-                <li class="gkt-cate-name float-left ">
+                <li class="gkt-cate-name float-left active">
                     <a class="float-left" href="/post/2022/12/22/mysoftwarelist/">工具 ▾</a>
                     
                     <ul class="gkt-sub-cate">
@@ -104,7 +104,7 @@
                         <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/2023/12/19/condabase/">python</a></li>
                         
-                        <li class="gkt-sub-cate-name "><a class="float-left"
+                        <li class="gkt-sub-cate-name active"><a class="float-left"
                                 href="/post/2023/12/23/nodeVc_nvm/">版本控制</a></li>
                         
                     </ul>
@@ -144,7 +144,7 @@
                     
                 </li>
                 
-                <li class="gkt-cate-name float-left active">
+                <li class="gkt-cate-name float-left ">
                     <a class="float-left" href="/post/2023/12/10/buildBlogByHexo/">博客技术 ▾</a>
                     
                     <ul class="gkt-sub-cate">
@@ -152,7 +152,7 @@
                         <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/2023/12/10/buildBlogByHexo/">搭建</a></li>
                         
-                        <li class="gkt-sub-cate-name active"><a class="float-left"
+                        <li class="gkt-sub-cate-name "><a class="float-left"
                                 href="/post/2023/12/10/myBlogJournal/">随想</a></li>
                         
                     </ul>
@@ -196,23 +196,21 @@
 <div class="float-left post-container box-shadow">
     <div class="u-arrow-wrapper hidden-xs">
         
-        <a class="float-left" href="/post/2023/12/10/git_SimpleServer/"><i class="u-arrow-left"></i></a>
+        <a class="float-left" href="/post/2023/12/20/2023summary/"><i class="u-arrow-left"></i></a>
         
-        
-        <a class="float-right" href="/post/2023/12/12/git_Gogs/"><i class="u-arrow-right"></i></a>
         
     </div>
     <article class="col-xs-12">
-        <h1> 我的博客历程 </h1>
+        <h1> node版本控制——nvm </h1>
         
         
         <div class="hidden-lg hidden-md series_links">
-            <p> <strong> 随想系列文章链接：</strong></p>
+            <p> <strong> 版本控制系列文章链接：</strong></p>
             <ul>
                 
                 <li>
-                    <a href="/post/2023/12/10/myBlogJournal/">我的博客历程</a>
-                    <span class="post-item-date">(Dec 10, 2023)</span>
+                    <a href="/post/2023/12/23/nodeVc_nvm/">node版本控制——nvm</a>
+                    <span class="post-item-date">(Dec 23, 2023)</span>
                 </li>
                 
             </ul>
@@ -220,37 +218,80 @@
         
         
         <div class="gkt-article-start"></div>
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>折腾个人博客也算有些年限了，从刚毕业开始就在折腾，那时候觉得拥有一个自己网站的人是很厉害的(当然，现在也这么认为的)。那时候什么都不懂，反正就各种搜索，但都是折腾框架，折腾主题，到现在为止才慢慢定型，沉潜下来好好写点东西。这篇文章就从我使用的那些博客框架开始说起吧。</p>
-<h1 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h1><ul>
-<li><p><strong>jekyll+githubPage</strong><br>一开始我使用的是 jekyll+GithubPage 的方式来写博客的，因为 GithubPage 支持直接上传 jekyll 项目的源码，不用自己安装部署什么 Ruby 环境，只要写 markdown 文件，然后修改一些配置，推送到 github 上就行了.</p>
-</li>
-<li><p><strong>Hexo+githubPage</strong></p>
-<p>后面发现 Jeykyll 主题太少了，转去用 Hexo，玩了一段时间，还是在各种主题之间切换，搭建-修改配置-运行，这个流程无限循环，跑起来的那一刻很有成就感，但总觉得少了点什么，同样的主题，为什么别人的博客看起来就好看一点，我的就显得很苍白无力？思来想去，后面想通了一些事，就是别人的博客是有内容的，所谓的“好看”，其实是由内容丰富起来的，别人博客几百篇文章，我的博客就 1-2 篇，那怎么能比。</p>
-<p>虽然想通了，但还是有些难以改变，自己还是在折腾各种框架。</p>
-<p>至于为什么没有继续使用 Hexo 我也有点想不起来了，好像是因为评论系统的问题，别人评论的我文章之后，没法保存评论的数据，而我又经常折腾变动，之前买的都是便宜的虚拟主机，有时候没钱了就干脆不续费了，反正也没人看，过了个一年半载又重新买一个，数据又重头开始了。</p>
-</li>
-<li><p><strong>typecho+轻量云服务器</strong><br>后面转去使用了 typecho，这个也是默认支持 markdown 的，typecho 是用的时间比较长的一个框架了，当时有了要写文章的觉悟，告诉自己不要在折腾无意义的主题，把内容先丰富起来才是正确的方向，于是就搭建的这个 PHP 程序，用宝塔创建一个 PHP 程序，程序往里面一丢，然后就可以傻瓜式的下一步下一步点击安装，安装完之后，写文章直接在线编辑，不用配置什么 git 仓库，编译推送拉取这么“麻烦”。</p>
-</li>
-<li><p><strong>hexo+轻量云服务器</strong><br>而现在最终定位回 Hexo，可能是因为我成功从土木转来做开发了，工作中每天都在使用 git，在编程上的知识也变得深入起来,折腾了很多框架，以前觉得麻烦的那些事，现在都变成家常便饭。</p>
-<p>反而觉得现在这样是最高效的：<strong>使用 hexo 写文章，编译生成静态页面，在服务器上启动 nginx，跑一跑这些静态页面</strong>。有一天觉得 Hexo 生成的静态页面不好看了，审美疲劳了，就换一个，换 jeykll、vuepress、hugo、sphinx 什么都行，最终给服务器一个静态页面的数据就行，至于你用什么生成的，可以随时换。</p>
-<p>而反观 typecho，已经很久没有更新技术了，前后端分离，写博客的时候上传图片也很麻烦，备份方案也繁琐，要备份数据库和附件文件，我是搞桌面端开发的，数据库什么的只会增删改查，什么备份这些都没折腾，为了写一篇没有太大价值的文章而折腾一堆技术栈，折腾到后面，想写的欲望也没有了。</p>
-<p>至于评论什么，其实如果真的要交流，直接创建一个 QQ 群，微信群，大家随时都可以讨论，在这个静态博客上能讨论出什么问题，发表评论和回复评论的时间间隔，足够你折腾出问题的解决方案了。</p>
-<blockquote>
-<p>人生苦短，生命有限，一个人能专精的事真的不多。</p>
-</blockquote>
-</li>
+        <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><ul>
+<li>Linux&#x2F;MacOS: <a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a></li>
+<li>Windows：<a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows">https://github.com/coreybutler/nvm-windows</a></li>
 </ul>
-<p>以前还觉得使用个 hexo 部署到服务器怎么这么麻烦，还要做各种 git 的配置操作，都是因为对 git 理解的不深，不理解 Nginx 是什么，不知道那些教程是什么意思</p>
-<blockquote>
-<p>其实本质也很简单，就只是用了 git 的技术来实现自动推送而已: 先在服务器上创建一个 git 远程仓库，用 git 把本地的静态页面推送上去，然后用 git hooks 把这些静态页面复制到网站的根目录、</p>
+<h2 id="配置环境-安装包版本的跳过"><a href="#配置环境-安装包版本的跳过" class="headerlink" title="配置环境(安装包版本的跳过)"></a>配置环境(安装包版本的跳过)</h2><blockquote>
+<p>如果下载的是安装包版本的，可跳过，此处为绿色版的配置</p>
 </blockquote>
-<p>其实没有 git，也完全可以自己手动上传那些生成好的静态页面文件到服务器上，然后用 nginx 跑就行了。但程序员总得有点程序员的样子，复制粘贴上传这种看起来比较“笨”的方法，显得逼格不够高，使用命令敲一堆普通人看不懂的英文，显得自己更像技术大牛，成就感就是这么来的。</p>
-<blockquote>
-<p>正常人电脑关机要鼠标移动到开始菜单-关机，最简单最方便，可是身为程序员的我，怎么还能用这种方式？我应该使用快捷键<code>win+T</code>打开 terminal 终端然后熟练的敲下<code>sudo poweroff</code>，或者<code>win+R</code>输入 cmd 然后敲下<code>shutdown -p</code>,这样才显得专业，就算敲错了半天也无所谓。</p>
-</blockquote>
-<p>随着对编程技术的深入了解，学了那些比较复杂的东西，理解了之后，就觉得都没什么了。</p>
-<p>现在经常使用 sphinx、mkdocs 来创建一些文档笔记，现在也会了怎么在自己域名下放这些子目录，就是新建文件夹，把文件放进去，然后使用<code>http://xxx.cn/新建的文件夹名称</code>访问,至于怎么方便的创建文件夹，自动创建这些，思路就开阔了，笨方法就连服务器，上传文件，能用就行，笨不笨也没太大关系，主要是有内容。</p>
+<p>下载了<code>nvm-noinstall.zip</code>版本的，解压放到某个路径下,这里解压到<code>C:\Users\test\Programs\nvm-noinstall</code>，然后进行以下配置：</p>
+<ol>
+<li>在解压的路径下创建一个名为<code>settings.txt</code>的文件以及一个名为<code>nodejs</code>的文件夹，在里面写入：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">root: C:\Users\test\Programs\nvm-noinstall</span><br><span class="line">path: C:\Users\test\Programs\nvm-noinstall\nodejs</span><br><span class="line">node_mirror: https://npm.taobao.org/mirrors/node/</span><br><span class="line">npm_mirror: https://npm.taobao.org/mirrors/npm/</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>注意：把其中的 root 路径和 path 路径改成自己电脑的实际路径</p>
+</blockquote>
+<ul>
+<li><code>root</code>: nvm 的根目录</li>
+<li><code>path</code>: 当前使用的 node 版本</li>
+<li><code>node_mirror</code>: node 下载镜像源</li>
+<li><code>npm_mirror</code>: npm 镜像源</li>
+</ul>
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_131910.webp" alt="img_2023_12_23_131910"></p>
+<ol>
+<li>新建 HOME 和 Symlink 变量</li>
+</ol>
+<p>在用户环境变量新建以下两个变量，并设置对应的值：</p>
+<ul>
+<li><code>NVM_HOME</code>：设置值为 root 目录<code>C:\Users\test\Programs\nvm-noinstall</code></li>
+<li><code>NVM_SYMLINK</code>: 设置值为 path 目录<code>C:\Users\test\Programs\nvm-noinstall\nodejs</code></li>
+</ul>
+<p>具体操作如下:</p>
+<p>打开设置-搜索<code>环境</code>，选择编辑账户的环境变量：</p>
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_123414.webp" alt="img_2023_12_23_123414"></p>
+<p>弹出界面，选择新建，分别新建<code>NVM_HOME</code>、<code>NVM_SYMLINK</code>，并设置对应的值：</p>
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_123732.webp" alt="img_2023_12_23_123732"></p>
+<p>最终效果如下：</p>
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_124041.webp" alt="img_2023_12_23_124041"></p>
+<ol start="3">
+<li>编辑 PATH 环境变量</li>
+</ol>
+<p>编辑 Path 变量，在其中新增 root，path 目录：</p>
+<ul>
+<li><code>C:\Users\test\Programs\nvm-noinstall</code></li>
+<li><code>C:\Users\test\Programs\nvm-noinstall\nodejs</code></li>
+</ul>
+<p>具体操作如下：</p>
+<ol>
+<li>在用户变量列表中选择 Path，点击编辑</li>
+<li>弹出窗口，点击新增，填写 root 路径</li>
+<li>再点击新增，填写 path 路径</li>
+</ol>
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_132142.webp" alt="img_2023_12_23_132142"></p>
+<p>至此，绿色版的安装和环境配置就完成了。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>打开终端输入<code>nvm version</code>，出现版本号说明安装成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm version</span><br></pre></td></tr></table></figure>
+
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_132554.webp" alt="img_2023_12_23_132554">  </p>
+<h3 id="查看网络可以安装的版本"><a href="#查看网络可以安装的版本" class="headerlink" title="查看网络可以安装的版本"></a>查看网络可以安装的版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm list available</span><br></pre></td></tr></table></figure>
+
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_132726.webp" alt="img_2023_12_23_132726">  </p>
+<h3 id="选择一个版本安装"><a href="#选择一个版本安装" class="headerlink" title="选择一个版本安装"></a>选择一个版本安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># nvm install 版本号</span></span><br><span class="line">nvm install 20.10.0</span><br></pre></td></tr></table></figure>
+
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_132848.webp" alt="img_2023_12_23_132848">  </p>
+<h3 id="切换当前node版本"><a href="#切换当前node版本" class="headerlink" title="切换当前node版本"></a>切换当前node版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># nvm use 版本号</span></span><br><span class="line">nvm use 20.10.0</span><br></pre></td></tr></table></figure>
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_132942.webp" alt="img_2023_12_23_132942">  </p>
+<h3 id="查看当前正在使用的版本"><a href="#查看当前正在使用的版本" class="headerlink" title="查看当前正在使用的版本"></a>查看当前正在使用的版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm current</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看已安装版本"><a href="#查看已安装版本" class="headerlink" title="查看已安装版本"></a>查看已安装版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm list</span><br></pre></td></tr></table></figure>
+
+<p><img src="/post/2023/12/23/nodeVc_nvm/img_2023_12_23_133056.webp" alt="img_2023_12_23_133056">  </p>
+<h3 id="查看当前npm源"><a href="#查看当前npm源" class="headerlink" title="查看当前npm源"></a>查看当前npm源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+
+<h3 id="更换当前npm镜像源"><a href="#更换当前npm镜像源" class="headerlink" title="更换当前npm镜像源"></a>更换当前npm镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 淘宝源</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line"><span class="comment"># 阿里源</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://npm.aliyun.com</span><br><span class="line"></span><br><span class="line"><span class="comment"># 腾讯源</span></span><br><span class="line">npm config <span class="built_in">set</span> registry http://mirrors.cloud.tencent.com/npm/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 华为源</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://mirrors.huaweicloud.com/repository/npm/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 官方源</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org/</span><br></pre></td></tr></table></figure>
         
 <script src="/js/qrious.min.js"></script>
 
@@ -261,20 +302,20 @@
             <p>
                 <span>专题: </span>
                 
-                <a href="/series/#随想">
-                    <code key="随想" class="post-label">随想</code>
+                <a href="/series/#版本控制">
+                    <code key="版本控制" class="post-label">版本控制</code>
                 </a>
                 
             </p>
             
             <p>
-                <span>本文发表于 2023-12-10，最后修改于 2023-12-13。</span>
+                <span>本文发表于 2023-12-23，最后修改于 2023-12-23。</span>
             </p>
             <!-- 文章末尾的提示 start -->
             
             <p>
                 本站永久域名「 <a
-                        href="/post/2023/12/10/myBlogJournal/">selfteachingroad.cn</a>
+                        href="/post/2023/12/23/nodeVc_nvm/">selfteachingroad.cn</a>
                     」，也可搜索「 自学之路 」找到我。
             </p>
             
@@ -285,10 +326,8 @@
         <hr />
         <p name="pagination" style="font-size: 1.2em">
     
-    <a class="float-left" href="/post/2023/12/10/git_SimpleServer/">上一篇 « 如何搭建git托管平台之简易篇</a>
+    <a class="float-left" href="/post/2023/12/20/2023summary/">上一篇 « 2023 年终总结</a>
     
-    
-    <a class="float-right" href="/post/2023/12/12/git_Gogs/">下一篇 » 如何搭建git托管平台之gogs篇</a>
     
 </p>
     </article>
@@ -446,50 +485,21 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/img/git/git.jpg')"></div>
+    <div class="post-img" style="background-image: url('/img/hexo/hexo.webp')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
             </div>
-            <a href="/post/2023/12/12/git_Gogs/" class="title">
-                如何搭建git托管平台之gogs篇
+            <a href="/post/2023/12/10/myBlogJournal/" class="title">
+                我的博客历程
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2023-12-12，</span>
-                    <span class="hidden-xs">全文3984字，</span>
-                    <span>阅读约14分钟</span>
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-        
-        <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/2023/07/02/2023SummaryFirsthalf/2023.jpeg')"></div>
-    <div class="post-info">
-        <div class="post-info-center">
-            <div class="hidden-xs">
-                
-                
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#关于我"
-                    title="关于我">关于我</a>
-                <span>/</span>
-                
-                
-            </div>
-            <a href="/post/2023/07/02/2023SummaryFirsthalf/" class="title">
-                2023上半年总结
-            </a>
-            <p class="text-gray">
-                <small>
-                    <span>发表于2023-07-02，</span>
-                    <span class="hidden-xs">全文4718字，</span>
-                    <span>阅读约16分钟</span>
+                    <span>发表于2023-12-10，</span>
+                    <span class="hidden-xs">全文2293字，</span>
+                    <span>阅读约8分钟</span>
                 </small>
             </p>
         </div>
@@ -511,6 +521,35 @@
                 <small>
                     <span>发表于2023-03-05，</span>
                     <span class="hidden-xs">全文1297字，</span>
+                    <span>阅读约5分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/post/2023/02/18/2023FirstSum/bridge7675585640.webp')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#关于我"
+                    title="关于我">关于我</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a href="/post/2023/02/18/2023FirstSum/" class="title">
+                2023年转行进入新领域
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2023-02-18，</span>
+                    <span class="hidden-xs">全文1357字，</span>
                     <span>阅读约5分钟</span>
                 </small>
             </p>
@@ -727,19 +766,19 @@
         
         
         <section class="gkt-sidebar-content box-shadow">
-            <strong>随想</strong>
+            <strong>版本控制</strong>
             <ul>
                 
                 <li>
-                    <a href="/post/2023/12/10/myBlogJournal/"
-                        class="gkt-sidebar-active">我的博客历程</a>
+                    <a href="/post/2023/12/23/nodeVc_nvm/"
+                        class="gkt-sidebar-active">node版本控制——nvm</a>
                     
                     <!-- Table of Contents -->
 <div id="sidebar-toc">
   <!-- TOC  -->
   
   
-  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%8E%86%E7%A8%8B"><span class="toc-nav-text">历程</span></a></li></ol>
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-nav-text">下载</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83-%E5%AE%89%E8%A3%85%E5%8C%85%E7%89%88%E6%9C%AC%E7%9A%84%E8%B7%B3%E8%BF%87"><span class="toc-nav-text">配置环境(安装包版本的跳过)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-nav-text">使用</span></a></li></ol>
   
 </div>
 
