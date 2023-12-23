@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://selfteachingroad.cn/post/2023/12/23/nodeVc_nvm/</loc>
+    <loc>https://selfteachingroad.cn/post/2023/12/20/2023summary/</loc>
     
     <lastmod>2023-12-23</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://selfteachingroad.cn/post/2023/12/20/2023summary/</loc>
+    <loc>https://selfteachingroad.cn/post/2023/12/23/nodeVc_nvm/</loc>
     
-    <lastmod>2023-12-19</lastmod>
+    <lastmod>2023-12-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -264,13 +264,6 @@
 
   
   <url>
-    <loc>https://selfteachingroad.cn/categories/%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-12-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://selfteachingroad.cn/categories/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -285,7 +278,7 @@
   </url>
   
   <url>
-    <loc>https://selfteachingroad.cn/categories/%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/</loc>
+    <loc>https://selfteachingroad.cn/categories/%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -293,6 +286,13 @@
   
   <url>
     <loc>https://selfteachingroad.cn/categories/C/</loc>
+    <lastmod>2023-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://selfteachingroad.cn/categories/%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
